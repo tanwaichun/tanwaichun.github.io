@@ -6,29 +6,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Space+Grotesk:wght@300..700&display=swap');
+
         .container {
-            background: #ffffff;
             display: flex;
-            gap: 20px;
-            justify-content: side;
-            height: 30px;
+            gap: 30px;
+            justify-content: space-between;
+            height: 40px;
+            align-items: center;
+            padding-right: 100px;
+            padding-top: 50px;
+        }
+
+        .request {
+            color: black;
+            font-size: 15px;
+            width: 220px;
+            height: 55px;
+            margin: 2px;
+            border-radius: 8px;
+            border: 1px solid black;
+            background-color: white;
+            font-family: "Space Grotesk";
+        }
+
+        .about.us {
+            padding-right: 100px
+        }
+
+        .positivus {
+            padding: 70px
+        }
+
+        /* target element with both classes: class="about us" */
+        .about.us {
+            display: flex;
+            font-family: "Space Grotesk";
+            justify-content: space-evenly;
+            gap: 40px;
+            align-items: center;
+            width: 800px
+        }
+
+        button {
+            font-family: "space grotesk";
+        }
+
+        .mid {
+            display: flex;
+            width: 1440px;
+            height: 450px;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 60px;
+            gap: auto;
+        }
+
+        .midleft {
+            width: 600px;
+            height: auto;
+            gap: 35px;
+            font-family: "Space Grotesk";
+            align-items: top;
+        }
+
+        .content {
+            font-size: 60px;
+        }
+
+        .contentt {
+            font-size: 20px;
+        }
+
+        .midright {
+            width: 600px;
+            height: 500px;
+            padding-right: 10px;
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            padding: 70px;
+            width: 1370px;
+            mix-blend-mode: luminosity
+        }
+
+        .midbutton {
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            width: 220px;
+            height: 55px;
+            margin: 2px;
+            border-radius: 8px;
+            font-family: "Space Grotesk"
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div>Positivus</div>
-        <div>About us</div>
-        <div>Services</div>
-        <div>Pricing</div>
-        <div>Blog</div>
-        <div><button>a Quote</button></div>
+        <img class="positivus" src="image/positivus-image.png" height="50px">
+        <div class="about us">
+            <p>About us</p>
+            <p>Services</p>
+            <p>Use Cases</p>
+            <p>Pricing</p>
+            <p>Blog</p>
+            <button class="request">Request a quote</button>
+        </div>
     </div>
 
-    <h1>Navigating the digital landscape for success</h1>
-    <p>Our digital marketing agency helps businesses grow and succeed online through a range of services including
-        SEO, PPC, social media marketing, and content creation.</p>
+    <div class="mid">
+        <div class="midleft">
+            <h1 class="content">Navigating the digital landscape for success</h1>
+            <p class="contentt">Our digital marketing agency helps businesses grow and succeed online through a range of
+                services
+                including
+                SEO, PPC, social media marketing, and content creation.</p>
+            <button class="midbutton">Book a consultation</button>
+
+        </div>
+
+        <img class="midright" src="image/speak.png">
+    </div>
+
+    <div class="bottom">
+
+        <img src="image/amazon.png">
+
+        <img src="image/drillle.png">
+
+        <img src="image/hubspot.png">
+
+        <img src="image/notion.png">
+
+        <img src="image/netflix.png">
+
+        <img src="image/zoom.png">
+    </div>
 
 </body>
 
