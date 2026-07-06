@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: pink;
+        }
+
+
+        @media screen and (min-width:680px) {
+            body {
+                background-color: lightgreen;
+            }
+
+            h1 {
+                display: none;
+            }
+        }
+
+        .container {
+            display: flex;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Resize the browser window to see the effect!</h1>
+
+    <p>The media query is applied if the media type is screen, and the viewport width is 480px or more</p>
+
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+    </div>
+
+
+</body>
+
+</html>
