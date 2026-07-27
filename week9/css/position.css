@@ -1,0 +1,169 @@
+:root {
+    --green: #d9ff00;
+    --num: "Montserrat", sans-serif;
+    --radius: 18px;
+    --herowidth: 980px;
+    --imgheight: 650px;
+    --leftcardwidth: 430px;
+    --rightcardwidth: 260px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 698px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #081b8f;
+    font-family: "Inter", sans-serif;
+}
+
+section.image {
+    position: relative;
+    width: var(--herowidth);
+    width: min(90vw, 980px);
+}
+
+div.image {
+    width: 100%;
+    height: var(--imgheight);
+    aspect-ratio: 0.83;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+div.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+div.card {
+    position: absolute;
+    border-radius: var(--radius);
+}
+
+div.card-left {
+    left: -25px;
+    bottom: 40px;
+    width: var(--leftcardwidth);
+    background: var(--green);
+    padding: 38px 28px;
+}
+
+div.card-left h2 {
+    font-size: 64px;
+    font-weight: 700px;
+    font-family: var(--num);
+}
+
+div.card-left span {
+    display: block;
+    width: 295px;
+    height: 2px;
+    background: black;
+    margin: 28px 0 16px;
+}
+
+div.card-left p {
+    font-size: 18px;
+}
+
+div.card-right {
+    top: 35px;
+    right: -35px;
+    width: var(--rightcardwidth);
+    background: white;
+    padding: 24px;
+}
+
+div.card-right h3 {
+    font-size: 42px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--num);
+}
+
+div.card-right h3 span {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--green);
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+}
+
+div.progress {
+    margin: 18px 0 14px;
+    width: 100%;
+    height: 8px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+div.bar {
+    width: 87%;
+    height: 100%;
+    background: var(--green);
+}
+
+div.card-right p {
+    color: gray;
+    font-size: 16px;
+}
+
+@media (max-width:900px) {
+    :root {
+        --herowidth: min(88vw, 500px);
+        --imgheight: 620px;
+        --leftcardwidth: 330px;
+        --rightcardwidth: 220px;
+    }
+
+    div.card-left {
+        left: -15px;
+        bottom: 28px;
+        padding: 28px;
+    }
+
+    div.card-right {
+        top: 20px;
+        right: -18px;
+    }
+
+    div.card-left h2 {
+        font-size: 56px;
+    }
+
+    div.card-left span {
+        width: 220px;
+        height: 1px;
+    }
+
+
+    div.card-right h3 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width:768px) {
+    div.card-left {
+        left: -20px;
+        bottom: 25px;
+    }
+
+    div.card-right {
+        right: -20px;
+        top: 20px;
+    }
+}

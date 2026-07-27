@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div.relative {
+            position: relative;
+            width: 50%;
+            height: 200px;
+            border: 3px solid green;
+            margin: auto;
+        }
+
+        div.box1 {
+            position: absolute;
+            top: 20px;
+            left: -80px;
+            width: 100px;
+            height: 100px;
+            border: 3px solid red;
+        }
+
+        div.box2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            border: 3px solid blue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="relative">
+        <div class="box1">First Box</div>
+        <div class="box2">Second Box</div>
+    </div>
+
+</body>
+
+</html>
