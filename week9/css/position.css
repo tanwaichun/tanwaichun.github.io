@@ -44,12 +44,12 @@ div.image img {
     object-position: center;
 }
 
-div.card {
+div.box {
     position: absolute;
     border-radius: var(--radius);
 }
 
-div.card-left {
+div.box-left {
     left: -25px;
     bottom: 40px;
     width: var(--leftcardwidth);
@@ -57,13 +57,13 @@ div.card-left {
     padding: 38px 28px;
 }
 
-div.card-left h2 {
+div.box-left h2 {
     font-size: 64px;
     font-weight: 700px;
     font-family: var(--num);
 }
 
-div.card-left span {
+div.box-left span {
     display: block;
     width: 295px;
     height: 2px;
@@ -71,11 +71,11 @@ div.card-left span {
     margin: 28px 0 16px;
 }
 
-div.card-left p {
+div.box-left p {
     font-size: 18px;
 }
 
-div.card-right {
+div.box-right {
     top: 35px;
     right: -35px;
     width: var(--rightcardwidth);
@@ -83,7 +83,7 @@ div.card-right {
     padding: 24px;
 }
 
-div.card-right h3 {
+div.box-right h3 {
     font-size: 42px;
     display: flex;
     align-items: center;
@@ -91,7 +91,7 @@ div.card-right h3 {
     font-family: var(--num);
 }
 
-div.card-right h3 span {
+div.box-right h3 span {
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -117,7 +117,7 @@ div.bar {
     background: var(--green);
 }
 
-div.card-right p {
+div.box-right p {
     color: gray;
     font-size: 16px;
 }
@@ -130,39 +130,39 @@ div.card-right p {
         --rightcardwidth: 220px;
     }
 
-    div.card-left {
+    div.box-left {
         left: -15px;
         bottom: 28px;
         padding: 28px;
     }
 
-    div.card-right {
+    div.box-right {
         top: 20px;
         right: -18px;
     }
 
-    div.card-left h2 {
+    div.box-left h2 {
         font-size: 56px;
     }
 
-    div.card-left span {
+    div.box-left span {
         width: 220px;
         height: 1px;
     }
 
 
-    div.card-right h3 {
+    div.box-right h3 {
         font-size: 32px;
     }
 }
 
 @media (max-width:768px) {
-    div.card-left {
+    div.box-left {
         left: -20px;
         bottom: 25px;
     }
 
-    div.card-right {
+    div.box-right {
         right: -20px;
         top: 20px;
     }
