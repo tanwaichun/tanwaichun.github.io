@@ -10,7 +10,9 @@
 
 <body>
     <div class="header">
-        <div class="header-logo"><img src="image/vegan-logo.png" alt="vegan store logo" width="190px"></div>
+        <form action="/action_page.php">
+            <div class="header-logo"><img src="image/vegan-logo.png" alt="vegan store logo" width="190px"></div>
+        </form>
         <div class="search-bar">
             <div><input type="search" id="search" name="search" placeholder="Search products..."></div>
         </div>
@@ -50,9 +52,11 @@
             <div class="footer-left">
                 <div class="footer-logo"><img src="image/vegan-logo.png" alt="vegan store logo" width="210px"></div>
                 <p>Signup for 10% off your first purchase & more products discounts</p>
-                <div class="enter-email">
-                    <p>Enter your email..*</p>
-                </div>
+                <form action="/action_page.php">
+                    <div class="enter-email">
+                        <input type="email" id="email" name="email" placeholder="Enter your email ..*">
+                    </div>
+                </form>
                 <button class="subscribe-button">SUBSCRIBE NOW</button>
             </div>
             <div class="container-list">
@@ -105,12 +109,14 @@
                 <p>© Copyright 2012 - 2026 • Avada is a Website Builder for WordPress and eCommerce • All Rights
                     Reserved • Developed by ThemeFusion</p>
             </div>
-            <img src="image/cards-footer.png" alt="cards footer">
+            <div class="footer-cards">
+                <img src="image/cards-footer.png" alt="cards footer" width="100%">
+            </div>
             <div class="vegan-text">
                 <p>Vegan Products are 100% Plant-Based and Safe for Human Health and Environment.</p>
             </div>
             <div class="footer-download">
-                <div>
+                <div class="vegan-text">
                     <p>Download Vegan Store App</p>
                 </div>
                 <div class="footer-playstore">

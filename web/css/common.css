@@ -15,7 +15,7 @@
  }
 
  .header-logo {
-     width: 200px;
+     width: 190px;
  }
 
  .menu {
@@ -68,7 +68,7 @@
      color: #494949;
  }
 
- .enter-email {
+ .enter-email input {
      box-sizing: border-box;
      font-size: 17px;
      font-weight: 400;
@@ -82,6 +82,13 @@
      line-height: 1;
      text-align: left;
      margin-top: 20px;
+     border: none;
+ }
+
+ form {
+     width: 100%;
+     margin: 0;
+     padding: 0;
  }
 
  .subscribe-button {
@@ -130,52 +137,81 @@
 
  .phone-text {
      font-size: 17px;
+     font-weight: 400;
+     margin-bottom: 2px;
+ }
+
+ .phone-text p {
+     margin: 0;
  }
 
  .phone-number {
      font-size: 24px;
      font-weight: 700;
      color: #76B62B;
+     margin-bottom: 4px;
+ }
+
+ .phone-number p {
+     margin: 0;
  }
 
  .vegan-gmail {
      font-size: 17px;
      color: #494949;
+     margin-bottom: 32px;
  }
 
  .footer-social {
      display: flex;
      justify-content: space-between;
      flex-direction: row;
-     margin-top: 30px;
  }
 
  .footer-social div {
+     display: flex;
      box-sizing: border-box;
      background-color: #FFFFFF;
-     border-radius: 7px;
+     border-radius: 8px;
      width: 40px;
      height: 40px;
-     padding: 8px;
+     padding: 12px;
+     margin: 5px;
+     align-items: center;
+     justify-content: center;
  }
 
  .footer-bottom {
-     text-align: center;
+     display: flex;
+     flex-direction: column;
      margin-top: 30px;
-     padding: 32px 30px 24px;
      color: #494949;
+     align-items: center;
+     flex-wrap: wrap;
  }
 
  .footer-copyright {
+     display: flex;
      font-size: 15px;
+     font-weight: 400;
      color: #494949;
-     margin-bottom: 30px;
+     line-height: 1.8;
+     letter-spacing: -0.15px;
  }
 
- .footer-text {
+ .footer-cards {
+     width: 326px;
+     line-height: 1.2;
+     margin-top: 16px;
+     margin-bottom: 8px;
+ }
+
+ .vegan-text {
      font-size: 13px;
+     font-weight: 400;
      color: #494949;
-     margin-top: 50px;
+     line-height: 1.5;
+     letter-spacing: -0.13px;
  }
 
  .footer-download {
@@ -183,13 +219,17 @@
      flex-direction: row;
      justify-content: center;
      align-items: center;
-     gap: 30px;
+     width: 100%;
+     margin-left: -80px;
  }
 
  .footer-playstore {
      display: flex;
      flex-direction: row;
-     gap: 15px
+     gap: 10px;
+     max-width: 90px;
+     line-height: 1;
+     margin-left: 8px;
  }
 
  .footer {
