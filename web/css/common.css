@@ -2,6 +2,7 @@
 
  body {
      font-family: "Sen", sans-serif;
+     margin: 0;
  }
 
  .header {
@@ -19,7 +20,7 @@
      justify-content: center;
      align-items: center;
      width: 650px;
-     margin-left: 80px;
+     margin-left: 100px;
  }
 
  .search-bar>div:first-child {
@@ -60,26 +61,123 @@
      width: 190px;
  }
 
- .menu {
-     display: flex;
-     gap: 50px;
-     align-items: center;
-     font-size: 17px;
-     font-weight: 600;
-     font-family: "Sen", sans-serif;
- }
-
  .header-icon {
      display: flex;
-     gap: 30px;
+     gap: 24px;
  }
 
  .header-icon img {
-     width: 30px;
+     width: 22px;
  }
 
- .home-text {
-     color: #FFA42D;
+ .menu-bar {
+     display: flex;
+     align-items: center;
+     font-family: "Sen", sans-serif;
+     background-color: #76B62B;
+     padding: 4px 80px;
+ }
+
+ .inside-box {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     align-items: center;
+     padding-top: 4px;
+     padding-bottom: 4px;
+     width: 100%;
+ }
+
+ .category-btn {
+     padding: 24px 40px;
+     border-radius: 8px;
+     color: #FFFFFF;
+     background-color: #609523;
+     border: none;
+     font-size: 17px;
+     font-weight: 600;
+     line-height: 1.2;
+     min-height: 42px;
+ }
+
+ .submenu-icon {
+     width: 22px;
+     margin-right: 18px;
+ }
+
+ .categories-submenu {
+     font-size: 17px;
+     font-weight: 600;
+     align-items: flex-start;
+     flex-direction: column;
+     width: 300px;
+     background-color: #FFFFFF;
+     padding: 32px 32px 36px;
+     border-radius: 8px;
+     margin-top: 5px;
+     flex-wrap: wrap;
+     position: absolute;
+     display: none;
+ }
+
+ .submenu-link {
+     display: flex;
+     align-items: flex-start;
+     flex-wrap: nowrap;
+     margin-top: 8px;
+     margin-bottom: 25px;
+ }
+
+ .submenu-link a {
+     color: #494949;
+     text-decoration: dashed underline;
+ }
+
+ .categories {
+     position: relative;
+ }
+
+ .categories:hover .categories-submenu {
+     display: block;
+ }
+
+ .menu-bar-list {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     font-size: 17px;
+     font-weight: 600;
+     gap: 48px;
+     line-height: 1.2;
+     padding: 8px 15px;
+     color: #FFFFFF;
+ }
+
+ .phone-icon {
+     width: 42px;
+     height: 42px;
+     margin-top: 2px;
+     margin-right: 14px;
+ }
+
+ .header-contact p {
+     font-size: 14px;
+     font-weight: 400;
+     color: #FFFFFF;
+     margin: 0;
+     text-align: right;
+ }
+
+ .header-phone-number p {
+     font-size: 19px;
+     font-weight: 700;
+     margin-top: 5px;
+ }
+
+ .phone-contact {
+     display: flex;
+     align-items: center;
  }
 
  .footer-upper {
@@ -177,30 +275,32 @@
      gap: 14px
  }
 
- .phone-text {
+ .footer-phone-text {
      font-size: 17px;
      font-weight: 400;
      margin-bottom: 2px;
  }
 
- .phone-text p {
+ .footer-phone-text p {
      margin: 0;
  }
 
- .phone-number {
+ .footer-phone-number {
      font-size: 24px;
      font-weight: 700;
      color: #76B62B;
      margin-bottom: 4px;
  }
 
- .phone-number p {
+ .footer-phone-number p {
      margin: 0;
  }
 
  .vegan-gmail {
      font-size: 17px;
      color: #494949;
+     text-decoration: underline;
+     margin: 0;
      margin-bottom: 32px;
  }
 
