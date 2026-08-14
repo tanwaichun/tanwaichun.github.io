@@ -192,6 +192,130 @@
      align-items: center;
  }
 
+ .side-menu {
+     padding: 12px 20px;
+     box-sizing: border-box;
+     background-color: #FFFFFF;
+     position: absolute;
+     top: 0px;
+     bottom: 0px;
+     width: 400px;
+ }
+
+ .side-menu-inside {
+     padding: 40px 30px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     height: 100%;
+     box-sizing: border-box;
+ }
+
+ .side-menu-logo {
+     max-width: 160px;
+     margin-bottom: 32px;
+ }
+
+ .side-menu-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+     flex-direction: row;
+ }
+
+ .cart-box {
+     padding: 16px 24px;
+     border-radius: 8px;
+     background-color: #f2f8e9;
+     text-align: center;
+ }
+
+ .cart-box p {
+     font-size: 17px;
+     font-weight: 400;
+     color: #494949;
+     margin: 0;
+ }
+
+ .cart-box a {
+     font-size: 15px;
+     font-weight: 400;
+     line-height: 1.8;
+     color: #76B62B;
+     margin-top: 6px;
+ }
+
+ .side-menu-list {
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     align-items: flex-start;
+     padding-top: 10px;
+     padding-bottom: 10px;
+ }
+
+ .side-menu-list>div {
+     font-size: 17px;
+     font-weight: 600;
+     line-height: 1.2;
+     color: #212934;
+     padding-top: 16px;
+     padding-bottom: 16px;
+ }
+
+ .side-categories {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+ }
+
+ .side-menu-list>.side-home-text {
+     color: #FFA42D;
+ }
+
+ .side-contact {
+     display: flex;
+     padding-top: 40px;
+     padding-bottom: 40px;
+     border-top: 1px solid #e5e5e5;
+     flex-direction: column;
+ }
+
+ .side-contact h3 {
+     font-size: 20px;
+     font-weight: 700;
+     margin-bottom: 15px;
+     color: #141414;
+ }
+
+ .side-contact p {
+     font-size: 17px;
+     font-weight: 400;
+     color: #494949;
+     margin-top: 4px;
+     margin-bottom: 4px;
+ }
+
+ .side-social {
+     display: flex;
+     flex-direction: row;
+     margin-top: 24px;
+ }
+
+ .side-social div {
+     display: flex;
+     box-sizing: border-box;
+     background-color: #F2F2F2;
+     border-radius: 8px;
+     width: 40px;
+     height: 40px;
+     padding: 12px;
+     margin: 5px;
+     align-items: center;
+     justify-content: center;
+ }
+
  .footer-upper {
      background-color: #F2F2F2;
      color: #494949;
