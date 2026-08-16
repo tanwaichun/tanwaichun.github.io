@@ -426,6 +426,10 @@
      border: none;
  }
 
+ .subscribe-button:hover {
+     background-color: #2d2d2d;
+ }
+
  .footer-right {
      display: flex;
      justify-content: space-between;
@@ -498,6 +502,10 @@
      text-decoration: underline;
      margin: 0;
      margin-bottom: 32px;
+ }
+
+ .vegan-gmail:hover {
+     color: #FFA42D;
  }
 
  .footer-social {
