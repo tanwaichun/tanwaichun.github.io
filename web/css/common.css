@@ -177,6 +177,13 @@
      color: #FFFFFF;
  }
 
+ .menu-bar-list a {
+     font-size: 17px;
+     font-weight: 600;
+     color: #ffffff;
+     text-decoration: none;
+ }
+
  .phone-icon {
      width: 42px;
      height: 42px;
