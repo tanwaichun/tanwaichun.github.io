@@ -526,3 +526,86 @@
     color: #ffa42d;
     text-decoration: none;
 }
+
+.announcement-tablet {
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+    .hero-banner {
+        height: 555px;
+    }
+
+    .hero-left,
+    .hero-right {
+        display: none;
+    }
+
+    .hero-inside {
+        height: 555px;
+        width: 90%;
+        justify-content: center;
+    }
+
+    .hero-middle {
+        width: 80%;
+    }
+
+    .announcement-inside>div {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .announcement-tablet {
+        display: flex;
+    }
+
+    .announcement-desktop {
+        display: none;
+    }
+
+    .product-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .green-selling-card {
+        width: 206px;
+        height: 1185px;
+        margin-right: 0px;
+    }
+
+    .product-card {
+        width: calc((100% - 20px) / 2);
+    }
+
+    .product-card-row {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        gap: 20px;
+    }
+
+    .green-selling-card .icon-leaf {
+        margin-top: 700px;
+    }
+
+    .green-selling-card h4 {
+        width: 80%;
+    }
+
+    .brown-selling-card {
+        width: 206px;
+        height: 1185px;
+        margin-left: 0px;
+    }
+
+    .brown-selling-card .icon-leaf {
+        margin-top: 700px;
+    }
+
+    .brown-selling-card h4 {
+        width: 80%;
+    }
+}
