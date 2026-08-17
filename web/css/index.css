@@ -355,7 +355,7 @@
 }
 
 .introduce-left {
-    width: 50%;
+    width: 45%;
     position: relative;
 }
 
@@ -531,6 +531,44 @@
     display: none;
 }
 
+.content-tablet {
+    display: none;
+}
+
+.announcement-mobile {
+    display: none;
+}
+
+.brown-card-mobile {
+    display: none;
+}
+
+.content-mobile {
+    display: none;
+}
+
+.introduce-right-mobile {
+    display: none;
+}
+
+.introduce-right-mobile {
+    width: 45%;
+    position: relative;
+}
+
+.introduce-right-mobile>img {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.back-stemp img {
+    position: absolute;
+    width: 50%;
+    margin-top: -100px;
+    margin-left: 150px;
+}
+
 @media screen and (max-width:1000px) {
     .hero-banner {
         height: 555px;
@@ -608,4 +646,244 @@
     .brown-selling-card h4 {
         width: 80%;
     }
+
+    .content-tablet {
+        display: flex;
+    }
+
+    .content-desktop {
+        display: none;
+    }
+
+    .introduce-left {
+        width: 45%;
+    }
+
+    .introduce-left>img {
+        width: 80%;
+        margin-top: -10px;
+        margin-left: 90px;
+    }
+
+    .introduce-title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .introduce-title h3 {
+        margin: 10px 0px 30px 0px;
+    }
+
+    .about-store-btn {
+        margin-top: 80px;
+    }
+
+    .article-grids {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .article-card {
+        width: calc((100% - 40px) / 2);
+    }
+
+    .article-content {
+        margin: 0px 10px;
+    }
+
+    .article-down {
+        margin: 10px 10px 0px;
+        padding: 8px;
+        gap: 5px
+    }
+}
+
+@media screen and (max-width:800px) {
+    .announcement-tablet {
+        display: none;
+    }
+
+    .announcement-mobile {
+        display: flex;
+    }
+
+    .green-selling-card {
+        width: 100%;
+        height: 185px;
+        position: relative;
+    }
+
+    .product-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 30px
+    }
+
+    .green-selling-card h4 {
+        width: auto;
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+
+    .green-selling-card .icon-leaf img {
+        margin-left: 0px;
+    }
+
+    .green-selling-card h4 br {
+        display: none;
+    }
+
+    .selling-card-inside {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        margin-left: 40px;
+    }
+
+    .green-selling-card .icon-leaf {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .green-selling-card .light-leaf {
+        position: absolute;
+    }
+
+    .product-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .product-card-row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    .product-price {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .product-card p br {
+        display: none;
+    }
+
+    .product-option {
+        margin-bottom: 10px;
+    }
+
+    .brown-selling-card {
+        width: 100%;
+        height: 185px;
+        position: relative;
+    }
+
+    .product-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 30px
+    }
+
+    .brown-selling-card h4 {
+        width: auto;
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+
+    .brown-selling-card .icon-leaf img {
+        margin-left: 0px;
+    }
+
+    .brown-selling-card h4 br {
+        display: none;
+    }
+
+    .brown-selling-card .icon-leaf {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .brown-selling-card .light-leaf {
+        position: absolute;
+    }
+
+    .brown-card-mobile {
+        display: flex;
+    }
+
+    .brown-card-desktop {
+        display: none;
+    }
+
+    .content-tablet {
+        display: none;
+    }
+
+    .content-mobile {
+        display: flex;
+    }
+
+    .introduce {
+        flex-direction: column;
+    }
+
+    .introduce-right {
+        width: 100%;
+    }
+
+    .introduce-title {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .introduce-title h3 {
+        margin: 0;
+    }
+
+    .introduce-right-mobile {
+        display: flex;
+        ;
+    }
+
+    .introduce-right-desktop {
+        display: none;
+    }
+
+    .left-back-stamp {
+        display: none;
+    }
+
+    .introduce-left {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .about-store-btn {
+        margin-top: 0px;
+    }
+
+    .article-upper {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+        gap: 20px;
+    }
+
+    .article-grids {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .article-card {
+        width: 100%;
+    }
+
 }
