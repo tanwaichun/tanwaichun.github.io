@@ -1,7 +1,3 @@
-/* =========================================================
-   GLOBAL
-========================================================= */
-
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +5,7 @@
 }
 
 body {
-    font-family: "Mulish", sans-serif;
+    font-family: "Sen", sans-serif;
     color: #222;
     background: #fff;
 }
@@ -25,21 +21,17 @@ img {
 }
 
 
-/* =========================================================
-   FLASH DEALS
-========================================================= */
 
 .flash-deals {
     width: 100%;
     background-color: #222;
-    background-image: url("../images/pattern.png");
+
     background-size: 300px;
 
     padding: 55px 0 80px;
 }
 
 
-/* Heading */
 
 .flash-deals__heading {
     text-align: center;
@@ -54,7 +46,6 @@ img {
 }
 
 
-/* Countdown */
 
 .countdown {
     display: flex;
@@ -96,9 +87,6 @@ img {
 }
 
 
-/* =========================================================
-   PRODUCT SLIDER
-========================================================= */
 
 .product-slider {
     width: calc(100% - 40px);
@@ -113,7 +101,6 @@ img {
 }
 
 
-/* Product Card */
 
 .product-card {
     padding: 7px;
@@ -136,7 +123,6 @@ img {
 }
 
 
-/* Product Content */
 
 .product-card__content {
     padding: 15px 12px 10px;
@@ -167,7 +153,6 @@ img {
 }
 
 
-/* Price */
 
 .price {
     margin: 12px 0;
@@ -184,7 +169,6 @@ img {
 }
 
 
-/* Product Options */
 
 .options {
     display: flex;
@@ -207,7 +191,6 @@ img {
 }
 
 
-/* Add To Cart */
 
 .add-cart {
     width: 100%;
@@ -234,9 +217,6 @@ img {
 }
 
 
-/* =========================================================
-   SLIDER DOTS
-========================================================= */
 
 .slider-dots {
     display: flex;
@@ -264,9 +244,6 @@ img {
 }
 
 
-/* =========================================================
-   FEATURED PRODUCTS
-========================================================= */
 
 .featured {
     width: calc(100% - 40px);
@@ -279,7 +256,6 @@ img {
 }
 
 
-/* Orange Promotional Card */
 
 .featured__promo {
     min-height: 320px;
@@ -316,7 +292,6 @@ img {
 }
 
 
-/* Featured Products */
 
 .featured__products {
     padding: 28px;
@@ -332,7 +307,6 @@ img {
 }
 
 
-/* Mini Product */
 
 .mini-product {
     min-width: 0;
@@ -389,9 +363,6 @@ img {
 }
 
 
-/* =========================================================
-   NEW ARRIVALS
-========================================================= */
 
 .new-arrivals {
     width: calc(100% - 40px);
@@ -414,7 +385,6 @@ img {
 }
 
 
-/* New Arrivals List */
 
 .new-arrivals__list h2 {
     margin-bottom: 15px;
@@ -460,9 +430,6 @@ img {
 }
 
 
-/* =========================================================
-   ARRIVAL BANNERS
-========================================================= */
 
 .arrival-banner {
     position: relative;
@@ -506,9 +473,6 @@ img {
 }
 
 
-/* =========================================================
-   CTA
-========================================================= */
 
 .cta {
     width: calc(100% - 40px);
