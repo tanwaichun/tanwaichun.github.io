@@ -284,6 +284,8 @@
      top: 0px;
      bottom: 0px;
      width: 400px;
+     opacity: 0;
+     z-index: 2;
  }
 
  .side-menu-inside {
@@ -438,17 +440,14 @@
      display: block;
  }
 
- .side-menu {
-     opacity: 0;
-     z-index: 2;
+ .side-menu.active {
+     opacity: 1;
  }
 
-
-
- #hamburder {
-     display: flex;
+ .menu-toggle {
+     cursor: pointer;
+     font-size: 21px;
  }
-
 
  /* Footer */
 

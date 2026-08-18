@@ -1,5 +1,5 @@
-const toggleButton = document.getElementById("menu-toggle");
-const menu = document.getElementById("mobile-menu");
+const toggleButton = document.querySelectorAll(".menu-toggle");
+const menu = document.getElementById("menu");
 
 toggleButton.addEventListener("click", () => {
     menu.classList.toggle("active");
