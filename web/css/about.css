@@ -1,0 +1,148 @@
+.introduce-title {
+    display: flex;
+    align-items: center;
+}
+
+.introduce-title img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.introduce-title h3 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #141414;
+}
+
+.introduce-right p {
+    font-size: 19px;
+    font-weight: 400;
+    color: #494949;
+    margin: 8px 8px 0px 8px;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+
+.introduce {
+    margin: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.introduce-right {
+    width: 45%;
+    position: relative;
+}
+
+.introduce-right>img {
+    position: absolute;
+    margin-top: -100px;
+}
+
+.introduce-left {
+    width: 45%;
+}
+
+.introduce-left img {
+    width: 100%;
+}
+
+.about-store-btn button {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 20px 40px 22px;
+    border-radius: 8px;
+    border: none;
+    color: #ffffff;
+    background-color: #ffa42d;
+}
+
+.owner-content {
+    text-align: center;
+}
+
+.about-header {
+    margin: 0px -30px;
+}
+
+.store-service {
+    margin: 80px 60px 60px 60px;
+}
+
+.service-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.service-card {
+    border-radius: 10px;
+    border: 1px solid #c2c2c2;
+    box-sizing: border-box;
+    width: calc((100% - 40px) / 3);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-card h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #141414;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.service-card p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #494949;
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+}
+
+.service-card img {
+    width: 100px;
+    height: 100px;
+}
+
+.about-header {
+    position: relative;
+    width: 100%;
+}
+
+.about img {
+    width: 100%;
+    height: 680px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.owner-card {
+    background-color: #fff8f0;
+    padding: 48px 100px;
+    border-radius: 12px;
+    align-items: center;
+}
+
+.stats {
+    background-color: #3b2117;
+    color: white;
+    text-align: center;
+    padding: 100px 50px;
+}
+
+.number h2 {
+    color: white;
+
+}
+
+.number p {
+    color: white;
+}
+
+.big-title {
+    font-size: 36px;
+}
