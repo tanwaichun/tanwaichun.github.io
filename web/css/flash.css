@@ -61,7 +61,7 @@ button {
 
     gap: 4px;
 
-    background: #76b62b;
+    background: var(--main);
     border-radius: 5px;
 
     color: #fff;
@@ -368,7 +368,7 @@ button {
 
     gap: 30px;
 
-    background: #fff;
+    background: var(--white);
 
     border-radius: 4px;
 
@@ -515,7 +515,7 @@ button {
     transition: .25s;
 }
 
-.cta button a{
+.cta button a {
     text-decoration: none;
     color: inherit;
 }

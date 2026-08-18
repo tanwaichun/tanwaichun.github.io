@@ -3,17 +3,105 @@
  :root {
      --font-heading: "Sen", sans-serif;
      --font-body: "Happy Monkey", system-ui;
-     --white: #ffffff;
-     --title: #141414;
-     --special: #2d2d2d;
-     --text: #494949;
-     --sel-box: #7d7d7d;
-     --some-bg: #632117;
-     --button-bg: #ffa42d;
-     --main: #76b62b;
-     --some-bg2: #4d781c;
-     --price: #ea2a30;
-     --menu: #212934;
+     --color-white: #ffffff;
+     --color-title-black: #141414;
+     --color-heading-black: #2d2d2d;
+     --color-text-gray: #494949;
+     --color-box-gray: #7d7d7d;
+     --color-bg-red: #632117;
+     --color-button-orange: #ffa42d;
+     --color-main-green: #76b62b;
+     --color-bg-green: #4d781c;
+     --color-price-red: #ea2a30;
+     --color-menu-black: #212934;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     font-family: var(--font-heading);
+ }
+
+ h1 {
+     font-size: 72px;
+     font-weight: 700;
+     line-height: 86.4px;
+     letter-spacing: -2.52px
+ }
+
+ h2 {
+     font-size: 36px;
+     font-weight: 700;
+     line-height: 43.2px;
+     letter-spacing: -1.26px
+ }
+
+ h3 {
+     font-size: 24px;
+     font-weight: 700;
+     line-height: 33.6px;
+     letter-spacing: -0.84px
+ }
+
+ h4 {
+     font-size: 36px;
+     font-weight: 700;
+     line-height: 33.6px;
+     letter-spacing: -0.84px
+ }
+
+ h5 {
+     font-size: 16px;
+     font-weight: 700;
+     line-height: 22.4px;
+     letter-spacing: -0.56px;
+ }
+
+ h6 {
+     font-size: 20px;
+     font-weight: 700;
+     line-height: 28px;
+     letter-spacing: -0.7px
+ }
+
+ .p1,
+ .p2,
+ .p3,
+ .p4,
+ .p5 {
+     font-family: var(--font-heading);
+ }
+
+ .p1 {
+     font-size: 36px;
+     line-height: 50.4px;
+     letter-spacing: -0.4px;
+ }
+
+ .p2 {
+     font-size: 44px;
+     line-height: 52.8px;
+     letter-spacing: -1.5px;
+ }
+
+ .p3 {
+     font-size: 19px;
+     line-height: 32.7px;
+     letter-spacing: -0.2px;
+ }
+
+ .p4 {
+     font-size: 15px;
+     line-height: 25.5x;
+     letter-spacing: -0.2px;
+ }
+
+ .p5 {
+     font-size: 14px;
+     line-height: -0.1px;
  }
 
  * {
@@ -56,9 +144,9 @@
      border-radius: 8px 0px 0px 8px;
      height: 64px;
      border-right: none;
-     border: 1px solid #d2d2d2;
-     color: #494949;
-     background-color: #FFFFFF;
+     border: 1px solid var(--sel-box);
+     color: var(--text);
+     background-color: var(--white);
      box-sizing: border-box;
  }
 
@@ -73,7 +161,7 @@
      height: 64px;
      width: 64px;
      border-radius: 0px 8px 8px 0px;
-     background-color: #000000;
+     background-color: var(--menu);
      border: none;
      border-left: none;
  }
@@ -104,7 +192,7 @@
      display: flex;
      align-items: center;
      font-family: "Sen", sans-serif;
-     background-color: #76B62B;
+     background-color: var(--main);
      padding: 4px 80px;
      position: relative;
      z-index: 2;
@@ -124,8 +212,8 @@
  .category-btn {
      padding: 24px 40px;
      border-radius: 8px;
-     color: #FFFFFF;
-     background-color: #609523;
+     color: var(--white);
+     background-color: var(--main);
      border: none;
      font-size: 17px;
      font-weight: 600;
@@ -144,7 +232,7 @@
      align-items: flex-start;
      flex-direction: column;
      width: 300px;
-     background-color: #FFFFFF;
+     background-color: var(--white);
      padding: 32px 32px 36px;
      border-radius: 8px;
      margin-top: 5px;
@@ -162,12 +250,12 @@
  }
 
  .submenu-link a {
-     color: #494949;
+     color: var(--text);
      text-decoration: dashed underline;
  }
 
  .submenu-link a:hover {
-     color: #FFA42D;
+     color: var(--button-bg);
  }
 
  .categories {
@@ -187,13 +275,13 @@
      gap: 48px;
      line-height: 1.2;
      padding: 8px 15px;
-     color: #FFFFFF;
+     color: var(--white);
  }
 
  .menu-bar-list a {
      font-size: 17px;
      font-weight: 600;
-     color: #ffffff;
+     color: var(--white);
      text-decoration: none;
  }
 
@@ -207,7 +295,7 @@
  .header-contact p {
      font-size: 14px;
      font-weight: 400;
-     color: #FFFFFF;
+     color: var(--white);
      margin: 0;
      text-align: right;
  }
@@ -226,7 +314,7 @@
  .side-menu {
      padding: 12px 20px;
      box-sizing: border-box;
-     background-color: #FFFFFF;
+     background-color: var(--white);
      position: absolute;
      top: 0px;
      bottom: 0px;
@@ -259,14 +347,14 @@
  .cart-box {
      padding: 16px 24px;
      border-radius: 8px;
-     background-color: #f2f8e9;
+     background-color: var(--light-bg);
      text-align: center;
  }
 
  .cart-box p {
      font-size: 17px;
      font-weight: 400;
-     color: #494949;
+     color: var(--text);
      margin: 0;
  }
 
