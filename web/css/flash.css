@@ -79,7 +79,7 @@ button {
 
 .product-slider {
     width: calc(100% - 40px);
-    max-width: 1030px;
+    max-width: 1248px;
 
     margin: 45px auto 0;
 
@@ -236,7 +236,12 @@ button {
 
 .featured {
     width: calc(100% - 40px);
-    max-width: 1030px;
+    background-color: #222;
+    background-image: url("image/flash-background.png");
+    background-size: 300px;
+
+    padding: 55px 0 80px;
+    max-width: 1248px;
 
     margin: 0 auto 70px;
 
@@ -355,7 +360,7 @@ button {
 
 .new-arrivals {
     width: calc(100% - 40px);
-    max-width: 1030px;
+    max-width: 1248px;
 
     margin: 0 auto 60px;
 
@@ -465,7 +470,7 @@ button {
 
 .cta {
     width: calc(100% - 40px);
-    max-width: 1030px;
+    max-width: 1248px;
 
     min-height: 130px;
 
