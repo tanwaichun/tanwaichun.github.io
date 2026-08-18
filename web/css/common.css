@@ -91,6 +91,7 @@
      background-color: #76B62B;
      padding: 4px 80px;
      position: relative;
+     z-index: 2;
  }
 
  .inside-box {
