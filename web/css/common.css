@@ -1,5 +1,21 @@
  @import url('https://fonts.googleapis.com/css2?family=Geomini:wght@200..800&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Happy+Monkey&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&display=swap');
 
+ :root {
+     --font-heading: "Sen", sans-serif;
+     --font-body: "Happy Monkey", system-ui;
+     --white: #ffffff;
+     --title: #141414;
+     --special: #2d2d2d;
+     --text: #494949;
+     --sel-box: #7d7d7d;
+     --some-bg: #632117;
+     --button-bg: #ffa42d;
+     --main: #76b62b;
+     --some-bg2: #4d781c;
+     --price: #ea2a30;
+     --menu: #212934;
+ }
+
  * {
      margin: 0;
      padding: 0;
@@ -7,7 +23,7 @@
  }
 
  body {
-     font-family: "Sen", sans-serif;
+     font-family: var(--font-heading);
  }
 
  /* Header */
