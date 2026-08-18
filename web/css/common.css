@@ -67,7 +67,42 @@
      letter-spacing: -0.7px
  }
 
+ .p1,
+ .p2,
+ .p3,
+ .p4,
+ .p5 {
+     font-family: var(--font-heading);
+ }
 
+ .p1 {
+     font-size: 36px;
+     line-height: 50.4px;
+     letter-spacing: -0.4px;
+ }
+
+ .p2 {
+     font-size: 44px;
+     line-height: 52.8px;
+     letter-spacing: -1.5px;
+ }
+
+ .p3 {
+     font-size: 19px;
+     line-height: 32.7px;
+     letter-spacing: -0.2px;
+ }
+
+ .p4 {
+     font-size: 15px;
+     line-height: 25.5x;
+     letter-spacing: -0.2px;
+ }
+
+ .p5 {
+     font-size: 14px;
+     line-height: -0.1px;
+ }
 
  * {
      margin: 0;
