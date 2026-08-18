@@ -236,15 +236,11 @@ button {
 
 .featured {
     width: calc(100% - 40px);
-    background-color: #222;
-    background-image: url("image/flash-background.png");
-    background-size: 300px;
 
-    padding: 55px 0 80px;
     max-width: 1248px;
 
     margin: 0 auto 70px;
-
+    padding: 35px 0;
     display: grid;
     grid-template-columns: 290px 1fr;
 }
@@ -506,7 +502,6 @@ button {
 .cta button {
     width: 145px;
     height: 50px;
-
     background: transparent;
 
     border: 1px solid rgba(255, 255, 255, .5);
@@ -517,6 +512,11 @@ button {
     font-size: 12px;
 
     transition: .25s;
+}
+
+.cta button a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .cta button:hover {
