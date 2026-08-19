@@ -145,7 +145,7 @@
      height: 64px;
      border-right: none;
      border: 1px solid var(--sel-box);
-     color: var(--text);
+     color: var(--color-text-gray);
      background-color: var(--white);
      box-sizing: border-box;
  }
@@ -192,7 +192,7 @@
      display: flex;
      align-items: center;
      font-family: "Sen", sans-serif;
-     background-color: var(--main);
+     background-color: var(--color-main-green);
      padding: 4px 80px;
      position: relative;
      z-index: 2;
@@ -212,7 +212,7 @@
  .category-btn {
      padding: 24px 40px;
      border-radius: 8px;
-     color: var(--white);
+     color: var(--color-white);
      background-color: var(--main);
      border: none;
      font-size: 17px;
@@ -232,7 +232,7 @@
      align-items: flex-start;
      flex-direction: column;
      width: 300px;
-     background-color: var(--white);
+     background-color: var(--color-white);
      padding: 32px 32px 36px;
      border-radius: 8px;
      margin-top: 5px;
@@ -250,12 +250,12 @@
  }
 
  .submenu-link a {
-     color: var(--text);
+     color: var(--color-text-gray);
      text-decoration: dashed underline;
  }
 
  .submenu-link a:hover {
-     color: var(--button-bg);
+     color: var(--color-button-orange);
  }
 
  .categories {
@@ -275,13 +275,13 @@
      gap: 48px;
      line-height: 1.2;
      padding: 8px 15px;
-     color: var(--white);
+     color: var(--color-white);
  }
 
  .menu-bar-list a {
      font-size: 17px;
      font-weight: 600;
-     color: var(--white);
+     color: var(--color-white);
      text-decoration: none;
  }
 
@@ -295,7 +295,7 @@
  .header-contact p {
      font-size: 14px;
      font-weight: 400;
-     color: var(--white);
+     color: var(--color-white);
      margin: 0;
      text-align: right;
  }
@@ -314,12 +314,13 @@
  .side-menu {
      padding: 12px 20px;
      box-sizing: border-box;
-     background-color: var(--white);
+     background-color: var(--color-white);
      position: absolute;
      top: 0px;
      bottom: 0px;
+     right: 0;
      width: 400px;
-     opacity: 0;
+     display: none;
      z-index: 2;
  }
 
@@ -476,12 +477,17 @@
  }
 
  .side-menu.active {
-     opacity: 1;
+     display: block;
  }
 
  .menu-toggle {
      cursor: pointer;
-     font-size: 21px;
+     font-size: 30px;
+ }
+
+ .menu-close {
+     cursor: pointer;
+     font-size: 30px;
  }
 
  /* Footer */
