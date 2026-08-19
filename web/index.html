@@ -27,7 +27,7 @@
         <div class="header-icon">
             <img src="image/profile-icon.png" alt="profile">
             <img src="image/cart-icon.png" alt="cart">
-            <img src="image/hamburger-icon.png" alt="hamburger" class="hamburger">
+            <div class="menu-toggle">&#9776;</div>
         </div>
     </div>
     <div class="header-tablet">
@@ -37,7 +37,7 @@
         <div class="header-icon">
             <img src="image/profile-icon.png" alt="profile">
             <img src="image/cart-icon.png" alt="cart">
-            <img src="image/hamburger-icon.png" alt="hamburger" class="hamburger">
+            <div class="menu-toggle">&#9776;</div>
         </div>
         <form action="/action_page.php">
             <div class="search-bar">
@@ -72,10 +72,12 @@
                 </div>
             </div>
             <div class="menu-bar-list">
-                <div><a href="/tanwaichun.github.io/web/index.html">Home</a></div>
-                <div>Shop</div>
-                <div>Hot Deals</div>
-                <div>About</div>
+
+                <div><a href="index.html">Home</a></div>
+                <div><a href=".html">Shop</a></div>
+                <div><a href="flash.html">Hot Deals</a></div>
+                <div><a href="about.html">About</a></div>
+
                 <div>News</div>
                 <div>Contact</div>
             </div>
@@ -95,16 +97,14 @@
         </div>
     </div>
 
-    <div class="side-menu">
+    <div class="side-menu" id="menu">
         <div class="side-menu-inside">
             <div class="side-menu-upper">
                 <div class="side-menu-header">
                     <div class="side-menu-logo">
                         <img src="image/vegan-logo.png" alt="vegan store logo" width="160px">
                     </div>
-                    <div class="close-menu">
-                        <img src="image/close-icon.png" alt="close">
-                    </div>
+                    <div class="menu-close">&times;</div>
                 </div>
                 <div class="cart-box">
                     <p>0 Items in your Cart</p>
@@ -118,11 +118,11 @@
                             <div>˅</div>
                         </div>
                         <div class="side-categories-list">
-                            <div class="sidemenu-link"> <a href="submenu-items">Vegan Food & Drinks</a></div>
-                            <div class="sidemenu-link"><a href="submenu-items">Pet Care Items</a></div>
-                            <div class="sidemenu-link"> <a href="submenu-items">Fitness & Nutrition</a></div>
-                            <div class="sidemenu-link"><a href="submenu-items">Beauty & Care</a></div>
-                            <div class="sidemenu-link"><a href="submenu-items">Clothes & Accessories</a></div>
+                            <div> <a href="submenu-items">Vegan Food & Drinks</a></div>
+                            <div><a href="submenu-items">Pet Care Items</a></div>
+                            <div> <a href="submenu-items">Fitness & Nutrition</a></div>
+                            <div><a href="submenu-items">Beauty & Care</a></div>
+                            <div><a href="submenu-items">Clothes & Accessories</a></div>
                         </div>
                     </div>
                     <div>Vegan Products</div>
@@ -286,14 +286,9 @@
                     <button class="add-cart-btn"><img src="image/cart-icon.png" alt="cart">Add To Cart</button>
                 </div>
             </div>
-            <div class="brown-selling-card brown-card-mobile">
-                <div class="light-leaf"><img src="image/light-leaf.png" alt="light leaf"></div>
-                <div class="selling-card-inside">
-                    <div class="icon-leaf"><img src="image/icon-leaf.png" alt="white icon leaf"></div>
-                    <h4>Fashion &<br>Personal Care</h4>
-                </div>
-            </div>
-            <div class="product-card-row second-row">
+        </div>
+        <div class="product-grid second-row">
+            <div class="product-card-row">
                 <div class="product-card">
                     <img src="image/beauty1.png" alt="beauty & care">
                     <div><a href="#">Beauty & Care</a></div>
@@ -552,6 +547,10 @@
             </div>
         </div>
     </div>
+
+    <script src="js/common.js">
+    </script>
+
 </body>
 
 </html>

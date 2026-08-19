@@ -1,0 +1,179 @@
+.introduce-title {
+    display: flex;
+    align-items: center;
+}
+
+.introduce-title img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.introduce-title h3 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #141414;
+}
+
+.introduce-right p {
+    font-size: 19px;
+    font-weight: 400;
+    color: #494949;
+    margin: 8px 8px 0px 8px;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+
+.introduce {
+    margin: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.introduce-right {
+    width: 45%;
+    position: relative;
+}
+
+.introduce-right>img {
+    position: absolute;
+    margin-top: -100px;
+}
+
+.introduce-left {
+    width: 45%;
+}
+
+.introduce-left img {
+    width: 100%;
+}
+
+.content {
+    font-size: 110px;
+    font-weight: 700;
+    margin: 0;
+    color: #494949;
+    line-height: 1.2;
+    padding: 0px 22px;
+}
+
+.content h1 {
+    font-size: 110px;
+    padding: 0px 22px;
+}
+
+.about-store-btn button {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 20px 40px 22px;
+    border-radius: 8px;
+    border: none;
+    color: #ffffff;
+    background-color: #ffa42d;
+}
+
+.owner-content {
+    text-align: center;
+}
+
+.store-service {
+    margin: 80px 60px 60px 60px;
+}
+
+.service-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.service-card {
+    border-radius: 10px;
+    border: 1px solid #c2c2c2;
+    box-sizing: border-box;
+    width: calc((100% - 40px) / 3);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-card h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #141414;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.service-card p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #494949;
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+}
+
+.service-card img {
+    width: 100px;
+    height: 100px;
+}
+
+.owner-card {
+    background-color: #fff8f0;
+    padding: 30px;
+    margin: 0px 150px;
+    border-radius: 12px;
+    align-items: center;
+}
+
+.stats {
+    background-color: #3b2117;
+    color: white;
+    text-align: center;
+    padding: 100px 50px;
+}
+
+.number h2 {
+    color: white;
+    font-size: 70px;
+}
+
+.number p {
+    color: white;
+    font-size: 15px;
+}
+
+.big-title h2 {
+    font-size: 36px;
+}
+
+.title {
+    margin: 0px -20px;
+}
+
+.article-upper h3 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #141414;
+    margin: 0;
+    text-align: center;
+    padding: 150px 22px;
+}
+
+.article-card img {
+    width: 464px;
+    height: 321px;
+}
+
+.about-header {
+    position: relative;
+    width: 100%;
+}
+
+.about img {
+    width: 1200px;
+    height: 551px;
+    position: relative;
+    border-radius: 15px;
+    align-items: center;
+}

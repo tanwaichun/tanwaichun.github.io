@@ -73,9 +73,9 @@
             </div>
             <div class="menu-bar-list">
                 <div><a href="index.html">Home</a></div>
-                <div>Shop</div>
-                <div>Hot Deals</div>
-                <div>About</div>
+                <div><a href=".html">Shop</a></div>
+                <div><a href="flash.html">Hot Deals</a></div>
+                <div><a href="about.html">About</a></div>
                 <div>News</div>
                 <div>Contact</div>
             </div>
@@ -166,7 +166,7 @@
                 </p>
 
                 <button>
-                    Shop Now&nbsp; →
+                    Shop Now →
                 </button>
 
             </div>
@@ -230,7 +230,7 @@
         <div class="flash-products">
 
 
-  
+
 
             <article class="flash-product">
 
@@ -244,12 +244,8 @@
                     ★★★★★
                 </div>
 
-                <p class="description">
-                    Vegan body care product
-                </p>
-
                 <p class="price">
-                    $48.00 – $56.00
+                    $48.00 - $56.00
                 </p>
 
                 <div class="product-option">
@@ -264,7 +260,7 @@
                 </div>
 
                 <button class="add-cart">
-                    🛒 &nbsp; Add To Cart
+                    🛒 Add To Cart
                 </button>
 
             </article>
@@ -288,10 +284,6 @@
                     ★★★★★
                 </div>
 
-                <p class="description">
-                    Delicious vegan breakfast
-                </p>
-
                 <p class="price">
                     $3.20
                     <del>$3.80</del>
@@ -302,7 +294,7 @@
                 </div>
 
                 <button class="add-cart">
-                    🛒 &nbsp; Add To Cart
+                    🛒 Add To Cart
                 </button>
 
             </article>
@@ -326,21 +318,17 @@
                     ★★★★★
                 </div>
 
-                <p class="description">
-                    Delicious plant-based cheese
-                </p>
-
                 <p class="price">
                     $12.80
                     <del>$16.00</del>
                 </p>
 
                 <div class="discount">
-                    20% Off
+                    2% Off
                 </div>
 
                 <button class="add-cart">
-                    🛒 &nbsp; Add To Cart
+                    🛒 Add To Cart
                 </button>
 
             </article>
@@ -360,12 +348,8 @@
                     ★★★★★
                 </div>
 
-                <p class="description">
-                    Plant-based nutrition supplement
-                </p>
-
                 <p class="price">
-                    $280.00 – $350.00
+                    $280.00 - $350.00
                 </p>
 
                 <div class="product-option">
@@ -380,13 +364,13 @@
                 </div>
 
                 <button class="add-cart">
-                    🛒 &nbsp; Add To Cart
+                    🛒 Add To Cart
                 </button>
 
             </article>
 
 
-           
+
 
             <article class="flash-product">
 
@@ -399,10 +383,6 @@
                 <div class="stars">
                     ★★★★★
                 </div>
-
-                <p class="description">
-                    Comfortable vegan fashion
-                </p>
 
                 <p class="price">
                     $3.50
@@ -420,7 +400,7 @@
                 </div>
 
                 <button class="add-cart">
-                    🛒 &nbsp; Add To Cart
+                    🛒 Add To Cart
                 </button>
 
             </article>
@@ -436,12 +416,8 @@
                     Vegan Puffer Jacket
                 </h3>
 
-                <div class="stars">
-                    ★★★★★
-                </div>
-
                 <p class="description">
-                    Warm and comfortable vegan jacket
+                    Be the first to leave a review.
                 </p>
 
                 <p class="price">
@@ -461,7 +437,7 @@
                 </div>
 
                 <button class="add-cart">
-                    🛒 &nbsp; Add To Cart
+                    🛒 Add To Cart
                 </button>
 
             </article>
@@ -481,12 +457,8 @@
                     ★★★★★
                 </div>
 
-                <p class="description">
-                    Healthy food for pets
-                </p>
-
                 <p class="price">
-                    $110.00 – $150.00
+                    $110.00 - $150.00
                 </p>
 
                 <div class="product-option">
@@ -501,7 +473,7 @@
                 </div>
 
                 <button class="add-cart">
-                    🛒 &nbsp; Add To Cart
+                    🛒 Add To Cart
                 </button>
 
             </article>
@@ -517,16 +489,12 @@
                     Adult Cat Food
                 </h3>
 
-                <div class="stars">
-                    ★★★★★
-                </div>
-
                 <p class="description">
-                    Complete & balanced food for adult pets
+                    Be the first to leave a review.
                 </p>
 
                 <p class="price">
-                    $6.00 – $9.00
+                    $6.00 - $9.00
                 </p>
 
                 <div class="product-option">
@@ -541,7 +509,7 @@
                 </div>
 
                 <button class="add-cart">
-                    🛒 &nbsp; Add To Cart
+                    🛒 Add To Cart
                 </button>
 
             </article>
@@ -672,6 +640,24 @@
             </div>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        gsap.from(".flash-heading", {
+            y: 10, // move 200px to the right
+            opacity: 0, // fade to 50% opacity
+            duration: 1, // 1.5 seconds
+            ease: "power1.inOut", // easing function
+            scrollTrigger: {
+                trigger: ".flash-heading" /* target */,
+                end: "top bottom" /* target, screen*/,
+                markers: true ,
+            }
+        });
+    </script>
 </body>
 
 </html>
