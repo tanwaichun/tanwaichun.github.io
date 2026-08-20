@@ -52,7 +52,7 @@
     text-align: center;
     margin-top: 0px;
     margin-bottom: 16px;
-    color: #141414;
+    color: var(--color-title-black);
 }
 
 .hero-middle h3 {
@@ -60,25 +60,25 @@
     font-size: 36px;
     line-height: 1.4;
     font-weight: 400;
-    color: #141414;
+    color: var(--color-title-black);
     text-align: center;
     margin-top: 0px;
     margin-bottom: 40px;
 }
 
 .browse-all-btn {
-    background-color: #ffa42d;
-    color: #ffffff;
+    background-color: var(--color-button-orange);
+    color: var(--color-white);
     border: none;
-    border-radius: 8px;
+    border-radius: var(--radius);
     padding: 22px 40px 24px;
     font-size: 17px;
     font-weight: 600;
 }
 
 .browse-all-btn:hover {
-    background-color: #76b62b;
-    color: #ffffff;
+    background-color: var(--color-main-green);
+    color: var(--color-white);
 }
 
 .announcement-bar {
@@ -96,12 +96,12 @@
 .announcement-text p {
     font-size: 17px;
     font-weight: 400;
-    color: #ffffff;
+    color: var(--color-white);
     margin: 0;
 }
 
 .announcement-inside>div {
-    color: #ffffff;
+    color: var(--color-white);
     margin-left: 25px;
     margin-right: 25px;
 }
@@ -125,7 +125,7 @@
 }
 
 .green-selling-card {
-    background-color: #4d781c;
+    background-color: var(--color-bg-green);
     border-radius: var(--radius);
     max-width: 266px;
     min-height: 606px;
@@ -148,7 +148,7 @@
 .green-selling-card h4 {
     font-size: 24px;
     font-weight: 700;
-    color: #ffffff;
+    color: var(--color-white);
     margin: 0;
 }
 
@@ -183,7 +183,7 @@
 .product-card a {
     font-size: 14px;
     font-weight: 400;
-    color: #76b26b;
+    color: var(--color-main-green);
     margin-top: 16px;
     margin-left: 16px;
 }
@@ -192,17 +192,17 @@
     font-size: 20px;
     font-weight: 600;
     margin-left: 16px;
-    color: #141414;
+    color: var(--color-title-black);
     margin-top: 16px;
     margin-bottom: 0px;
-    text-decoration: underline 1px solid #141414;
+    text-decoration: underline 1px solid var(--color-title-black);
 }
 
 .product-card p {
     font-size: 15px;
     font-weight: 400;
     margin-left: 16px;
-    color: #494949;
+    color: var(--color-text-grey);
 }
 
 .product-price {
@@ -238,11 +238,11 @@
 .add-cart-btn {
     font-size: 18px;
     font-weight: 600;
-    color: #141414;
+    color: var(--color-title-black);
     padding: 17px 40px;
     border: 1px solid #c2c2c2;
-    background-color: #ffffff;
-    border-radius: 8px;
+    background-color: var(--color-white);
+    border-radius: var(--radius);
     margin-top: auto;
     text-align: center;
 }
@@ -256,16 +256,16 @@
 .product-option p {
     font-size: 15px;
     font-weight: 400;
-    color: #494949;
+    color: var(--color-text-grey);
 }
 
 .option-btns button {
     font-size: 13px;
     font-weight: 400;
-    color: #7d7d7d;
+    color: var(--color-box-gray);
     border-radius: 4px;
     border: 1px solid #c2c2c2;
-    background-color: #ffffff;
+    background-color: var(--color-white);
     padding: 6px 14px;
 }
 
@@ -274,8 +274,8 @@
 }
 
 .brown-selling-card {
-    background-color: #632117;
-    border-radius: 8px;
+    background-color: var(--color-bg-red);
+    border-radius: var(--radius);
     width: 266px;
     height: 606px;
     margin-top: 50px;
@@ -299,7 +299,7 @@
 .brown-selling-card h4 {
     font-size: 24px;
     font-weight: 700;
-    color: #ffffff;
+    color: var(--color-white);
     margin: 0;
 }
 
@@ -312,7 +312,7 @@
     height: 29px;
     border-radius: 50%;
     border: 1px solid #bcbcbc;
-    background-color: #ffffff;
+    background-color: var(--color-white);
     padding: 4px;
 }
 
@@ -321,7 +321,7 @@
     width: 19px;
     height: 19px;
     border-radius: 50%;
-    background-color: #141414;
+    background-color: var(--color-title-black);
 }
 
 .green-color span {
@@ -340,7 +340,7 @@
     font-size: 110px;
     font-weight: 700;
     margin: 0;
-    color: #494949;
+    color: var(--color-text-grey);
     line-height: 1.2;
     letter-spacing: -3.58px;
 }
@@ -375,13 +375,13 @@
 .introduce-title h3 {
     font-size: 36px;
     font-weight: 600;
-    color: #141414;
+    color: var(--color-title-black);
 }
 
 .introduce-left p {
     font-size: 19px;
     font-weight: 400;
-    color: #494949;
+    color: var(--color-text-grey);
     margin: 8px 8px 0px 8px;
     line-height: 32px;
     margin-bottom: 30px;
@@ -391,10 +391,10 @@
     font-size: 17px;
     font-weight: 600;
     padding: 20px 40px 22px;
-    border-radius: 8px;
+    border-radius: var(--radius);
     border: none;
-    color: #ffffff;
-    background-color: #ffa42d;
+    color: var(--color-white);
+    background-color: var(--color-button-orange);
 }
 
 .introduce-right {
@@ -419,7 +419,7 @@
 .article-upper h3 {
     font-size: 36px;
     font-weight: 600;
-    color: #141414;
+    color: var(--color-title-black);
     margin: 0;
 }
 
@@ -427,9 +427,9 @@
     font-size: 17px;
     font-weight: 600;
     padding: 24px 40px;
-    border-radius: 8px;
-    color: #ffffff;
-    background-color: #ffa42d;
+    border-radius: var(--radius);
+    color: var(--color-white);
+    background-color: var(--color-button-orange);
     border: none;
 }
 
@@ -452,15 +452,15 @@
 .article-card h4 {
     font-size: 24px;
     font-weight: 600;
-    color: #141414;
-    text-decoration: underline #141414;
+    color: var(--color-title-black);
+    text-decoration: underline var(--color-title-black);
     margin-bottom: 20px;
 }
 
 .article-card p {
     font-size: 17px;
     font-weight: 400;
-    color: #494949;
+    color: var(--color-text-grey);
     margin: 0px 0px 20px 0px;
 }
 
@@ -477,16 +477,16 @@
 .article-down .date {
     font-size: 15px;
     font-weight: 400;
-    color: #494949;
-    border-right: 1px solid #141414;
+    color: var(--color-text-grey);
+    border-right: 1px solid var(--color-title-black);
     padding-right: 10px;
 }
 
 .article-down a {
     font-size: 15px;
     font-weight: 400;
-    color: #76b26b;
-    text-decoration: 1px solid #76b26b underline;
+    color: var(--color-main-green);
+    text-decoration: 1px solid var(--color-main-green) underline;
 }
 
 .article-content {
@@ -494,29 +494,29 @@
 }
 
 .product-card a:hover {
-    color: #ffa42d;
+    color: var(--color-button-orange);
 }
 
 .product-card h5:hover {
-    color: #ffa42d;
+    color: var(--color-button-orange);
     text-decoration: none;
 }
 
 .add-cart-btn:hover {
-    color: #ffffff;
-    background-color: #ffa42d;
+    color: var(--color-white);
+    background-color: var(--color-button-orange);
 }
 
 .about-store-btn button:hover {
-    background-color: #76b62b;
+    background-color: var(--color-main-green);
 }
 
 .article-upper button:hover {
-    background-color: #76b62b;
+    background-color: var(--color-main-green);
 }
 
 .article-card h4:hover {
-    color: #ffa42d;
+    color: var(--color-button-orange);
     text-decoration: none;
 }
 
