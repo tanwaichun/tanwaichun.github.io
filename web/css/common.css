@@ -645,6 +645,12 @@
      color: var(--color-main-green);
  }
 
+ @media screen and (max-width:1182px) {
+     .phone-contact {
+         display: none;
+     }
+ }
+
  @media screen and (max-width:1000px) {
      .menu-bar {
          display: none;

@@ -1,6 +1,6 @@
 .hero-banner {
     width: 100%;
-    height: 679px;
+    min-height: 679px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -9,40 +9,36 @@
 
 .hero-banner>img {
     width: 100%;
-    height: 100%;
+    display: block;
 }
 
 .hero-inside {
     display: flex;
     position: absolute;
     width: 90%;
-    height: 679px;
     align-items: center;
     justify-content: space-between;
+    top: 0;
+    bottom: 0;
+
 }
 
 .hero-left {
     width: 25%;
 }
 
-.hero-left img {
-    width: 100%;
-}
 
 .hero-right {
     width: 25%;
 }
 
-.hero-right img {
-    width: 100%;
-}
 
 .hero-middle {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
-    margin: 30px;
+    margin-top: 30px;
 }
 
 .icon-leaf img {
@@ -87,14 +83,14 @@
 
 .announcement-bar {
     width: 100%;
-    height: 74px;
     background-color: #421610;
 }
 
 .announcement-inside {
     display: flex;
     align-items: center;
-    height: 74px;
+    min-height: 74px;
+    justify-content: center;
 }
 
 .announcement-text p {
@@ -125,14 +121,14 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .green-selling-card {
     background-color: #4d781c;
-    border-radius: 8px;
-    width: 266px;
-    height: 606px;
-    margin-right: 60px;
+    border-radius: var(--radius);
+    max-width: 266px;
+    min-height: 606px;
 }
 
 .green-selling-card .light-leaf img {
@@ -524,23 +520,6 @@
     text-decoration: none;
 }
 
-.article-down a:hover {
-    color: #ffa42d;
-    text-decoration: none;
-}
-
-.announcement-tablet {
-    display: none;
-}
-
-.content-tablet {
-    display: none;
-}
-
-.announcement-mobile {
-    display: none;
-}
-
 .content-mobile {
     display: none;
 }
@@ -568,9 +547,6 @@
 }
 
 @media screen and (max-width:1000px) {
-    .hero-banner {
-        height: 555px;
-    }
 
     .hero-left,
     .hero-right {
@@ -578,9 +554,9 @@
     }
 
     .hero-inside {
-        height: 555px;
         width: 90%;
         justify-content: center;
+        margin-top: 40px;
     }
 
     .hero-middle {
@@ -588,16 +564,8 @@
     }
 
     .announcement-inside>div {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-
-    .announcement-tablet {
-        display: flex;
-    }
-
-    .announcement-desktop {
-        display: none;
+        margin-left: 8px;
+        margin-right: 8px;
     }
 
     .product-grid {
@@ -697,12 +665,18 @@
 }
 
 @media screen and (max-width:800px) {
-    .announcement-tablet {
-        display: none;
+    .announcement-inside {
+        justify-content: center;
     }
 
-    .announcement-mobile {
-        display: flex;
+    .announcement-inside>div {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 15px;
+    }
+
+    .announcement-text {
+        flex: 1;
     }
 
     .green-selling-card {
