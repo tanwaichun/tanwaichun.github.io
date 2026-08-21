@@ -1,3 +1,4 @@
+/*Hero banner*/
 .hero-banner {
     width: 100%;
     min-height: 679px;
@@ -81,6 +82,7 @@
     color: var(--color-white);
 }
 
+/*Announcement bar*/
 .announcement-bar {
     width: 100%;
     background-color: #421610;
@@ -106,6 +108,7 @@
     margin-right: 25px;
 }
 
+/*Best selling*/
 .best-selling-section {
     margin: 60px;
 }
@@ -122,26 +125,33 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
+    align-items: stretch;
 }
 
 .green-selling-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
     background-color: var(--color-bg-green);
     border-radius: var(--radius);
     max-width: 266px;
-    min-height: 606px;
+    width: 25%;
+    padding: 40px 30px;
+    box-sizing: border-box;
 }
 
 .green-selling-card .light-leaf img {
-    width: 204px;
+    width: 100%;
+    max-width: 204px;
+    height: auto;
 }
 
 .green-selling-card .icon-leaf img {
     width: 50px;
-    margin-left: -90px;
 }
 
 .green-selling-card .icon-leaf {
-    margin-top: 150px;
     margin-bottom: 16px;
 }
 
@@ -155,7 +165,8 @@
 .selling-card-inside {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: auto;
 }
 
 .product-card {
@@ -166,13 +177,17 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
+    min-width: 0px;
 }
 
 .product-card-row {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    width: calc(75% - 20px);
+    flex-wrap: wrap;
+    flex: 1;
+    min-width: 0;
+    align-items: stretch;
 }
 
 .product-card>img {
@@ -184,8 +199,7 @@
     font-size: 14px;
     font-weight: 400;
     color: var(--color-main-green);
-    margin-top: 16px;
-    margin-left: 16px;
+    margin: 12px 16px 0px;
 }
 
 .product-card h5 {
@@ -193,22 +207,22 @@
     font-weight: 600;
     margin-left: 16px;
     color: var(--color-title-black);
-    margin-top: 16px;
-    margin-bottom: 0px;
+    margin: 12px 16px 0px;
     text-decoration: underline 1px solid var(--color-title-black);
 }
 
 .product-card p {
     font-size: 15px;
     font-weight: 400;
-    margin-left: 16px;
+    margin: 6px 16px 0px;
     color: var(--color-text-grey);
 }
 
 .product-price {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
     margin-left: 16px;
     margin-top: 16px;
     align-items: center;
@@ -232,7 +246,7 @@
     font-weight: 400;
     color: #fa8e00;
     background-color: #ffa42e18;
-    padding: 3px;
+    padding: 5px;
 }
 
 .add-cart-btn {
@@ -257,6 +271,7 @@
     font-size: 15px;
     font-weight: 400;
     color: var(--color-text-grey);
+    margin: 10px 0px 10px 16px;
 }
 
 .option-btns button {
@@ -267,6 +282,7 @@
     border: 1px solid #c2c2c2;
     background-color: var(--color-white);
     padding: 6px 14px;
+    margin: 10px 0px 10px 0px;
 }
 
 .option-btns {
@@ -274,25 +290,28 @@
 }
 
 .brown-selling-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
     background-color: var(--color-bg-red);
     border-radius: var(--radius);
-    width: 266px;
-    height: 606px;
-    margin-top: 50px;
-    margin-left: 60px;
+    max-width: 266px;
+    width: 25%;
+    padding: 40px 30px;
+    box-sizing: border-box;
 }
 
 .brown-selling-card .light-leaf img {
-    width: 204px;
+    width: 100%;
+    max-width: 204px;
+    height: auto;
 }
 
 .brown-selling-card .icon-leaf img {
     width: 50px;
-    margin-left: -90px;
 }
 
 .brown-selling-card .icon-leaf {
-    margin-top: 150px;
     margin-bottom: 16px;
 }
 
@@ -314,6 +333,7 @@
     border: 1px solid #bcbcbc;
     background-color: var(--color-white);
     padding: 4px;
+    margin: 10px 0px 10px 0px;
 }
 
 .black-color span {
@@ -575,9 +595,8 @@
     }
 
     .green-selling-card {
-        width: 206px;
-        height: 1185px;
-        margin-right: 0px;
+        width: 25%;
+        max-width: 206px;
     }
 
     .product-card {
@@ -589,28 +608,17 @@
         flex-wrap: wrap;
         width: 70%;
         gap: 20px;
+        flex: 1;
     }
 
-    .green-selling-card .icon-leaf {
-        margin-top: 700px;
-    }
-
-    .green-selling-card h4 {
-        width: 80%;
+    .green-selling-card h4,
+    .brown-selling-card h4 {
+        width: auto;
     }
 
     .brown-selling-card {
-        width: 206px;
-        height: 1185px;
-        margin-left: 0px;
-    }
-
-    .brown-selling-card .icon-leaf {
-        margin-top: 700px;
-    }
-
-    .brown-selling-card h4 {
-        width: 80%;
+        width: 25%;
+        max-width: 206px;
     }
 
     .content-tablet {
@@ -681,8 +689,8 @@
 
     .green-selling-card {
         width: 100%;
-        height: 185px;
-        position: relative;
+        max-width: none;
+        min-height: 185px;
     }
 
     .product-grid {
@@ -755,7 +763,6 @@
     .brown-selling-card {
         width: 100%;
         min-height: 185px;
-        position: relative;
     }
 
     .product-grid {
