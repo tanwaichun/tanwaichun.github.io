@@ -474,6 +474,14 @@ h6 {
      color: var(--color-button-orange);
  }
 
+ .side-social div:hover {
+     background-color: var(--color-heading-black);
+ }
+
+ .side-social div:hover>img {
+     filter: brightness(0) invert(1);
+ }
+
  .side-categories-list {
      display: none;
  }
@@ -736,6 +744,10 @@ h6 {
 
  .footer-social div:hover {
      background-color: var(--color-heading-black);
+ }
+
+ .footer-social div:hover>img {
+     filter: brightness(0) invert(1);
  }
 
  .footer-list div:hover {
