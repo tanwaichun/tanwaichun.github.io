@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>product</title>
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/product.css">
 </head>
 
 <body>
@@ -25,8 +26,8 @@
         </form>
         <div class="header-icon">
             <img src="image/profile-icon.png" alt="profile">
-            <img src="image/cart-icon.png" alt="cart">
-            <img src="image/hamburger-icon.png" alt="hamburger" class="hamburger">
+            <img src="image/cart-icon.svg" alt="cart">
+            <div class="menu-toggle">&#9776;</div>
         </div>
     </div>
     <div class="header-tablet">
@@ -35,8 +36,8 @@
         </div>
         <div class="header-icon">
             <img src="image/profile-icon.png" alt="profile">
-            <img src="image/cart-icon.png" alt="cart">
-            <img src="image/hamburger-icon.png" alt="hamburger" class="hamburger">
+            <img src="image/cart-icon.svg" alt="cart">
+            <div class="menu-toggle">&#9776;</div>
         </div>
         <form action="/action_page.php">
             <div class="search-bar">
@@ -71,10 +72,12 @@
                 </div>
             </div>
             <div class="menu-bar-list">
+
                 <div><a href="index.html">Home</a></div>
                 <div><a href=".html">Shop</a></div>
                 <div><a href="flash.html">Hot Deals</a></div>
                 <div><a href="about.html">About</a></div>
+
                 <div>News</div>
                 <div>Contact</div>
             </div>
@@ -94,16 +97,14 @@
         </div>
     </div>
 
-    <div class="side-menu">
+    <div class="side-menu" id="menu">
         <div class="side-menu-inside">
             <div class="side-menu-upper">
                 <div class="side-menu-header">
                     <div class="side-menu-logo">
                         <img src="image/vegan-logo.png" alt="vegan store logo" width="160px">
                     </div>
-                    <div class="close-menu">
-                        <img src="image/close-icon.png" alt="close">
-                    </div>
+                    <div class="menu-close">&times;</div>
                 </div>
                 <div class="cart-box">
                     <p>0 Items in your Cart</p>
@@ -117,11 +118,11 @@
                             <div>˅</div>
                         </div>
                         <div class="side-categories-list">
-                            <div class="sidemenu-link"> <a href="submenu-items">Vegan Food & Drinks</a></div>
-                            <div class="sidemenu-link"><a href="submenu-items">Pet Care Items</a></div>
-                            <div class="sidemenu-link"> <a href="submenu-items">Fitness & Nutrition</a></div>
-                            <div class="sidemenu-link"><a href="submenu-items">Beauty & Care</a></div>
-                            <div class="sidemenu-link"><a href="submenu-items">Clothes & Accessories</a></div>
+                            <div> <a href="submenu-items">Vegan Food & Drinks</a></div>
+                            <div><a href="submenu-items">Pet Care Items</a></div>
+                            <div> <a href="submenu-items">Fitness & Nutrition</a></div>
+                            <div><a href="submenu-items">Beauty & Care</a></div>
+                            <div><a href="submenu-items">Clothes & Accessories</a></div>
                         </div>
                     </div>
                     <div>Vegan Products</div>
@@ -137,10 +138,10 @@
                     <p>Phone: +1 800 555 5555</p>
                     <p>Email: contact@avada-company.com</p>
                     <div class="side-social">
-                        <div><img src="image/vegan-facebook.png" alt="vegan facebook" width="25px"></div>
-                        <div><img src="image/vegan-x.png" alt="vegan x" width="25px"></div>
-                        <div><img src="image/vegan-instagram.png" alt="vegan instagram" width="25px"></div>
-                        <div><img src="image/youtube-icon.png" alt="vegan youtube" width="15px"></div>
+                        <div><img src="image/facebook-icon.svg" alt="vegan facebook" width="25px"></div>
+                        <div><img src="image/x-icon.svg" alt="vegan x" width="25px"></div>
+                        <div><img src="image/instagram-icon.svg" alt="vegan instagram" width="25px"></div>
+                        <div><img src="image/youtube-icon.svg" alt="vegan youtube" width="15px"></div>
                     </div>
                 </div>
             </div>
@@ -180,7 +181,7 @@
                 <div>1</div>
                 <div>+</div>
             </div>
-            <div><button class="add-cart-btn"><img src="image/cart-icon.png" alt="cart">Add To Cart</button></div>
+            <div><button class="add-cart-btn"><img src="image/cart-icon.svg" alt="cart">Add To Cart</button></div>
             <div>
                 <div>Categories:</div>
                 <div>Pet Care Items</div>
@@ -476,15 +477,16 @@
                             <p>sales@avada-company.com</p>
                         </div>
                         <div class="footer-social">
-                            <div><img src="image/vegan-facebook.png" alt="vegan facebook" width="25px"></div>
-                            <div><img src="image/vegan-x.png" alt="vegan x" width="25px"></div>
-                            <div><img src="image/vegan-instagram.png" alt="vegan instagram" width="25px"></div>
-                            <div><img src="image/vegan-pinterest.png" alt="vegan pinterest" width="25px"></div>
+                            <div><img src="image/facebook-icon.svg" alt="vegan facebook" width="25px"></div>
+                            <div><img src="image/x-icon.svg" alt="vegan x" width="25px"></div>
+                            <div><img src="image/instagram-icon.svg" alt="vegan instagram" width="25px"></div>
+                            <div><img src="image/pinterest-icon.svg" alt="vegan pinterest" width="25px"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="footer-bottom">
             <div class="footer-copyright">
                 <p>© Copyright 2012 - 2026 • <a href="#">Avada</a>is a <a href="#">Website Builder</a>for <a
@@ -509,6 +511,9 @@
             </div>
         </div>
     </div>
+
+    <script src="js/common.js">
+    </script>
 </body>
 
 </html>
