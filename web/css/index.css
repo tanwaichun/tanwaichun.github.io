@@ -230,7 +230,7 @@
 .product-price .price {
     font-size: 17px;
     font-weight: 600;
-    color: #ea2a30;
+    color: var(--color-price-red);
 }
 
 .product-price .old-price {
