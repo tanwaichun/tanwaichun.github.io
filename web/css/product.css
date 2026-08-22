@@ -1,9 +1,35 @@
 .product-introduce {
     display: flex;
-    width: 100%;
     margin: 60px;
+    justify-content: space-between;
 }
 
 .introduce-left {
-    width: 40%;
+    width: 45%;
+}
+
+.pet-image img {
+    width: 100%;
+}
+
+.stamp img {
+    width: 25%;
+}
+
+.introduce-right {
+    width: 45%;
+}
+
+.small-introduce p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: var(--color-text-gray);
+}
+
+.introduce-right h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--color-title-black);
+    margin: 6px 10px 10px 0px;
 }
