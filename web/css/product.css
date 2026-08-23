@@ -231,7 +231,7 @@
 }
 
 .product-description {
-    margin: 60px;
+    margin: 60px 200px;
 }
 
 .product-description h1 {
@@ -255,6 +255,7 @@
     font-weight: 700;
     line-height: 1.4;
     color: var(--color-title-black);
+    margin-top: 50px;
 }
 
 .product-benifits-point {
@@ -283,4 +284,184 @@
     justify-content: space-evenly;
     flex-direction: row;
     margin-top: 30px;
+}
+
+.benefits-icon-inside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.benefits-icon-inside img {
+    width: 100%;
+}
+
+.benefits-icon-inside p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.72;
+    color: var(--color-text-gray);
+    margin-top: 10px;
+}
+
+.product-down-information {
+    margin: 40px auto;
+}
+
+.information-inside {
+    border-top: 1px solid #e5e5e5;
+}
+
+.inside-nonhover {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 0px 0px 30px 0px;
+}
+
+.inside-nonhover button {
+    padding: 5px;
+    border: none;
+    background-color: var(--color-title-black);
+}
+
+.inside-nonhover h4,
+.inside-hover h4 {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--color-title-black);
+}
+
+.inside-title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+.inside-title button {
+    padding: 5px;
+    border: none;
+    background-color: var(--color-main-green);
+}
+
+.inside-hover h4 {
+    color: var(--color-main-green);
+}
+
+.inside-hover p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.72;
+    color: var(--color-title-black);
+    margin-top: 20px;
+}
+
+.information-inside:last-child {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.inside-hover {
+    display: none;
+}
+
+.information-inside:hover .inside-nonhover {
+    display: none;
+}
+
+.information-inside:hover .inside-hover {
+    display: block;
+}
+
+.additional-information h4 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--color-title-black);
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.additional-inside {
+    display: flex;
+    width: 100%;
+    gap: 10px
+}
+
+.additional-inside div {
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+}
+
+.additional-text {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--color-main-green);
+    padding: 16px 24px 16px 10px;
+    width: 20%;
+}
+
+.additional-weight {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-text-gray);
+    padding: 16px 24px 16px 10px;
+    width: 70%;
+}
+
+.product-review {
+    margin: 0;
+    background-color: #fff8f0;
+    width: 100%;
+}
+
+.review-inside {
+    display: flex;
+    flex-direction: column;
+    padding: 64px 60px 72px 60px;
+}
+
+.review-inside h3 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-title-black);
+    margin-bottom: 20px;
+}
+
+.review-inside p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.72;
+    color: var(--color-text-gray);
+    margin-bottom: 20px;
+}
+
+.big-text p {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.72;
+    color: var(--color-text-gray);
+    margin-top: 40px;
+}
+
+.rate-star {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.rate-star button {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--color-text-gray);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
 }
