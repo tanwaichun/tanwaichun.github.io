@@ -492,7 +492,7 @@
     background-color: var(--color-white);
     border-radius: var(--radius);
     box-sizing: border-box;
-    width: 50%;
+    width: 100%;
     min-height: 150px;
 }
 
@@ -502,7 +502,7 @@
     background-color: var(--color-white);
     border-radius: var(--radius);
     box-sizing: border-box;
-    width: 50%;
+    width: 100%;
     min-height: 50px;
 }
 
@@ -543,7 +543,7 @@
 
 .product-card {
     box-sizing: border-box;
-    width: calc((100% - 40px) / 3);
+    width: calc((100% - 20px) / 3);
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -611,4 +611,32 @@
     color: #fa8e00;
     background-color: #ffa42e18;
     padding: 5px;
+}
+
+@media screen and (max-width:1000px) {
+    .introduce-left {
+        width: 45%;
+    }
+
+    .introduce-right {
+        width: 50%;
+    }
+
+    .stamp img {
+        width: 40%;
+    }
+
+    .product-description {
+        margin: 60px 80px;
+    }
+
+    .review-inside {
+        padding: 64px 60px 72px 60px;
+        margin: 0px;
+    }
+
+    .rate-star {
+        gap: 10px;
+    }
+
 }
