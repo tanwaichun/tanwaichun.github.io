@@ -74,6 +74,7 @@
 
 .owner-content {
     text-align: center;
+    padding: 30px;
 }
 
 .store-service {
@@ -120,10 +121,23 @@
 
 .owner-card {
     background-color: #fff8f0;
-    padding: 30px;
-    margin: 0px 150px;
-    border-radius: 12px;
-    align-items: center;
+    max-width: 900px;
+    margin: -120px auto 0;
+    padding: 60px 40px;
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+}
+
+.owner-card h3,
+.owner-card p {
+    margin-bottom: 20px;
+}
+
+.about img {
+    width: 100%;
+    display: block;
+    border-radius: 6px;
 }
 
 .stats {
@@ -133,12 +147,18 @@
     padding: 100px 50px;
 }
 
-.number h2 {
-    color: white;
+.big-number {
+    display: flex;
+    justify-content: row;
+    gap: 40px;
+}
+
+.number {
+    color: #FFA42D;
     font-size: 70px;
 }
 
-.number p {
+.label {
     color: white;
     font-size: 15px;
 }
@@ -147,11 +167,7 @@
     font-size: 36px;
 }
 
-.title {
-    margin: 0px -20px;
-}
-
-.article-upper h3 {
+.article-title h3 {
     font-size: 36px;
     font-weight: 600;
     color: #141414;
@@ -161,19 +177,5 @@
 }
 
 .article-card img {
-    width: 464px;
-    height: 321px;
-}
-
-.about-header {
-    position: relative;
-    width: 100%;
-}
-
-.about img {
-    width: 1200px;
-    height: 551px;
-    position: relative;
-    border-radius: 15px;
-    align-items: center;
+    width: 40%;
 }
