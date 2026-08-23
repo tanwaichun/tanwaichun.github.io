@@ -208,6 +208,11 @@
 
 .banner-image {
     width: 100%;
+    display: block;
+}
+
+.banner-text img {
+    width: 20px;
 }
 
 .banner-inside {
@@ -538,6 +543,7 @@
 .products-grid {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -555,6 +561,12 @@
     flex-direction: column;
     gap: 10px;
     margin-left: 30px;
+}
+
+.product-card img {
+    width: 105px;
+    height: 115px;
+    border-radius: var(--radius);
 }
 
 .product-link {
@@ -639,4 +651,117 @@
         gap: 10px;
     }
 
+    .product-card {
+        box-sizing: border-box;
+        width: calc((100% - 10px) / 2);
+        justify-content: flex-start;
+        margin-bottom: 30px;
+    }
+
+    .product-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .related-product {
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .product-introduce {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introduce-left {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .pet-image img {
+        width: 100%;
+    }
+
+    .stamp img {
+        width: 20%;
+    }
+
+    .introduce-right {
+        width: 100%;
+        padding: 0px 16px;
+    }
+
+    .social-link {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .banner {
+        min-height: 160px;
+    }
+
+    .banner-inside {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        margin-left: 30px;
+    }
+
+    .benefits-icon {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .additional-weight {
+        width: 80%;
+    }
+
+    .product-description {
+        margin: 60px;
+    }
+
+    .rate-star button span {
+        display: none;
+    }
+
+    .rate-star button {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .rate-star-section {
+        flex: 1;
+    }
+
+    .rate-star button img {
+        margin-right: 0px;
+    }
+
+    .product-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .product-card {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .product-card img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .product-link {
+        margin-top: 10px;
+    }
 }
