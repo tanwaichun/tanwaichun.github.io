@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>product</title>
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/product.css">
 </head>
 
 <body>
@@ -25,8 +26,8 @@
         </form>
         <div class="header-icon">
             <img src="image/profile-icon.png" alt="profile">
-            <img src="image/cart-icon.png" alt="cart">
-            <img src="image/hamburger-icon.png" alt="hamburger" class="hamburger">
+            <img src="image/cart-icon.svg" alt="cart">
+            <div class="menu-toggle">&#9776;</div>
         </div>
     </div>
     <div class="header-tablet">
@@ -35,8 +36,8 @@
         </div>
         <div class="header-icon">
             <img src="image/profile-icon.png" alt="profile">
-            <img src="image/cart-icon.png" alt="cart">
-            <img src="image/hamburger-icon.png" alt="hamburger" class="hamburger">
+            <img src="image/cart-icon.svg" alt="cart">
+            <div class="menu-toggle">&#9776;</div>
         </div>
         <form action="/action_page.php">
             <div class="search-bar">
@@ -71,10 +72,12 @@
                 </div>
             </div>
             <div class="menu-bar-list">
+
                 <div><a href="index.html">Home</a></div>
                 <div><a href=".html">Shop</a></div>
                 <div><a href="flash.html">Hot Deals</a></div>
                 <div><a href="about.html">About</a></div>
+
                 <div>News</div>
                 <div>Contact</div>
             </div>
@@ -94,16 +97,14 @@
         </div>
     </div>
 
-    <div class="side-menu">
+    <div class="side-menu" id="menu">
         <div class="side-menu-inside">
             <div class="side-menu-upper">
                 <div class="side-menu-header">
                     <div class="side-menu-logo">
                         <img src="image/vegan-logo.png" alt="vegan store logo" width="160px">
                     </div>
-                    <div class="close-menu">
-                        <img src="image/close-icon.png" alt="close">
-                    </div>
+                    <div class="menu-close">&times;</div>
                 </div>
                 <div class="cart-box">
                     <p>0 Items in your Cart</p>
@@ -117,11 +118,11 @@
                             <div>˅</div>
                         </div>
                         <div class="side-categories-list">
-                            <div class="sidemenu-link"> <a href="submenu-items">Vegan Food & Drinks</a></div>
-                            <div class="sidemenu-link"><a href="submenu-items">Pet Care Items</a></div>
-                            <div class="sidemenu-link"> <a href="submenu-items">Fitness & Nutrition</a></div>
-                            <div class="sidemenu-link"><a href="submenu-items">Beauty & Care</a></div>
-                            <div class="sidemenu-link"><a href="submenu-items">Clothes & Accessories</a></div>
+                            <div> <a href="submenu-items">Vegan Food & Drinks</a></div>
+                            <div><a href="submenu-items">Pet Care Items</a></div>
+                            <div> <a href="submenu-items">Fitness & Nutrition</a></div>
+                            <div><a href="submenu-items">Beauty & Care</a></div>
+                            <div><a href="submenu-items">Clothes & Accessories</a></div>
                         </div>
                     </div>
                     <div>Vegan Products</div>
@@ -137,10 +138,10 @@
                     <p>Phone: +1 800 555 5555</p>
                     <p>Email: contact@avada-company.com</p>
                     <div class="side-social">
-                        <div><img src="image/vegan-facebook.png" alt="vegan facebook" width="25px"></div>
-                        <div><img src="image/vegan-x.png" alt="vegan x" width="25px"></div>
-                        <div><img src="image/vegan-instagram.png" alt="vegan instagram" width="25px"></div>
-                        <div><img src="image/youtube-icon.png" alt="vegan youtube" width="15px"></div>
+                        <div><img src="image/facebook-icon.svg" alt="vegan facebook" width="25px"></div>
+                        <div><img src="image/x-icon.svg" alt="vegan x" width="25px"></div>
+                        <div><img src="image/instagram-icon.svg" alt="vegan instagram" width="25px"></div>
+                        <div><img src="image/youtube-icon.svg" alt="vegan youtube" width="15px"></div>
                     </div>
                 </div>
             </div>
@@ -150,20 +151,20 @@
 
     <div class="product-introduce">
         <div class="introduce-left">
-            <div><img src="image/pet1.png" alt="pet 1"></div>
-            <div><img src="image/back-stamp.png"></div>
+            <div class="pet-image"><img src="image/pet1.png" alt="pet 1"></div>
+            <div class="stamp"><img src="image/back-stamp.png" alt="stamp"></div>
         </div>
         <div class="introduce-right">
-            <div>
+            <div class="small-introduce">
                 <p>Complete & balances food for adult pets</p>
             </div>
             <div>
-                <h3>Adult Cat Food</h3>
+                <h1>Adult Cat Food</h1>
             </div>
-            <div>
+            <div class="review-text">
                 <p>Be the first to leave a review.</p>
             </div>
-            <div>
+            <div class="introduce-text">
                 <p>Metus ac odio consectetur viverra. Aliquet ultrices dui eget
                     tristique arcu finibus eu. Baecenas posuere odio.</p>
             </div>
@@ -171,23 +172,25 @@
             <div class="product-option">
                 <p>Weight</p>
                 <div class="option-btns">
-                    <button>250g</button>
+                    <button>1Kg</button>
                     <button>500g</button>
                 </div>
             </div>
-            <div class="choose-number">
-                <div>-</div>
-                <div>1</div>
-                <div>+</div>
+            <div class="button-section">
+                <div class="choose-number">
+                    <button class="btn-1">-</button>
+                    <div>1</div>
+                    <button class="btn-2">+</button>
+                </div>
+                <button class="add-cart-btn"><img src="image/cart-icon.svg" alt="cart">Add To Cart</button>
             </div>
-            <div><button class="add-cart-btn"><img src="image/cart-icon.png" alt="cart">Add To Cart</button></div>
-            <div>
+            <div class="categories-section">
                 <div>Categories:</div>
-                <div>Pet Care Items</div>
+                <div class="color-green">Pet Care Items</div>
             </div>
-            <div>
+            <div class="tags-section">
                 <div>Tags:</div>
-                <div>cat, food, pets</div>
+                <div class="color-green">cat, food, pets</div>
             </div>
             <div class="social-link">
                 <div><a herf="#">Share</a></div>
@@ -199,15 +202,15 @@
     </div>
 
     <div class="banner">
-        <img src="image/banner-back-img.png" alt="banner background">
+        <img src="image/banner-back-img.png" alt="banner background" class="banner-image">
         <div class="banner-inside">
-            <div><img src="image/correct-icon.png" alt="correct icon">
+            <div class="banner-text"><img src="image/correct-icon.png" alt="correct icon">
                 <p>Money Back Guarantee</p>
             </div>
-            <div><img src="image/correct-icon.png" alt="correct icon">
+            <div class="banner-text"><img src="image/correct-icon.png" alt="correct icon">
                 <p>Top Quality Vegan Item</p>
             </div>
-            <div><img src="image/correct-icon.png" alt="correct icon">
+            <div class="banner-text"><img src="image/correct-icon.png" alt="correct icon">
                 <p>Fast & Secure Checkout</p>
             </div>
         </div>
@@ -229,7 +232,7 @@
                 mattis.</p>
         </div>
         <div>
-            <h2>Vegan Products Benefits</h2>
+            <h4>Vegan Products Benefits</h4>
         </div>
         <div>
             <p>Etiam ut pulvinar felis. Ut varius lacus vitae nibh malesuada consectetur felis dapibus. Phasellus nec
@@ -287,11 +290,143 @@
                     <button><img src="image/arrow-down.png" alt="arrow down"></button>
                 </div>
                 <div class="inside-hover">
-                    <h4>Guidelines For Using This Product</h4>
+                    <div class="inside-title">
+                        <h4>Guidelines For Using This Product</h4>
+                        <button><img src="image/arrow-up.png" alt="arrow up"></button>
+                    </div>
                     <p>Proin efficitur ex ac finibus consectetur. Vivamus tincidunt ac augue id tristique. Nunc
                         hendrerit tellus lectus in pellentesque ante congue ac. Morbi eu metus interdum bibendum libero
                         scelerisque.</p>
-                    <button><img src="image/arrow-up.png" alt="arrow up"></button>
+                </div>
+            </div>
+            <div class="information-inside">
+                <div class="inside-nonhover">
+                    <h4>Full Ingredients List</h4>
+                    <button><img src="image/arrow-down.png" alt="arrow down"></button>
+                </div>
+                <div class="inside-hover">
+                    <div class="inside-title">
+                        <h4>Full Ingredients List</h4>
+                        <button><img src="image/arrow-up.png" alt="arrow up"></button>
+                    </div>
+                    <p>Proin efficitur ex ac finibus consectetur. Vivamus tincidunt ac augue id tristique. Nunc
+                        hendrerit tellus lectus in pellentesque ante congue ac. Morbi eu metus interdum bibendum libero
+                        scelerisque.</p>
+                </div>
+            </div>
+            <div class="information-inside">
+                <div class="inside-nonhover">
+                    <h4>Product Shipping, Delivery & Returns</h4>
+                    <button><img src="image/arrow-down.png" alt="arrow down"></button>
+                </div>
+                <div class="inside-hover">
+                    <div class="inside-title">
+                        <h4>Product Shipping, Delivery & Returns</h4>
+                        <button><img src="image/arrow-up.png" alt="arrow up"></button>
+                    </div>
+                    <p>Proin efficitur ex ac finibus consectetur. Vivamus tincidunt ac augue id tristique. Nunc
+                        hendrerit tellus lectus in pellentesque ante congue ac. Morbi eu metus interdum bibendum libero
+                        scelerisque.</p>
+                </div>
+            </div>
+        </div>
+        <div class="additional-information">
+            <h4>Additional Information</h4>
+            <div class="additional-inside">
+                <div class="additional-text">Weight</div>
+                <div class="additional-weight">1Kg, 500g</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-review">
+        <div class="review-inside">
+            <h3>Product Reviews</h3>
+            <div>
+                <p>There are no reviews yet.</p>
+            </div>
+            <div class="big-text">
+                <p>Be the first to review ”Adult Cat Food”</p>
+            </div>
+            <div>
+                <p>Your email address will not be published. Required fields are marked*</p>
+            </div>
+            <div class="rate-star">
+                <div class="rate-star-section">
+                    <button>1 of 5 stars
+                        <img src="image/star1.png" alt="1 star"></button>
+                </div>
+                <div class="rate-star-section">
+                    <button>2 of 5 stars
+                        <img src="image/star2.png" alt="2 star"></button>
+                </div>
+                <div class="rate-star-section">
+                    <button>3 of 5 stars
+                        <img src="image/star3.png" alt="3 star"></button>
+                </div>
+                <div class="rate-star-section">
+                    <button>4 of 5 stars
+                        <img src="image/star4.png" alt="4 star"></button>
+                </div>
+                <div class="rate-star-section">
+                    <button>5 of 5 stars
+                        <img src="image/star5.png" alt="5 star"></button>
+                </div>
+            </div>
+            <form action="/action_page.php">
+                <div class="form-box">
+                    <div class="review">
+                        <div><label for="sintroduction">Your review*</label></div>
+                        <div><textarea id="sintroduction" name="sintroduction" row="7" cols="80"></textarea></div>
+                    </div>
+                    <div class="name">
+                        <div><label for="name">Name*</label></div>
+                        <div><input type="text" id="name" name="name"></div>
+                    </div>
+                    <div class="email">
+                        <div><label for="emailaddress">Email Address*</label></div>
+                        <div><input type="email" id="emailaddress" name="emailaddress"></div>
+                    </div>
+                    <div class="check-box">
+                        <input type="checkbox" id="savename" name="savename" value="Name">
+                        <label for="vehicle1"> Save my name, email, and website in this browser for the next time I
+                            comment.</label>
+                    </div>
+                </div>
+            </form>
+            <div class="submit-btn"><button>Submit</button></div>
+        </div>
+    </div>
+
+    <div class="related-product">
+        <h3>Related Vegan Products</h3>
+        <div class="products-grid">
+            <div class="product-card">
+                <div><img src="image/pet-item1.png" alt="pet items 1"></div>
+                <div class="product-introduction">
+                    <div class="product-link">Pet Care Items</div>
+                    <h5>Spinach Dog Sticks</h5>
+                    <div class="related-price">$22.00- $40.00</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div><img src="image/pet-item2.png" alt="pet items 2"></div>
+                <div class="product-introduction">
+                    <div class="product-link">Pet Care Items</div>
+                    <h5>Pets Vegan Stews</h5>
+                    <div class="related-price">$110.00- $150.00</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div><img src="image/pet-item3.png" alt="pet items 3"></div>
+                <div class="product-introduction">
+                    <div class="product-link">Pet Care Items</div>
+                    <h5>Organic Pet Treats</h5>
+                    <div class="product-price">
+                        <div class="related-price">$22.00- $40.00</div>
+                        <div class="old-price">$45.00</div>
+                        <div class="discount">29% Off</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -352,15 +487,16 @@
                             <p>sales@avada-company.com</p>
                         </div>
                         <div class="footer-social">
-                            <div><img src="image/vegan-facebook.png" alt="vegan facebook" width="25px"></div>
-                            <div><img src="image/vegan-x.png" alt="vegan x" width="25px"></div>
-                            <div><img src="image/vegan-instagram.png" alt="vegan instagram" width="25px"></div>
-                            <div><img src="image/vegan-pinterest.png" alt="vegan pinterest" width="25px"></div>
+                            <div><img src="image/facebook-icon.svg" alt="vegan facebook" width="25px"></div>
+                            <div><img src="image/x-icon.svg" alt="vegan x" width="25px"></div>
+                            <div><img src="image/instagram-icon.svg" alt="vegan instagram" width="25px"></div>
+                            <div><img src="image/pinterest-icon.svg" alt="vegan pinterest" width="25px"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="footer-bottom">
             <div class="footer-copyright">
                 <p>© Copyright 2012 - 2026 • <a href="#">Avada</a>is a <a href="#">Website Builder</a>for <a
@@ -385,6 +521,9 @@
             </div>
         </div>
     </div>
+
+    <script src="js/common.js">
+    </script>
 </body>
 
 </html>

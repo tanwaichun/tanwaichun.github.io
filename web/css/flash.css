@@ -14,7 +14,8 @@ button {
 .flash-deals {
     width: 100%;
     background-color: #222;
-    background-image: url("image/flash-background.png");
+    background-image: url("https://avada.website/vegan-store/wp-content/uploads/sites/186/2024/01/plants-bg-3.png");
+    background-blend-mode: multiply;
     background-size: 300px;
 
     padding: 55px 0 80px;
@@ -60,7 +61,7 @@ button {
 
     gap: 4px;
 
-    background: #76b62b;
+    background: var(--main);
     border-radius: 5px;
 
     color: #fff;
@@ -239,8 +240,8 @@ button {
 
     max-width: 1248px;
 
-    margin: 0 auto 70px;
-    padding: 35px 0;
+    margin: 0 auto 0;
+
     display: grid;
     grid-template-columns: 290px 1fr;
 }
@@ -367,7 +368,7 @@ button {
 
     gap: 30px;
 
-    background: #fff;
+    background: var(--white);
 
     border-radius: 4px;
 
@@ -514,7 +515,7 @@ button {
     transition: .25s;
 }
 
-.cta button a{
+.cta button a {
     text-decoration: none;
     color: inherit;
 }
