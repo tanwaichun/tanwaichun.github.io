@@ -242,3 +242,89 @@
     overflow: hidden;
     flex: 1;
 }
+
+.article-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: black;
+    opacity: 0.5;
+}
+
+.card-title {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+    z-index: 2;
+}
+
+.card-title h4 {
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.article-content {
+    color: #F0A227;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media screen and (max-width:1000px) {
+    .introduce {
+        flex-direction: column;
+        align-items: stretch;
+        margin: 30px 20px;
+    }
+
+    .introduce-left,
+    .introduce-right {
+        width: 100%;
+    }
+
+    .introduce-right {
+        margin-top: 30px;
+    }
+
+    .introduce-title {
+        align-items: flex-start;
+    }
+
+    .introduce-title img {
+        width: 36px;
+        margin-right: 14px;
+    }
+
+    .introduce-right p {
+        line-height: 1.7;
+        margin: 8px 0 24px;
+    }
+
+    .stats {
+        padding: 60px 28px;
+    }
+
+    .stats-title h2 {
+        line-height: 1.5;
+        margin-bottom: 40px;
+    }
+
+    .stats-grid {
+        gap: 40px;
+    }
+
+
+}
