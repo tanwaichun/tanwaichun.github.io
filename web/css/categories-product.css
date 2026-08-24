@@ -113,11 +113,6 @@
     text-decoration: underline var(--color-title-black);
 }
 
-.product-card-bottom h5:hover {
-    color: var(--color-button-orange);
-    text-decoration: none;
-}
-
 .product-card-bottom p {
     color: var(--color-text-gray);
     margin-top: 15px;
