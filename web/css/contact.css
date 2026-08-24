@@ -110,6 +110,8 @@
 
 .message-form {
     text-align: left;
+    margin: 0 auto;
+    max-width: 1180px;
 }
 
 .form-row {
@@ -130,12 +132,49 @@
     margin-bottom: 8px;
 }
 
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    border: 1px solid #c2c2c2;
+    border-radius: 4px;
+    padding: 14px 16px;
+}
+
 .submit-btn {
     background-color: var(--color-main-green);
     color: var(--color-white);
     border: none;
     border-radius: 4px;
-    padding: 14px 32px;
+    padding: 20px 523px;
+    margin-top: 50px;
     font-size: 17px;
     font-weight: 600;
+}
+
+.product-section {
+    width: 80%;
+    margin: 60px auto;
+}
+
+.product-grid-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.product-card {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: calc(33.33% - 30px);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #c2c2c2;
+    position: relative;
+}
+
+.product-card>img {
+    width: 100%;
+    border-radius: var(--radius);
 }
