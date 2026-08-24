@@ -1,0 +1,50 @@
+.categories-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 293px;
+    width: 80%;
+    margin: 60px;
+}
+
+.categories-banner>img {
+    width: 100%;
+}
+
+.banner-inside {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    top: 0;
+    bottom: 0;
+}
+
+.banner-inside h2 {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--color-title-black);
+    margin-bottom: 30px;
+}
+
+.banner-inside a {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--color-title-black);
+    text-decoration: dotted underline var(--color-title-black);
+}
+
+.banner-inside span {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--color-white);
+}
+
+.banner-inside a:hover {
+    color: var(--color-main-green);
+    text-decoration: none;
+}
