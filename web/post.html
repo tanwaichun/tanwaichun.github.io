@@ -6,10 +6,389 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/flash.css">
+    <link rel="stylesheet" href="css/post.css">
 </head>
 
 <body>
+    <div class="header">
+        <div class="header-logo">
+            <img src="image/vegan-logo.png" alt="vegan store logo" width="190px">
+        </div>
+        <form action="/action_page.php">
+            <div class="search-bar">
+                <div><input type="search" id="search" name="search" placeholder="Search products..."></div>
+                <div class="search-button">
+                    <button type="submit">
+                        <img src="image/search-icon-white.png" alt="search" width="35px">
+                    </button>
+                </div>
+            </div>
+        </form>
+        <div class="header-icon">
+            <img src="image/profile-icon.png" alt="profile">
+            <img src="image/cart-icon.svg" alt="cart">
+            <div class="menu-toggle">&#9776;</div>
+        </div>
+    </div>
+    <div class="header-tablet">
+        <div class="header-logo">
+            <img src="image/vegan-logo.png" alt="vegan store logo" width="190px">
+        </div>
+        <div class="header-icon">
+            <img src="image/profile-icon.png" alt="profile">
+            <img src="image/cart-icon.svg" alt="cart">
+            <div class="menu-toggle">&#9776;</div>
+        </div>
+        <form action="/action_page.php">
+            <div class="search-bar">
+                <div><input type="search" id="search-tablet" name="search" placeholder="Search products..."></div>
+                <div class="search-button">
+                    <button type="submit">
+                        <img src="image/search-icon-white.png" alt="search" width="35px">
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="menu-bar">
+        <div class="inside-box">
+            <div class="categories">
+                <button class="category-btn">CATEGORIES ˅</button>
+                <div class="categories-submenu">
+                    <div class="submenu-link"><img src="image/icon-leaf-orange.png" alt="leaf icon"
+                            class="submenu-icon"> <a href="submenu-items">Vegan Food &
+                            Drinks</a></div>
+                    <div class="submenu-link"><img src="image/icon-leaf-orange.png" alt="leaf icon"
+                            class="submenu-icon"> <a href="submenu-items">Pet Care Items</a></div>
+                    <div class="submenu-link"><img src="image/icon-leaf-orange.png" alt="leaf icon"
+                            class="submenu-icon"> <a href="submenu-items">Fitness &
+                            Nutrition</a></div>
+                    <div class="submenu-link"><img src="image/icon-leaf-orange.png" alt="leaf icon"
+                            class="submenu-icon"> <a href="submenu-items">Beauty & Care</a></div>
+                    <div class="submenu-link"><img src="image/icon-leaf-orange.png" alt="leaf icon"
+                            class="submenu-icon"> <a href="submenu-items">Clothes &
+                            Accessories</a></div>
+                </div>
+            </div>
+            <div class="menu-bar-list">
+
+                <div><a href="index.html">Home</a></div>
+                <div><a href=".html">Shop</a></div>
+                <div><a href="flash.html">Hot Deals</a></div>
+                <div><a href="about.html">About</a></div>
+
+                <div>News</div>
+                <div>Contact</div>
+            </div>
+            <div class="phone-contact">
+                <div class="phone-icon">
+                    <img src="image/phone.png" alt="phone" width="42px">
+                </div>
+                <div class="header-contact">
+                    <div>
+                        <p>Order by phone</p>
+                    </div>
+                    <div class="header-phone-number">
+                        <p>+1 800 555 5555</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="side-menu" id="menu">
+        <div class="side-menu-inside">
+            <div class="side-menu-upper">
+                <div class="side-menu-header">
+                    <div class="side-menu-logo">
+                        <img src="image/vegan-logo.png" alt="vegan store logo" width="160px">
+                    </div>
+                    <div class="menu-close">&times;</div>
+                </div>
+                <div class="cart-box">
+                    <p>0 Items in your Cart</p>
+                    <a href="#">View your Cart</a>
+                </div>
+                <div class="side-menu-list">
+                    <div class="side-home-text">Home Page</div>
+                    <div class="side-categories">
+                        <div class="categories-title">
+                            <div>Categories</div>
+                            <div>˅</div>
+                        </div>
+                        <div class="side-categories-list">
+                            <div> <a href="submenu-items">Vegan Food & Drinks</a></div>
+                            <div><a href="submenu-items">Pet Care Items</a></div>
+                            <div> <a href="submenu-items">Fitness & Nutrition</a></div>
+                            <div><a href="submenu-items">Beauty & Care</a></div>
+                            <div><a href="submenu-items">Clothes & Accessories</a></div>
+                        </div>
+                    </div>
+                    <div>Vegan Products</div>
+                    <div>About Store</div>
+                    <div>News & Recipes</div>
+                    <div>Contact</div>
+                </div>
+            </div>
+            <div class="side-menu-bottom">
+                <div class="side-contact">
+                    <h3>Get In Touch</h3>
+                    <p>123 Main Street, Queens, NY 11435</p>
+                    <p>Phone: +1 800 555 5555</p>
+                    <p>Email: contact@avada-company.com</p>
+                    <div class="side-social">
+                        <div><img src="image/facebook-icon.svg" alt="vegan facebook" width="25px"></div>
+                        <div><img src="image/x-icon.svg" alt="vegan x" width="25px"></div>
+                        <div><img src="image/instagram-icon.svg" alt="vegan instagram" width="25px"></div>
+                        <div><img src="image/youtube-icon.svg" alt="vegan youtube" width="15px"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <main class="vegan-article">
+        <section class="article-title-area">
+            <nav class="breadcrumbs" aria-label="Breadcrumb">
+                <a href="#">Home</a><span>/</span>
+                <a href="#">Posts</a><span>/</span>
+                <a href="#">Health &amp; Wellness</a>
+            </nav>
+
+            <h1>Vegan &amp; Vegetarian Diets May Lack Some Nutrients</h1>
+        </section>
+
+        <section class="article-inner">
+            <img class="featured-image"
+                src="https://avada.website/vegan-store/wp-content/uploads/sites/186/2024/02/blog-vegan-nutrients-01.jpg"
+                alt="Stuffed avocados">
+
+            <div class="post-meta">
+                By <a href="#">Atif</a> &nbsp;|&nbsp;
+                Categories: <a href="#">Health &amp; Wellness</a> &nbsp;|&nbsp;
+                Last Updated: April 23, 2024
+            </div>
+
+            <article class="article-content">
+                <h2>Discovering The Best Vegan Products!</h2>
+
+                <div class="intro-copy">
+                    <p>
+                        Curabitur ut congue. Fusce faucibus scelerisque auctor. Mauris
+                        porttitor sollicitudin ante sit amet sollicitudin urna convall sa.
+                        Sed ligula tellus, tincidunt ut scelerisque sed eleifend eget justo.
+                        Donec cursus mauris sit amet magns finibus.
+                    </p>
+
+                    <p>
+                        Curabitur in leo nec tortor sodales volutpat dui mauris. Maecenas non
+                        dui consequat blandit arcu vitae cons ken tum nisi. tincidunt siet
+                        amet quam nec, porta aliquam tellus. Aliquam sagittis elit vel posuere
+                        dapibus. Varius neque quis pharetra ac pretium nisl interdum.
+                    </p>
+                </div>
+
+                <div class="article-gallery">
+                    <!-- Add the first original image URL here if you have it -->
+                    <img src="image/clothes-jacket-1.jpg" width="100%">
+
+                    <img src="image/categories-product6.jpg" width="100%">
+
+                    <img src="image/nutrition-sweet-cream.jpg" width="100%">
+                </div>
+
+                <p>
+                    Suspendisse gravida ut mi ac varius. Nunc augue mi, dignissim arcu id,
+                    pretium volutpat tortor. Praesent vel felis eget tellus dignissim
+                    volutpat a sed sem. Integer euismod fringilla viverra. Fusce sit amet
+                    ante suscipit, gravida massa vitae, varius mi. Nam ut fringilla velit
+                    quis venenatis felis. Donec ullamcorper mollis con modo.
+                </p>
+
+                <ul class="article-checklist">
+                    <li>Aliquam dictum condimentum purus vel fringilla lectus efficitur</li>
+                    <li>Sed consequat pharetra enim at mattis tortor gravida</li>
+                    <li>Nunc eleifend mattis pur faucibus rhoncus erat males uada</li>
+                    <li>Fusce dictum augue nec tristique ornare. Ut molestie maximus laoreet</li>
+                </ul>
+
+                <h2>Unleashing The Power Of Plant-Based Eating</h2>
+
+                <p>
+                    Maecenas nec convallis diam. Etiam quis dictum mi, eget aliquet sem.
+                    Etiam rhoncus posuere dignissim. Curabitur dictum vel purus non
+                    sagittis. Proin in mattis ex. Nulla imperdiet risus ut ante vehicula
+                    consequat. Fusce a dapibus dui. Vestibulum ac libero ut erat luctus
+                    viverra.
+                </p>
+
+                <p>
+                    Sed porttitor vel lorem id hendrerit. Quisque eu odio risus. Sed ante
+                    eros, lacinia ut magna sed, consequat iaculis velit. Vivamus laoreet
+                    lorem eu felis molestie consectetur. Suspendisse commodo dictum lorem.
+                    Sed nec iaculis nibh.
+                </p>
+            </article>
+        </section>
+
+        <section class="comment-area">
+            <div class="comment-box">
+                <h2>Post Comments</h2>
+
+                <form>
+                    <textarea placeholder="Comment..." aria-label="Comment"></textarea>
+
+                    <div class="comment-fields">
+                        <input type="text" placeholder="Name (required)" required>
+                        <input type="email" placeholder="Email (required)" required>
+                        <input type="url" placeholder="Website">
+                    </div>
+
+                    <label class="remember-me">
+                        <input type="checkbox">
+                        Save my name, email, and website in this browser for the next time I comment.
+                    </label>
+
+                    <button type="submit">Post Comment</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="related-posts">
+            <h2>Some Related Articles</h2>
+
+            <div class="related-grid">
+                <a class="related-card" href="#"
+                    style="background-image:url('https://avada.website/vegan-store/wp-content/uploads/sites/186/2024/02/blog-vegan-voyages-eating-01.jpg');">
+                    <div class="related-card-content">
+                        Vegan Voyages: The World Of Delicious, Ethical Eating
+                        <small>Health &amp; Wellness</small>
+                    </div>
+                </a>
+
+                <a class="related-card" href="#" style="background-image:url(image/blog-vegan-street-food-01.jpg);">
+                    <div class="related-card-content">
+                        Street Food To Restaurants: The Next Vegan Hotspot
+                        <small>Health &amp; Wellness</small>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="footer-upper">
+            <div class="footer-upper-inside">
+                <div class="footer-left">
+                    <div class="footer-logo"><img src="image/vegan-logo.png" alt="vegan store logo" width="210px">
+                    </div>
+                    <p>Signup for 10% off your first purchase & more products discounts</p>
+                    <form action="/action_page.php">
+                        <div class="enter-email">
+                            <input type="email" id="email" name="email" placeholder="Enter your email ..*">
+                        </div>
+                    </form>
+                    <button class="subscribe-button">SUBSCRIBE NOW</button>
+                </div>
+                <div class="footer-right">
+                    <div class="container-list">
+                        <div class="title">
+                            <h5>Shop</h5>
+                        </div>
+                        <div class="footer-list">
+                            <div>Food & Drinks</div>
+                            <div>Vegan Grocery</div>
+                            <div>Beauty & Care</div>
+                            <div>Pet Care Items</div>
+                            <div>Fitness & Nutrition</div>
+                            <div>Vegan Ready Meals</div>
+                        </div>
+                    </div>
+                    <div class="container-list">
+                        <div class="title">
+                            <h5>About</h5>
+                        </div>
+                        <div class="footer-list">
+                            <div>Vegan Store</div>
+                            <div>Special Offers</div>
+                            <div>News & Recipes</div>
+                            <div>Contact</div>
+                            <div>Refund Policy</div>
+                            <div>Delivery Information</div>
+                        </div>
+                    </div>
+                    <div class="container-list">
+                        <div class="title">
+                            <h5>Get In Touch</h5>
+                        </div>
+                        <div class="footer-phone-text">
+                            <p>Order by phone</p>
+                        </div>
+                        <div class="footer-phone-number">
+                            <p>+1 800 555 5555</p>
+                        </div>
+                        <div class="vegan-gmail">
+                            <p>sales@avada-company.com</p>
+                        </div>
+                        <div class="footer-social">
+                            <div><img src="image/facebook-icon.svg" alt="vegan facebook" width="25px"></div>
+                            <div><img src="image/x-icon.svg" alt="vegan x" width="25px"></div>
+                            <div><img src="image/instagram-icon.svg" alt="vegan instagram" width="25px"></div>
+                            <div><img src="image/pinterest-icon.svg" alt="vegan pinterest" width="25px"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p>© Copyright 2012 - 2026 • <a href="#">Avada</a>is a <a href="#">Website Builder</a>for <a
+                        href="#">WordPress</a> and <a href="#">eCommerce</a> • All Rights Reserved • Developed by
+                    <a href="#">ThemeFusion</a>
+                </p>
+            </div>
+            <div class="footer-cards">
+                <img src="image/cards-footer.png" alt="cards footer" width="100%">
+            </div>
+            <div class="vegan-text">
+                <p>Vegan Products are 100% Plant-Based and Safe for Human Health and Environment.</p>
+            </div>
+            <div class="footer-download">
+                <div class="vegan-text">
+                    <p>Download Vegan Store App</p>
+                </div>
+                <div class="footer-playstore">
+                    <div><img src="image/vegan-googleplay.png" alt="Google Play"></div>
+                    <div><img src="image/vegan-applestore.png" alt="Apple Store"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/common.js">
+    </script>
 
 </body>
 
