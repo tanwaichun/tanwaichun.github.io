@@ -85,6 +85,14 @@
      line-height: 1.45;
  }
 
+ /*Link Text*/
+ .link-text {
+     font-size: 14px;
+     font-weight: 400;
+     color: var(--color-main-green);
+     text-decoration: underline var(--color-main-green);
+ }
+
  /* Body Text */
  .text-body {
      font-size: 15px;
