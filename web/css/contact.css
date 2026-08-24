@@ -7,7 +7,7 @@
 .page-title {
     font-size: 48px;
     font-weight: 600;
-    color: black;
+    color: var(--color-title-black);
     line-height: 1.1;
 }
 
@@ -15,7 +15,95 @@
     font-size: 110px;
     font-weight: 800;
     margin: 0;
-    color: #494949;
+    color: var(--color-text-gray);
     line-height: 1.2;
     padding: 20px 22px 50px;
+}
+
+.box {
+    background-color: #fff8f0;
+    padding: 60px;
+    margin: 80px;
+    border-radius: 8px;
+}
+
+.box-grid {
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+}
+
+.text img {
+    display: block;
+    margin-bottom: 24px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.text p {
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.text {
+    flex: 1
+}
+
+.contact {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.map-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.contact-card {
+    background: #fff8f0;
+    display: flex;
+    margin-top: 4px;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+}
+
+.contact-card img {
+    width: 100%;
+    height: 260px;
+    min-height: 140px;
+    object-fit: cover;
+    display: block;
+    flex: 1;
+}
+
+.contact-info {
+    flex: 1.6;
+    padding: 28px 32px;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.contact-info p {
+    font-size: 13px;
+    color: #4B4B4B;
+    line-height: 1.7;
+    margin-bottom: 4px;
+}
+
+.contact-info a {
+    color: var(--color-main-green);
+}
+
+.message-title {
+    font-size: 34px;
+    font-weight: 700;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align: center;
 }
