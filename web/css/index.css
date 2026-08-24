@@ -552,6 +552,7 @@
 .add-cart-btn:hover {
     color: var(--color-white);
     background-color: var(--color-button-orange);
+    border: none;
 }
 
 .add-cart-btn:hover img {
