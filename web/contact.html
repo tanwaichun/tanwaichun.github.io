@@ -196,19 +196,44 @@
 
     <div class="message">
         <h2 class="message-title">Send Us A Message</h2>
+
+        <form action="/action_page.php" class="message-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname">
+                </div>
+
+                <div class="form-group">
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <input type="text" id="message" name="message">
+            </div>
+
+            <input type="submit" class="submit-btn" value="SEND MESSAGE">
+        </form>
     </div>
 
-    <form action="/action_page.php">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname"><br><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br><br>
-        <label for="subject">Subject:</label><br>
-        <input type="text" id="subject" name="subject"><br><br>
-        <input type="submit" value="SEND MESSAGE">
-    </form>
+    <div class="message">
+        <h2 class="message-title">Visit Us Today!</h2>
+    </div>
 
     <div class="product-section">
         <div class="product-grid-card">
