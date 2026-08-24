@@ -1,0 +1,262 @@
+.vegan-article * {
+    box-sizing: border-box;
+}
+
+.article-title-area {
+    padding: 72px 8% 45px;
+    text-align: center;
+}
+
+.breadcrumbs {
+    margin-bottom: 22px;
+    font-size: 13px;
+}
+
+.breadcrumbs a {
+    color: #4d4d4d;
+    text-decoration: underline;
+}
+
+.breadcrumbs span {
+    margin: 0 6px;
+    color: #999;
+}
+
+.article-title-area h1 {
+    max-width: 760px;
+    margin: auto;
+    font-size: clamp(30px, 4vw, 48px);
+    line-height: 1.2;
+    letter-spacing: -.5px;
+}
+
+.article-inner {
+    width: min(90%, 1124px);
+    margin: auto;
+}
+
+.featured-image {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 1200 / 752;
+    object-fit: cover;
+}
+
+.post-meta {
+    margin: 24px 0 56px;
+    padding: 17px 20px;
+    border-radius: 5px;
+    background: #fff8ef;
+    color: #666;
+    text-align: center;
+    font-size: 13px;
+}
+
+.post-meta a {
+    color: var(--green);
+}
+
+.article-content {
+    max-width: 100%;
+    color: var(--muted);
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+.article-content h2 {
+    margin: 0 0 18px;
+    color: #252525;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.article-content p {
+    margin: 0 0 24px;
+}
+
+.intro-copy {
+    column-count: 2;
+    column-gap: 55px;
+    margin-bottom: 40px;
+}
+
+.intro-copy p {
+    margin: 0;
+}
+
+.article-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+    margin: 0 0 44px;
+}
+
+.article-gallery img {
+    width: 100%;
+    height: 250px;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.article-checklist {
+    padding: 0;
+    margin: 0 0 45px;
+    list-style: none;
+    color: #555;
+}
+
+.article-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin: 12px 0;
+}
+
+.article-checklist li::before {
+    content: "🌱";
+    line-height: 1.4;
+}
+
+.comment-area {
+    margin-top: 68px;
+    padding: 80px max(5%, calc((100vw - 1124px) / 2));
+    background: var(--cream);
+}
+
+.comment-box {
+    max-width: 1124px;
+    margin: auto;
+}
+
+.comment-box h2 {
+    margin: 0 0 24px;
+    font-size: 24px;
+}
+
+.comment-box textarea,
+.comment-box input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ececec;
+    border-radius: 4px;
+    outline: none;
+    font: inherit;
+    font-size: 13px;
+}
+
+.comment-box textarea {
+    height: 150px;
+    resize: vertical;
+    margin-bottom: 12px;
+}
+
+.comment-fields {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.remember-me {
+    display: block;
+    margin: 13px 0 20px;
+    color: #666;
+    font-size: 13px;
+}
+
+.remember-me input {
+    width: auto;
+    margin: 0 6px 0 0;
+}
+
+.comment-box button {
+    border: 0;
+    border-radius: 5px;
+    padding: 15px 24px;
+    background-color: #ffa42d;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.related-posts {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.related-posts h2 {
+    margin: 0 0 42px;
+    font-size: 32px;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.related-card {
+    position: relative;
+    min-height: 285px;
+    display: grid;
+    place-items: center;
+    padding: 30px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-decoration: none;
+}
+
+.related-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .65);
+}
+
+.related-card-content {
+    position: relative;
+    max-width: 310px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.related-card small {
+    display: block;
+    margin-top: 15px;
+    color: #f6a51d;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+@media (max-width: 800px) {
+    .article-title-area {
+        grid-template-columns: 1fr;
+        /* one picture per row */
+        gap: 16px;
+    }
+
+    .article-gallery,
+    .comment-fields,
+    .related-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .article-gallery img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+
+    }
+
+
+}
+
+</style>
