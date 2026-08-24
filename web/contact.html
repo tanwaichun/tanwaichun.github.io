@@ -154,19 +154,22 @@
         <h1 class="page-title">Contact</h1>
     </div>
 
-    <div class="showcase-grid">
-        <div class="showcase-item">
-            <img src="image/food6.png" alt="cake">
-            <p>Curabitur ut congues. Fusce faucibus scelerisque auctor. Mauris porttitor sollicitudin ante sit amet
-                sollicitudin urna convall sa. Sed ligula tellus, tincidunt ut scelerisque sed eleifend eget justo. Donec
-                cursus mauris sit amet magns finibus. Curabitur in leo nec tortor sodales volutpat dui</p>
-        </div>
+    <div class="box">
+        <div class="box-grid">
+            <div class="text">
+                <img src="image/food6.png" alt="cake">
+                <p>Curabitur ut congues. Fusce faucibus scelerisque auctor. Mauris porttitor sollicitudin ante sit amet
+                    sollicitudin urna convall sa. Sed ligula tellus, tincidunt ut scelerisque sed eleifend eget justo.
+                    Donec
+                    cursus mauris sit amet magns finibus. Curabitur in leo nec tortor sodales volutpat dui</p>
+            </div>
 
-        <div class="showcase-item">
-            <img src="image/food5.png" alt="vegetable bowl">
-            <p>Maecenas non dui consequat blandit arcu vitae cons ken tum nisi. tincidunt siet amet quam nec, porta
-                aliquam tellus. Aliquam sagitis elit vel posuere dapibus. Varius neque quis pharetra ac pretium nisi
-                interdum. Duis eget nunc in ex blandit feugiat et vitae nunc.</p>
+            <div class="text">
+                <img src="image/food5.png" alt="vegetable bowl">
+                <p>Maecenas non dui consequat blandit arcu vitae cons ken tum nisi. tincidunt siet amet quam nec, porta
+                    aliquam tellus. Aliquam sagitis elit vel posuere dapibus. Varius neque quis pharetra ac pretium nisi
+                    interdum. Duis eget nunc in ex blandit feugiat et vitae nunc.</p>
+            </div>
         </div>
     </div>
 
@@ -174,20 +177,124 @@
         <h1>Are 100% Safe For Human </h1>
     </div>
 
-    <div class="contact-card">
-        <img src="image/food7.png" alt="contact card">
+    <div class="contact">
+        <img class="map-img" src="image/map.png" alt="contact map">
 
-        <div class="contact-info">
-            <h3>Avada Vegan Store</h3>
-            <p class="address">123 Main Street, Queens, NY 11435,United States
-            </p>
-            <p class="phone">+1 800 555 5555</p>
-            <p class="email">Email: contact@avada-company.com</p>
+        <div class="contact-card">
+            <img class="food-img" src="image/food7.png" alt="contact card">
+
+            <div class="contact-info">
+                <h3>Avada Vegan Store</h3>
+                <p class="address">123 Main Street, Queens, NY 11435,United States
+                </p>
+                <p class="phone">+1 800 555 5555</p>
+                <p class="contact-line">Email: <a href="mailto:contact@avada-company.com">contact@avada-company.com</a>
+                </p>
+            </div>
         </div>
     </div>
 
     <div class="message">
         <h2 class="message-title">Send Us A Message</h2>
+
+        <form action="/action_page.php" class="message-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname">
+                </div>
+
+                <div class="form-group">
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <input type="text" id="message" name="message">
+            </div>
+
+            <input type="submit" class="submit-btn" value="SEND MESSAGE">
+        </form>
+    </div>
+
+    <div class="message">
+        <h2 class="message-title">Visit Us Today!</h2>
+    </div>
+
+    <div class="product-section">
+        <div class="product-grid-card">
+            <div class="product-card">
+                <img src="image/categories-product3.jpg" alt="product 3">
+                <div class="product-card-bottom">
+                    <div><a href="#">Vegan Food & Drinks</a></div>
+                    <div>
+                        <h5>Mango Turmeric Juice</h5>
+                    </div>
+                    <div>
+                        <p>Cool & refreshing drink</p>
+                    </div>
+                    <div class="product-price">
+                        <div class="price">$32.00</div>
+                        <div class="old-price">$34.00</div>
+                        <div class="discount">6% Off</div>
+                    </div>
+                    <button class="add-cart-btn"><img src="image/cart-icon.svg" alt="cart">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="image/categories-product4.jpg" alt="product 4">
+                <div class="product-card-bottom">
+                    <div><a href="#">Vegan Food & Drinks</a></div>
+                    <div>
+                        <h5>Organic Cold Coffee</h5>
+                    </div>
+                    <div>
+                        <p>Fabulous and magical taste</p>
+                    </div>
+                    <div class="product-price">
+                        <div class="price">$28.00</div>
+                        <div class="old-price">$45.00</div>
+                        <div class="discount">38% Off</div>
+                    </div>
+                    <button class="add-cart-btn"><img src="image/cart-icon.svg" alt="cart">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="image/categories-product2.jpg" alt="product 2">
+                <div class="product-card-bottom">
+                    <div><a href="#">Vegan Food & Drinks</a></div>
+                    <div>
+                        <h5>Fresh Organic Cake</h5>
+                    </div>
+                    <div>
+                        <p>Every bite fills with sweet delight</p>
+                    </div>
+                    <div class="product-price">
+                        <div class="price">$7.00</div>
+                        <div class="old-price">$9.00</div>
+                        <div class="discount">22% Off</div>
+                    </div>
+                    <button class="add-cart-btn"><img src="image/cart-icon.svg" alt="cart">Add To Cart</button>
+                </div>
+            </div>
+
+        </div>
     </div>
 
     <div class="footer">
