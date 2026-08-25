@@ -44,6 +44,13 @@
     color: var(--color-white);
 }
 
+.banner-inside .shop-text {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--color-title-black);
+    text-decoration: dotted underline var(--color-title-black);
+}
+
 .banner-inside a:hover {
     color: var(--color-main-green);
     text-decoration: none;
@@ -239,7 +246,7 @@
     background-color: var(--color-bg-green);
     border-radius: var(--radius);
     box-sizing: border-box;
-    padding: 10px;
+    padding: 20px;
     justify-content: space-between;
 }
 
@@ -262,8 +269,8 @@
 }
 
 .deals-card img {
-    max-width: 110px;
-    max-height: 115px;
+    width: 120px;
+    height: 115px;
     border-radius: var(--radius);
 }
 
@@ -278,6 +285,18 @@
     font-weight: 600;
     color: var(--color-title-black);
     text-decoration: underline var(--color-title-black);
+}
+
+.product-link a {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-title-black);
+    text-decoration: underline var(--color-title-black);
+}
+
+.product-link a:hover {
+    color: var(--color-button-orange);
+    text-decoration: none;
 }
 
 .deals-introduce {
@@ -305,7 +324,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
+    width: 55%;
     box-sizing: border-box;
     padding: 10px 30px;
 
@@ -330,7 +349,7 @@
 }
 
 .ready-eat-right {
-    width: 50%;
+    width: 45%;
 }
 
 .ready-eat-right img {
@@ -339,6 +358,8 @@
 }
 
 .ready-eat-left button {
+    display: flex;
+    flex-direction: row;
     font-size: 17px;
     font-weight: 600;
     line-height: 1.2;
@@ -349,6 +370,7 @@
     padding: 20px 40px 22px;
     width: 45%;
     margin-top: 20px;
+    gap: 10px;
 }
 
 .ready-eat-left button:hover {
@@ -418,7 +440,8 @@
 
 .review-right {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     width: 60%;
 }
 
@@ -450,4 +473,214 @@
 
 .text-body {
     color: var(--color-main-green);
+}
+
+.another-page-circle {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 30px;
+    align-items: center;
+
+}
+
+.orange-color {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: var(--color-button-orange);
+}
+
+.grey-color {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #c2c2c2;
+}
+
+@media screen and (max-width:1000px) {
+    .categories-banner {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .product-section {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .product-card {
+        width: calc((100% - 30px) / 2);
+    }
+
+    .next-page-section {
+        margin-right: 10px;
+    }
+
+    .other-deals-section {
+        width: 90%;
+        gap: 60px;
+        padding: 60px 20px;
+    }
+
+    .green-card {
+        min-width: 130px;
+        min-height: 580px;
+        padding: 20px;
+    }
+
+    .light-leaf img {
+        width: 100%;
+        max-width: 180px;
+    }
+
+    .deals-card-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .deals-card {
+        width: 100%;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .ready-eat-banner {
+        width: 90%;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .ready-eat-left {
+        width: 50%;
+    }
+
+    .ready-eat-right {
+        width: 50%;
+        padding: 10px;
+    }
+
+    .ready-eat-right img {
+        width: 100%;
+        height: auto;
+    }
+
+    .ready-eat-left button {
+        padding: 20px;
+    }
+
+    .review-inside {
+        padding: 30px;
+    }
+
+    .customer-card:nth-child(3) {
+        display: none;
+    }
+
+    .customer-card {
+        width: calc((100% - 10px) / 2);
+    }
+
+    .customer-card-grid {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .categories-banner {
+        margin: 30px auto;
+    }
+
+    .product-section {
+        margin: 30px auto;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    .other-deals-section {
+        flex-direction: column;
+    }
+
+    .green-card {
+        width: 100%;
+        min-height: 100px;
+    }
+
+    .light-leaf img {
+        max-width: 100px;
+    }
+
+    .deals-card-grid {
+        width: 100%;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .deals-card {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .deals-card img {
+        width: 100%;
+        max-width: 600px;
+        min-height: 450px;
+    }
+
+    .deals-introduce {
+        width: 85%;
+        text-align: left;
+        margin-left: 0px;
+    }
+
+    .ready-eat-banner {
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .ready-eat-left {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .ready-eat-right {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .ready-eat-left button {
+        width: 30%;
+        justify-content: center;
+    }
+
+    .customers-review {
+        min-height: auto;
+    }
+
+    .review-inside {
+        flex-direction: column;
+    }
+
+    .review-left {
+        width: 100%;
+    }
+
+    .review-right {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .customer-card-grid {
+        width: 100%;
+    }
+
+    .customer-card {
+        padding: 30px 80px;
+    }
 }
