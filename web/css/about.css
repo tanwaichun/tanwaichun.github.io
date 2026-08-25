@@ -69,6 +69,7 @@
     color: var(--color-text-gray);
     line-height: 1.2;
     padding: 20px 22px 50px;
+    text-align: center;
 }
 
 .about-store-btn button {
@@ -242,6 +243,8 @@
     border-radius: 6px;
     overflow: hidden;
     flex: 1;
+    height: 0;
+    padding-top: 35%;
 }
 
 .article-card img {
@@ -283,7 +286,6 @@
 .article-content {
     color: var(--color-button-orange);
     font-size: 14px;
-    font-weight: 600;
 }
 
 @media screen and (max-width:1000px) {
@@ -392,17 +394,16 @@
         gap: 20px;
     }
 
-    .article-card {
-        height: 0;
-        padding-top: 75%;
-    }
-
     .card-title h4 {
         font-size: 16px;
     }
 
     .article-content {
         font-size: 12px;
+    }
+
+    .article-card {
+        padding-top: 55%;
     }
 
 }
