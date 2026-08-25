@@ -85,6 +85,14 @@
      line-height: 1.45;
  }
 
+ /*Link Text*/
+ .link-text {
+     font-size: 14px;
+     font-weight: 400;
+     color: var(--color-main-green);
+     text-decoration: underline var(--color-main-green);
+ }
+
  /* Body Text */
  .text-body {
      font-size: 15px;
@@ -384,12 +392,27 @@
  }
 
  .side-menu-list>div {
+     padding-top: 16px;
+     padding-bottom: 16px;
+ }
+
+ .side-menu-list a {
      font-size: 17px;
      font-weight: 600;
      line-height: 1.2;
      color: var(--color-menu-black);
-     padding-top: 16px;
-     padding-bottom: 16px;
+     text-decoration: none;
+ }
+
+ .side-home-text a {
+     color: var(--color-button-orange);
+ }
+
+ .categories-title {
+     font-size: 17px;
+     font-weight: 600;
+     line-height: 1.2;
+     color: var(--color-menu-black);
  }
 
  .side-categories {
@@ -470,7 +493,7 @@
      border-bottom: none;
  }
 
- .side-menu-list>div:hover {
+ .side-menu-list a:hover {
      color: var(--color-button-orange);
  }
 

@@ -5,7 +5,7 @@
     position: relative;
     min-height: 293px;
     width: 80%;
-    margin: 60px;
+    margin: 60px auto;
 }
 
 .categories-banner>img {
@@ -31,8 +31,328 @@
     margin-bottom: 30px;
 }
 
-.banner-inside div {
+.banner-inside a {
     font-size: 15px;
     font-weight: 400;
+    color: var(--color-title-black);
+    text-decoration: dotted underline var(--color-title-black);
+}
 
+.banner-inside span {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--color-white);
+}
+
+.banner-inside a:hover {
+    color: var(--color-main-green);
+    text-decoration: none;
+}
+
+.product-section {
+    width: 80%;
+    margin: 60px auto;
+}
+
+.product-grid-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.product-card {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: calc(33.33% - 30px);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #c2c2c2;
+    position: relative;
+}
+
+.product-card>img {
+    width: 100%;
+    border-radius: var(--radius);
+}
+
+.out-stock {
+    font-size: 17px;
+    font-size: 400;
+    color: var(--color-white);
+    background-color: var(--color-price-red);
+    text-align: center;
+    border-radius: var(--radius) var(--radius) 0px 0px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+.product-card-bottom {
+    margin: 10px;
+}
+
+.link-text a {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-main-green);
+    margin-bottom: 10px;
+}
+
+.product-card-bottom a:hover {
+    color: var(--color-button-orange);
+    text-decoration: none;
+}
+
+.product-card-bottom h5 {
+    font-weight: 600;
+    color: var(--color-title-black);
+    margin-top: 10px;
+    text-decoration: underline var(--color-title-black);
+}
+
+.product-card-bottom p {
+    color: var(--color-text-gray);
+    margin-top: 15px;
+}
+
+.price {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--color-price-red);
+    margin-top: 15px;
+}
+
+.sale {
+    position: absolute;
+    background-color: #c13ee8;
+    color: var(--color-white);
+    border-radius: 50%;
+    font-size: 11px;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+}
+
+.product-price {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.text-sale {
+    color: var(--color-price-red);
+    margin-top: 15px;
+    color: #4a4a4a;
+    text-decoration: line-through;
+}
+
+.discount {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fa8e00;
+    background-color: #ffa42e18;
+    padding: 5px;
+    margin-top: 11px;
+}
+
+.add-cart-btn {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-title-black);
+    background-color: var(--color-white);
+    border-radius: var(--radius);
+    border: 1px solid #c2c2c2;
+    padding: 17px 40px;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.add-cart-btn img {
+    width: 21px;
+    margin-right: 15px;
+    margin-bottom: -2px;
+}
+
+.add-cart-btn:hover {
+    color: var(--color-white);
+    background-color: var(--color-button-orange);
+    border: none;
+}
+
+.add-cart-btn:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.next-page-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+    margin-right: 50px;
+    align-items: center;
+}
+
+.page-number {
+    font-size: 14px;
+    font-weight: 400;
+    box-sizing: border-box;
+    background-color: var(--color-main-green);
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: var(--color-white);
+}
+
+.page-number.white {
+    background-color: var(--color-white);
+    color: var(--color-main-green);
+    border: 1px solid #c2c2c2;
+}
+
+.next-page-section p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-main-green);
+}
+
+.other-deals-section {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 20px;
+    align-items: center;
+    margin: 60px auto;
+    border-top: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+    padding: 80px 0px;
+}
+
+.green-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 260px;
+    min-height: 357px;
+    background-color: var(--color-bg-green);
+    border-radius: var(--radius);
+    box-sizing: border-box;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.light-leaf img {
+    width: 100%;
+    max-width: 180px;
+}
+
+.green-card h3 {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+.deals-card-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 80px 30px;
+}
+
+.deals-card img {
+    max-width: 110px;
+    max-height: 115px;
+    border-radius: var(--radius);
+}
+
+.deals-card {
+    display: flex;
+    flex-direction: row;
+    width: calc((100% - 30px) / 2);
+}
+
+.deals-introduce h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-title-black);
+    text-decoration: underline var(--color-title-black);
+}
+
+.deals-introduce {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    gap: 5px;
+}
+
+.deals-introduce .price {
+    margin: 0;
+}
+
+.ready-eat-banner {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 60px auto;
+    background-color: #421610;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.ready-eat-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    box-sizing: border-box;
+    padding: 10px 30px;
+
+}
+
+.ready-eat-left h3 {
+    font-family: var(--font-body);
+    font-size: 36px;
+    color: var(--color-white);
+    margin-bottom: 20px;
+}
+
+.ready-eat-left h2 {
+    font-size: 44px;
+    font-weight: 600;
+    color: var(--color-white);
+    margin-bottom: 20px;
+}
+
+.heading-small {
+    color: var(--color-button-orange);
+}
+
+.ready-eat-right {
+    width: 50%;
+}
+
+.ready-eat-right img {
+    width: 100%;
+    height: 100%;
+}
+
+.ready-eat-left button {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.2;
+    border-radius: var(--radius);
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+    background-color: transparent;
+    padding: 20px 40px 22px;
+    width: 45%;
+    margin-top: 20px;
+}
+
+.ready-eat-left button:hover {
+    background-color: var(--color-main-green);
+    color: var(--color-white);
+    border: none;
 }
