@@ -1,7 +1,7 @@
 body {
-    font-family: "Sen", sans-serif;
-    color: #222;
-    background: #fff;
+    font-family: var(--font-heading);
+    color: var(--color-title-black);
+    background: var(--color-white);
 }
 
 button {
@@ -9,12 +9,23 @@ button {
     cursor: pointer;
 }
 
+a {
+    cursor: pointer;
+}
 
+
+/* ==================================================
+   FLASH DEALS
+================================================== */
 
 .flash-deals {
     width: 100%;
-    background-color: #222;
-    background-image: url("https://avada.website/vegan-store/wp-content/uploads/sites/186/2024/01/plants-bg-3.png");
+
+    background-color: var(--color-title-black);
+
+    background-image:
+        url("https://avada.website/vegan-store/wp-content/uploads/sites/186/2024/01/plants-bg-3.png");
+
     background-blend-mode: multiply;
     background-size: 300px;
 
@@ -22,23 +33,28 @@ button {
 }
 
 
+/* ==================================================
+   FLASH HEADING
+================================================== */
 
 .flash-deals__heading {
     text-align: center;
-    color: #fff;
+
+    color: var(--color-white);
 }
 
 .flash-deals__heading h2 {
     margin-bottom: 25px;
-
-    font-size: 32px;
-    font-weight: 400;
 }
 
 
+/* ==================================================
+   COUNTDOWN
+================================================== */
 
 .countdown {
     display: flex;
+
     justify-content: center;
     align-items: center;
 
@@ -47,8 +63,6 @@ button {
 
 .countdown__label {
     margin-right: 25px;
-
-    font-size: 14px;
 }
 
 .countdown__item {
@@ -56,15 +70,17 @@ button {
     height: 42px;
 
     display: flex;
+
     justify-content: center;
     align-items: center;
 
     gap: 4px;
 
-    background: var(--main);
+    background: var(--color-main-green);
+
     border-radius: 5px;
 
-    color: #fff;
+    color: var(--color-white);
 }
 
 .countdown__item strong {
@@ -77,6 +93,9 @@ button {
 }
 
 
+/* ==================================================
+   PRODUCT SLIDER
+================================================== */
 
 .product-slider {
     width: calc(100% - 40px);
@@ -85,25 +104,31 @@ button {
     margin: 45px auto 0;
 
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
 
     gap: 20px;
 }
 
 
+/* ==================================================
+   PRODUCT CARD
+================================================== */
 
 .product-card {
     padding: 7px;
 
-    background: #fff;
-    border-radius: 6px;
+    background: var(--color-white);
+
+    border-radius: var(--radius);
 
     overflow: hidden;
 
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    box-shadow:
+        0 2px 10px rgba(0, 0, 0, .15);
 }
 
-.product-card>img {
+.product-card > img {
     width: 100%;
     height: 230px;
 
@@ -112,56 +137,49 @@ button {
     border-radius: 3px;
 }
 
-
-
 .product-card__content {
     padding: 15px 12px 10px;
 }
 
+
+/* Category */
+
 .category {
     display: block;
 
-    color: #a6bd87;
-
-    font-size: 11px;
+    color: var(--color-light-green);
 }
 
-.product-card h3 {
-    margin: 10px 0;
 
-    font-size: 15px;
-    font-weight: 400;
-
-    text-decoration: underline;
-}
+/* Product description */
 
 .product-card p {
-    color: #777;
-
-    font-size: 12px;
-    line-height: 1.6;
+    color: var(--color-box-gray);
 }
 
 
+/* Price */
 
 .price {
     margin: 12px 0;
 
-    color: #bd6f70;
-
-    font-size: 12px;
+    color: var(--color-price-red);
 }
 
 .price del {
     margin-left: 5px;
 
-    color: #999;
+    color: var(--color-option-gray);
 }
 
 
+/* ==================================================
+   OPTIONS
+================================================== */
 
 .options {
     display: flex;
+
     gap: 5px;
 
     margin-bottom: 15px;
@@ -170,28 +188,33 @@ button {
 .options button {
     padding: 5px 12px;
 
-    background: #fff;
+    background: var(--color-white);
 
-    border: 1px solid #eee;
+    border: 1px solid var(--color-light-gray);
+
     border-radius: 4px;
 
-    color: #aaa;
+    color: var(--color-option-gray);
 
     font-size: 10px;
 }
 
 
+/* ==================================================
+   ADD CART
+================================================== */
 
 .add-cart {
     width: 100%;
     height: 45px;
 
-    background: #fff;
+    background: var(--color-white);
 
-    border: 1px solid #eee;
+    border: 1px solid var(--color-light-gray);
+
     border-radius: 3px;
 
-    color: #222;
+    color: var(--color-title-black);
 
     font-size: 13px;
 
@@ -199,17 +222,21 @@ button {
 }
 
 .add-cart:hover {
-    background: #76b62b;
+    background: var(--color-main-green);
 
-    border-color: #76b62b;
+    border-color: var(--color-main-green);
 
-    color: #fff;
+    color: var(--color-white);
 }
 
 
+/* ==================================================
+   SLIDER DOTS
+================================================== */
 
 .slider-dots {
     display: flex;
+
     justify-content: center;
 
     gap: 6px;
@@ -217,54 +244,47 @@ button {
     margin-top: 35px;
 }
 
-.slider-dots button {
+.slider-dots span {
     width: 7px;
     height: 7px;
 
-    padding: 0;
+    display: block;
 
-    border: 0;
     border-radius: 50%;
 
-    background: #eee;
+    background: var(--color-light-gray);
 }
 
-.slider-dots button.active {
-    background: #ffa42d;
+.slider-dots span.active {
+    background: var(--color-button-orange);
 }
 
 
+/* ==================================================
+   FEATURED
+================================================== */
 
 .featured {
     width: calc(100% - 40px);
-
     max-width: 1248px;
 
-    margin: 0 auto 0;
+    margin: 0 auto;
 
     display: grid;
+
     grid-template-columns: 290px 1fr;
 }
-
-
 
 .featured__promo {
     min-height: 320px;
 
     padding: 30px;
 
-    background: #ffa42d;
+    background: var(--color-button-orange);
 
     border-radius: 5px 0 0 5px;
 
-    color: #fff;
-}
-
-.featured__promo h2 {
-    font-size: 21px;
-    line-height: 1.3;
-
-    font-weight: 400;
+    color: var(--color-white);
 }
 
 .featured__promo button {
@@ -275,21 +295,21 @@ button {
     background: transparent;
 
     border: 1px solid rgba(255, 255, 255, .5);
+
     border-radius: 4px;
 
-    color: #fff;
+    color: var(--color-white);
 
     font-size: 12px;
 }
 
-
-
 .featured__products {
     padding: 28px;
 
-    background: #fff;
+    background: var(--color-white);
 
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
 
     gap: 15px;
@@ -298,6 +318,9 @@ button {
 }
 
 
+/* ==================================================
+   MINI PRODUCT
+================================================== */
 
 .mini-product {
     min-width: 0;
@@ -312,23 +335,16 @@ button {
     border-radius: 4px;
 }
 
-.mini-product>span {
+.mini-product > span {
     display: block;
 
     margin-top: 12px;
 
-    color: #a6bd87;
-
-    font-size: 10px;
+    color: var(--color-light-green);
 }
 
-.mini-product h3 {
+.mini-product h5 {
     margin: 10px 0;
-
-    font-size: 12px;
-    font-weight: 400;
-
-    text-decoration: underline;
 }
 
 .mini-product .price {
@@ -339,21 +355,27 @@ button {
     width: 100%;
     height: 35px;
 
-    background: #fff;
+    background: var(--color-white);
 
-    border: 1px solid #eee;
+    border: 1px solid var(--color-light-gray);
+
     border-radius: 3px;
 
     font-size: 11px;
 }
 
 .mini-product button:hover {
-    background: #76b62b;
-    border-color: #76b62b;
-    color: #fff;
+    background: var(--color-main-green);
+
+    border-color: var(--color-main-green);
+
+    color: var(--color-white);
 }
 
 
+/* ==================================================
+   NEW ARRIVALS
+================================================== */
 
 .new-arrivals {
     width: calc(100% - 40px);
@@ -364,31 +386,31 @@ button {
     padding: 30px;
 
     display: grid;
+
     grid-template-columns: 1.2fr 1fr 1fr;
 
     gap: 30px;
 
-    background: var(--white);
+    background: var(--color-white);
 
     border-radius: 4px;
 
-    box-shadow: 0 3px 15px rgba(0, 0, 0, .08);
+    box-shadow:
+        0 3px 15px rgba(0, 0, 0, .08);
 }
-
-
 
 .new-arrivals__list h2 {
     margin-bottom: 15px;
+
     padding-bottom: 8px;
 
-    font-size: 28px;
-    font-weight: 400;
-
-    border-bottom: 2px solid #ddd;
+    border-bottom:
+        2px solid var(--color-border-gray);
 }
 
 .new-arrivals__list article {
     display: flex;
+
     align-items: center;
 
     gap: 12px;
@@ -405,9 +427,8 @@ button {
     border-radius: 5px;
 }
 
-.new-arrivals__list h3 {
-    font-size: 12px;
-    font-weight: 400;
+.new-arrivals__list h5 {
+    font-size: 20px;
 }
 
 .new-arrivals__list span {
@@ -415,12 +436,13 @@ button {
 
     margin-top: 5px;
 
-    color: #bd6f70;
-
-    font-size: 10px;
+    color: var(--color-price-red);
 }
 
 
+/* ==================================================
+   ARRIVAL BANNER
+================================================== */
 
 .arrival-banner {
     position: relative;
@@ -439,31 +461,27 @@ button {
     object-fit: cover;
 }
 
-.arrival-banner>div {
+.arrival-banner > div {
     position: absolute;
 
     top: 20px;
     left: 20px;
 }
 
-.arrival-banner h3 {
+.arrival-banner h4 {
     margin-bottom: 15px;
-
-    font-size: 17px;
-    font-weight: 400;
 }
 
 .arrival-banner a {
-    color: #111;
-
-    font-size: 11px;
+    color: var(--color-title-black);
 
     text-decoration: underline;
-
-    cursor: pointer;
 }
 
 
+/* ==================================================
+   CTA
+================================================== */
 
 .cta {
     width: calc(100% - 40px);
@@ -476,39 +494,36 @@ button {
     padding: 30px 50px;
 
     display: flex;
+
     justify-content: space-between;
     align-items: center;
 
-    background-color: #558d29;
-
-
-    background-size: cover;
+    background: var(--color-bg-green);
 
     border-radius: 5px;
 
-    color: #fff;
+    color: var(--color-white);
 }
 
-.cta h2 {
-    font-size: 24px;
-    font-weight: 400;
+.cta h3 {
+    margin: 0;
 }
 
 .cta p {
     margin-top: 8px;
-
-    font-size: 12px;
 }
 
 .cta button {
     width: 145px;
     height: 50px;
+
     background: transparent;
 
     border: 1px solid rgba(255, 255, 255, .5);
+
     border-radius: 5px;
 
-    color: #fff;
+    color: var(--color-white);
 
     font-size: 12px;
 
@@ -516,11 +531,13 @@ button {
 }
 
 .cta button a {
-    text-decoration: none;
     color: inherit;
+
+    text-decoration: none;
 }
 
 .cta button:hover {
-    background: #fff;
-    color: #558d29;
+    background: var(--color-white);
+
+    color: var(--color-bg-green);
 }

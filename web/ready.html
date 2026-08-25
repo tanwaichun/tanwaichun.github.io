@@ -12,7 +12,7 @@
 <body>
     <div class="header">
         <div class="header-logo">
-            <a href="index.html"><img src="image/vegan-logo.png" alt="vegan store logo" width="190px"></a>
+            <img src="image/vegan-logo.png" alt="vegan store logo" width="190px">
         </div>
         <form action="/action_page.php">
             <div class="search-bar">
@@ -26,8 +26,8 @@
         </form>
         <div class="header-icon">
             <img src="image/profile-icon.png" alt="profile">
-            <img src="image/cart-icon.png" alt="cart">
-            <img src="image/hamburger-icon.png" alt="hamburger" class="hamburger">
+            <img src="image/cart-icon.svg" alt="cart">
+            <div class="menu-toggle">&#9776;</div>
         </div>
     </div>
     <div class="header-tablet">
@@ -36,8 +36,8 @@
         </div>
         <div class="header-icon">
             <img src="image/profile-icon.png" alt="profile">
-            <img src="image/cart-icon.png" alt="cart">
-            <img src="image/hamburger-icon.png" alt="hamburger" class="hamburger">
+            <img src="image/cart-icon.svg" alt="cart">
+            <div class="menu-toggle">&#9776;</div>
         </div>
         <form action="/action_page.php">
             <div class="search-bar">
@@ -72,10 +72,12 @@
                 </div>
             </div>
             <div class="menu-bar-list">
+
                 <div><a href="index.html">Home</a></div>
                 <div><a href=".html">Shop</a></div>
                 <div><a href="flash.html">Hot Deals</a></div>
                 <div><a href="about.html">About</a></div>
+
                 <div>News</div>
                 <div>Contact</div>
             </div>
@@ -95,16 +97,14 @@
         </div>
     </div>
 
-    <div class="side-menu">
+    <div class="side-menu" id="menu">
         <div class="side-menu-inside">
             <div class="side-menu-upper">
                 <div class="side-menu-header">
                     <div class="side-menu-logo">
                         <img src="image/vegan-logo.png" alt="vegan store logo" width="160px">
                     </div>
-                    <div class="close-menu">
-                        <img src="image/close-icon.png" alt="close">
-                    </div>
+                    <div class="menu-close">&times;</div>
                 </div>
                 <div class="cart-box">
                     <p>0 Items in your Cart</p>
@@ -118,11 +118,11 @@
                             <div>˅</div>
                         </div>
                         <div class="side-categories-list">
-                            <div class="sidemenu-link"> <a href="submenu-items">Vegan Food & Drinks</a></div>
-                            <div class="sidemenu-link"><a href="submenu-items">Pet Care Items</a></div>
-                            <div class="sidemenu-link"> <a href="submenu-items">Fitness & Nutrition</a></div>
-                            <div class="sidemenu-link"><a href="submenu-items">Beauty & Care</a></div>
-                            <div class="sidemenu-link"><a href="submenu-items">Clothes & Accessories</a></div>
+                            <div> <a href="submenu-items">Vegan Food & Drinks</a></div>
+                            <div><a href="submenu-items">Pet Care Items</a></div>
+                            <div> <a href="submenu-items">Fitness & Nutrition</a></div>
+                            <div><a href="submenu-items">Beauty & Care</a></div>
+                            <div><a href="submenu-items">Clothes & Accessories</a></div>
                         </div>
                     </div>
                     <div>Vegan Products</div>
@@ -138,419 +138,485 @@
                     <p>Phone: +1 800 555 5555</p>
                     <p>Email: contact@avada-company.com</p>
                     <div class="side-social">
-                        <div><img src="image/vegan-facebook.png" alt="vegan facebook" width="25px"></div>
-                        <div><img src="image/vegan-x.png" alt="vegan x" width="25px"></div>
-                        <div><img src="image/vegan-instagram.png" alt="vegan instagram" width="25px"></div>
-                        <div><img src="image/youtube-icon.png" alt="vegan youtube" width="15px"></div>
+                        <div><img src="image/facebook-icon.svg" alt="vegan facebook" width="25px"></div>
+                        <div><img src="image/x-icon.svg" alt="vegan x" width="25px"></div>
+                        <div><img src="image/instagram-icon.svg" alt="vegan instagram" width="25px"></div>
+                        <div><img src="image/youtube-icon.svg" alt="vegan youtube" width="15px"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+<!-- ================= HERO ================= -->
 
+<section class="hero">
 
-    <section class="hero">
+    <div class="hero__inner">
 
-        <div class="hero__inner">
+        <div class="hero__content">
 
-            <div class="hero__content">
+            <h1>
+                Get The Plant-Based<br>
+                Ready-To-Eat Meals
+            </h1>
 
-                <h1>
-                    Get The Plant-Based<br>
-                    Ready-To-Eat Meals
-                </h1>
-
-                <p>
-                    Upto 35% off today!
-                </p>
-
-                <button>
-                    Shop Now →
-                </button>
-
-            </div>
-
-            <div class="hero__image">
-
-                <img src="image/ready.png" alt="Plant Based Meals">
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="flash-section">
-
-
-        <div class="flash-heading">
-
-            <h2>
-                Big Day Flash Deals
-            </h2>
-
-            <div class="flash-heading__right">
-
-                <p>
-                    Hurry! Before It's too late!
-                </p>
-
-                <div class="flash-countdown">
-
-                    <div>
-                        <strong class="days">00</strong>
-                        <span>Days</span>
-                    </div>
-
-                    <div>
-                        <strong class="hours">00</strong>
-                        <span>Hrs</span>
-                    </div>
-
-                    <div>
-                        <strong class="minutes">00</strong>
-                        <span>Min</span>
-                    </div>
-
-                    <div>
-                        <strong class="seconds">00</strong>
-                        <span>Sec</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-
-        <div class="flash-products">
-
-
-
-
-            <article class="flash-product">
-
-                <img src="image/flash1.png" alt="Organic Body Lotion">
-
-                <h3>
-                    Organic Body Lotion
-                </h3>
-
-                <div class="stars">
-                    ★★★★★
-                </div>
-
-                <p class="price">
-                    $48.00 - $56.00
-                </p>
-
-                <div class="product-option">
-
-                    <span>Size</span>
-
-                    <div>
-                        <button>14oz</button>
-                        <button>20oz</button>
-                    </div>
-
-                </div>
-
-                <button class="add-cart">
-                    🛒 Add To Cart
-                </button>
-
-            </article>
-
-
-
-
-            <article class="flash-product">
-
-                <div class="sale">
-                    Sale!
-                </div>
-
-                <img src="image/flash2.png" alt="Vegan Breakfast Rolls">
-
-                <h3>
-                    Vegan Breakfast Rolls
-                </h3>
-
-                <div class="stars">
-                    ★★★★★
-                </div>
-
-                <p class="price">
-                    $3.20
-                    <del>$3.80</del>
-                </p>
-
-                <div class="discount">
-                    16% Off
-                </div>
-
-                <button class="add-cart">
-                    🛒 Add To Cart
-                </button>
-
-            </article>
-
-
-
-
-            <article class="flash-product">
-
-                <div class="sale">
-                    Sale!
-                </div>
-
-                <img src="image/flash3.png" alt="Vegan Cheese Trio">
-
-                <h3>
-                    Vegan Cheese Trio
-                </h3>
-
-                <div class="stars">
-                    ★★★★★
-                </div>
-
-                <p class="price">
-                    $12.80
-                    <del>$16.00</del>
-                </p>
-
-                <div class="discount">
-                    2% Off
-                </div>
-
-                <button class="add-cart">
-                    🛒 Add To Cart
-                </button>
-
-            </article>
-
-
-
-
-            <article class="flash-product">
-
-                <img src="image/flash4.png" alt="Vegan Omega Capsules">
-
-                <h3>
-                    Vegan Omega Capsules
-                </h3>
-
-                <div class="stars">
-                    ★★★★★
-                </div>
-
-                <p class="price">
-                    $280.00 - $350.00
-                </p>
-
-                <div class="product-option">
-
-                    <span>Pack</span>
-
-                    <div>
-                        <button>30 Caps</button>
-                        <button>60 Caps</button>
-                    </div>
-
-                </div>
-
-                <button class="add-cart">
-                    🛒 Add To Cart
-                </button>
-
-            </article>
-
-
-
-
-            <article class="flash-product">
-
-                <img src="image/flash5.png" alt="Soft Beanie Hat">
-
-                <h3>
-                    Soft Beanie Hat
-                </h3>
-
-                <div class="stars">
-                    ★★★★★
-                </div>
-
-                <p class="price">
-                    $3.50
-                </p>
-
-                <div class="product-option">
-
-                    <span>Color</span>
-
-                    <div class="color-options">
-                        <button class="black"></button>
-                        <button class="green"></button>
-                    </div>
-
-                </div>
-
-                <button class="add-cart">
-                    🛒 Add To Cart
-                </button>
-
-            </article>
-
-
-
-
-            <article class="flash-product">
-
-                <img src="image/flash6.png" alt="Vegan Puffer Jacket">
-
-                <h3>
-                    Vegan Puffer Jacket
-                </h3>
-
-                <p class="description">
-                    Be the first to leave a review.
-                </p>
-
-                <p class="price">
-                    $65.00
-                </p>
-
-                <div class="product-option">
-
-                    <span>Size</span>
-
-                    <div>
-                        <button>S</button>
-                        <button>M</button>
-                        <button>L</button>
-                    </div>
-
-                </div>
-
-                <button class="add-cart">
-                    🛒 Add To Cart
-                </button>
-
-            </article>
-
-
-
-
-            <article class="flash-product">
-
-                <img src="image/flash7.png" alt="Pets Vegan Stews">
-
-                <h3>
-                    Pets Vegan Stews
-                </h3>
-
-                <div class="stars">
-                    ★★★★★
-                </div>
-
-                <p class="price">
-                    $110.00 - $150.00
-                </p>
-
-                <div class="product-option">
-
-                    <span>Weight</span>
-
-                    <div>
-                        <button>1Kg</button>
-                        <button>2Kg</button>
-                    </div>
-
-                </div>
-
-                <button class="add-cart">
-                    🛒 Add To Cart
-                </button>
-
-            </article>
-
-
-
-
-            <article class="flash-product">
-
-                <img src="image/flash8.png" alt="Adult Cat Food">
-
-                <h3>
-                    Adult Cat Food
-                </h3>
-
-                <p class="description">
-                    Be the first to leave a review.
-                </p>
-
-                <p class="price">
-                    $6.00 - $9.00
-                </p>
-
-                <div class="product-option">
-
-                    <span>Weight</span>
-
-                    <div>
-                        <button>1Kg</button>
-                        <button>500g</button>
-                    </div>
-
-                </div>
-
-                <button class="add-cart">
-                    🛒 Add To Cart
-                </button>
-
-            </article>
-
-        </div>
-
-    </section>
-
-
-
-    <section class="about">
-
-        <div class="about__content">
-
-            <h2>
-                About Vegan Store
-            </h2>
-
-            <p>
-                Vegan products represents the approach to
-                consumption for items crafted entirely from
-                plant-based ingredients. Get vegan lifestyle
-                for a better life and healthy future.
+            <p class="text-section">
+                Upto 35% off today!
             </p>
 
-            <a href="#">
-                Read More
-            </a>
+            <button>
+                Shop Now →
+            </button>
 
         </div>
 
 
-        <div class="about__image">
+        <div class="hero__image">
 
-            <img src="image/about.png" alt="Vegan Food">
+            <img
+                src="image/ready.png"
+                alt="Plant Based Meals"
+            >
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
+<!-- ================= FLASH SECTION ================= -->
+
+<section class="flash-section">
+
+
+    <!-- Flash Heading -->
+
+    <div class="flash-heading">
+
+        <h2>
+            Big Day Flash Deals
+        </h2>
+
+
+        <div class="flash-heading__right">
+
+            <p class="text-small">
+                Hurry! Before It's too late!
+            </p>
+
+
+            <div class="flash-countdown">
+
+                <div>
+                    <strong class="days">00</strong>
+                    <span>Days</span>
+                </div>
+
+                <div>
+                    <strong class="hours">00</strong>
+                    <span>Hrs</span>
+                </div>
+
+                <div>
+                    <strong class="minutes">00</strong>
+                    <span>Min</span>
+                </div>
+
+                <div>
+                    <strong class="seconds">00</strong>
+                    <span>Sec</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FLASH PRODUCTS ================= -->
+
+    <div class="flash-products">
+
+
+        <!-- Product 1 -->
+
+        <article class="flash-product">
+
+            <img
+                src="image/flash1.png"
+                alt="Organic Body Lotion"
+            >
+
+            <h5>
+                Organic Body Lotion
+            </h5>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p class="price text-sale">
+                $48.00 - $56.00
+            </p>
+
+
+            <div class="product-option">
+
+                <span class="text-small">
+                    Size
+                </span>
+
+                <div>
+                    <button>14oz</button>
+                    <button>20oz</button>
+                </div>
+
+            </div>
+
+
+            <button class="add-cart">
+                🛒 Add To Cart
+            </button>
+
+        </article>
+
+
+        <!-- Product 2 -->
+
+        <article class="flash-product">
+
+            <div class="sale text-small">
+                Sale!
+            </div>
+
+            <img
+                src="image/flash2.png"
+                alt="Vegan Breakfast Rolls"
+            >
+
+            <h5>
+                Vegan Breakfast Rolls
+            </h5>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p class="price text-sale">
+                $3.20
+                <del>$3.80</del>
+            </p>
+
+            <div class="discount">
+                16% Off
+            </div>
+
+
+            <button class="add-cart">
+                🛒 Add To Cart
+            </button>
+
+        </article>
+
+
+        <!-- Product 3 -->
+
+        <article class="flash-product">
+
+            <div class="sale text-small">
+                Sale!
+            </div>
+
+            <img
+                src="image/flash3.png"
+                alt="Vegan Cheese Trio"
+            >
+
+            <h5>
+                Vegan Cheese Trio
+            </h5>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p class="price text-sale">
+                $12.80
+                <del>$16.00</del>
+            </p>
+
+            <div class="discount">
+                2% Off
+            </div>
+
+
+            <button class="add-cart">
+                🛒 Add To Cart
+            </button>
+
+        </article>
+
+
+        <!-- Product 4 -->
+
+        <article class="flash-product">
+
+            <img
+                src="image/flash4.png"
+                alt="Vegan Omega Capsules"
+            >
+
+            <h5>
+                Vegan Omega Capsules
+            </h5>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p class="price text-sale">
+                $280.00 - $350.00
+            </p>
+
+
+            <div class="product-option">
+
+                <span class="text-small">
+                    Pack
+                </span>
+
+                <div>
+                    <button>30 Caps</button>
+                    <button>60 Caps</button>
+                </div>
+
+            </div>
+
+
+            <button class="add-cart">
+                🛒 Add To Cart
+            </button>
+
+        </article>
+
+
+        <!-- Product 5 -->
+
+        <article class="flash-product">
+
+            <img
+                src="image/flash5.png"
+                alt="Soft Beanie Hat"
+            >
+
+            <h5>
+                Soft Beanie Hat
+            </h5>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p class="price text-sale">
+                $3.50
+            </p>
+
+
+            <div class="product-option">
+
+                <span class="text-small">
+                    Color
+                </span>
+
+                <div class="color-options">
+
+                    <button class="black"></button>
+                    <button class="green"></button>
+
+                </div>
+
+            </div>
+
+
+            <button class="add-cart">
+                🛒 Add To Cart
+            </button>
+
+        </article>
+
+
+        <!-- Product 6 -->
+
+        <article class="flash-product">
+
+            <img
+                src="image/flash6.png"
+                alt="Vegan Puffer Jacket"
+            >
+
+            <h5>
+                Vegan Puffer Jacket
+            </h5>
+
+            <p class="description text-small">
+                Be the first to leave a review.
+            </p>
+
+            <p class="price text-sale">
+                $65.00
+            </p>
+
+
+            <div class="product-option">
+
+                <span class="text-small">
+                    Size
+                </span>
+
+                <div>
+                    <button>S</button>
+                    <button>M</button>
+                    <button>L</button>
+                </div>
+
+            </div>
+
+
+            <button class="add-cart">
+                🛒 Add To Cart
+            </button>
+
+        </article>
+
+
+        <!-- Product 7 -->
+
+        <article class="flash-product">
+
+            <img
+                src="image/flash7.png"
+                alt="Pets Vegan Stews"
+            >
+
+            <h5>
+                Pets Vegan Stews
+            </h5>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p class="price text-sale">
+                $110.00 - $150.00
+            </p>
+
+
+            <div class="product-option">
+
+                <span class="text-small">
+                    Weight
+                </span>
+
+                <div>
+                    <button>1Kg</button>
+                    <button>2Kg</button>
+                </div>
+
+            </div>
+
+
+            <button class="add-cart">
+                🛒 Add To Cart
+            </button>
+
+        </article>
+
+
+        <!-- Product 8 -->
+
+        <article class="flash-product">
+
+            <img
+                src="image/flash8.png"
+                alt="Adult Cat Food"
+            >
+
+            <h5>
+                Adult Cat Food
+            </h5>
+
+            <p class="description text-small">
+                Be the first to leave a review.
+            </p>
+
+            <p class="price text-sale">
+                $6.00 - $9.00
+            </p>
+
+
+            <div class="product-option">
+
+                <span class="text-small">
+                    Weight
+                </span>
+
+                <div>
+                    <button>1Kg</button>
+                    <button>500g</button>
+                </div>
+
+            </div>
+
+
+            <button class="add-cart">
+                🛒 Add To Cart
+            </button>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about">
+
+    <div class="about__content">
+
+        <h2>
+            About Vegan Store
+        </h2>
+
+        <p class="text-body">
+            Vegan products represents the approach to
+            consumption for items crafted entirely from
+            plant-based ingredients. Get vegan lifestyle
+            for a better life and healthy future.
+        </p>
+
+        <a class="text-small" href="#">
+            Read More
+        </a>
+
+    </div>
+
+
+    <div class="about__image">
+
+        <img
+            src="image/about.png"
+            alt="Vegan Food"
+        >
+
+    </div>
+
+</section>
 
     <div class="footer">
         <div class="footer-upper">
@@ -607,15 +673,16 @@
                             <p>sales@avada-company.com</p>
                         </div>
                         <div class="footer-social">
-                            <div><img src="image/vegan-facebook.png" alt="vegan facebook" width="25px"></div>
-                            <div><img src="image/vegan-x.png" alt="vegan x" width="25px"></div>
-                            <div><img src="image/vegan-instagram.png" alt="vegan instagram" width="25px"></div>
-                            <div><img src="image/vegan-pinterest.png" alt="vegan pinterest" width="25px"></div>
+                            <div><img src="image/facebook-icon.svg" alt="vegan facebook" width="25px"></div>
+                            <div><img src="image/x-icon.svg" alt="vegan x" width="25px"></div>
+                            <div><img src="image/instagram-icon.svg" alt="vegan instagram" width="25px"></div>
+                            <div><img src="image/pinterest-icon.svg" alt="vegan pinterest" width="25px"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="footer-bottom">
             <div class="footer-copyright">
                 <p>© Copyright 2012 - 2026 • <a href="#">Avada</a>is a <a href="#">Website Builder</a>for <a
