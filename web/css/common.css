@@ -260,10 +260,10 @@
      background-color: var(--color-white);
      padding: 32px 32px 36px;
      border-radius: var(--radius);
-     margin-top: 5px;
      flex-wrap: wrap;
      position: absolute;
-     display: none;
+     opacity: 0;
+     pointer-events: none;
  }
 
  .submenu-link {
@@ -288,7 +288,8 @@
  }
 
  .categories:hover .categories-submenu {
-     display: block;
+     opacity: 1;
+     pointer-events: auto;
  }
 
  .menu-bar-list {
@@ -531,6 +532,7 @@
  .menu-toggle {
      cursor: pointer;
      font-size: 35px;
+     display: none;
  }
 
  .menu-close {
@@ -797,6 +799,10 @@
  @media screen and (max-width:1000px) {
      .menu-bar {
          display: none;
+     }
+
+     .menu-toggle {
+         display: flex;
      }
 
      .header {
