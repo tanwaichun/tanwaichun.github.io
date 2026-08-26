@@ -522,11 +522,10 @@
     padding-right: 10px;
 }
 
-.article-down a {
+.article-down .link {
     font-size: 15px;
     font-weight: 400;
     color: var(--color-main-green);
-    text-decoration: 1px solid var(--color-main-green) underline;
 }
 
 .article-content {

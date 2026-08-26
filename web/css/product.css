@@ -552,7 +552,6 @@
     font-size: 14px;
     font-weight: 400;
     color: var(--color-main-green);
-    text-decoration: dotted underline var(--color-main-green);
 }
 
 .product-introduction h5 {
@@ -618,6 +617,15 @@
 
     .add-cart-btn {
         padding: 17px 5px;
+    }
+
+    .banner-inside {
+        gap: 10px;
+        width: 95%;
+    }
+
+    .banner-text {
+        gap: 5px;
     }
 
     .product-description {
