@@ -547,8 +547,7 @@
 
 @media screen and (max-width:800px) {
     .categories-banner {
-        width: 95%;
-        margin: 30px auto;
+        width: 100%;
     }
 
     .banner-inside {
