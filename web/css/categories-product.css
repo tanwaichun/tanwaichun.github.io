@@ -102,13 +102,11 @@
 }
 
 .link-text a {
-    font-size: 14px;
-    font-weight: 400;
     color: var(--color-main-green);
     margin-bottom: 10px;
 }
 
-.product-card-bottom a:hover {
+.link-text a:hover {
     color: var(--color-button-orange);
     text-decoration: none;
 }
@@ -173,25 +171,19 @@
     background-color: var(--color-white);
     border-radius: var(--radius);
     border: 1px solid #c2c2c2;
-    padding: 17px 40px;
+    padding: 17px 10px;
     width: 100%;
     margin-top: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .add-cart-btn img {
     width: 21px;
     margin-right: 15px;
     margin-bottom: -2px;
-}
-
-.add-cart-btn:hover {
-    color: var(--color-white);
-    background-color: var(--color-button-orange);
-    border: none;
-}
-
-.add-cart-btn:hover img {
-    filter: brightness(0) invert(1);
 }
 
 .next-page-section {
@@ -278,6 +270,10 @@
     display: flex;
     flex-direction: row;
     width: calc((100% - 30px) / 2);
+}
+
+.deals-introduce .link-text {
+    text-decoration: underline var(--color-main-green);
 }
 
 .deals-introduce h5 {
@@ -367,7 +363,7 @@
     border: 1px solid var(--color-white);
     color: var(--color-white);
     background-color: transparent;
-    padding: 20px 40px 22px;
+    padding: 20px 20px 22px;
     width: 45%;
     margin-top: 20px;
     gap: 10px;
@@ -567,6 +563,7 @@
 
     .ready-eat-left button {
         padding: 20px;
+        width: 60%;
     }
 
     .review-inside {
