@@ -126,6 +126,18 @@
     text-decoration: underline;
 }
 
+.product-card a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+.category a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
 .product-card h5 {
     font-weight: bold;
     text-decoration: underline;

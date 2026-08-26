@@ -1,479 +1,513 @@
-.page-banner {
-    width: calc(100% - 160px);
-    max-width: 1440px;
-
-    height: 230px;
-
-    margin: 0 auto 60px;
-
+.categories-banner {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 293px;
+    width: 80%;
+    margin: 60px auto;
+}
+
+.categories-banner img {
+    width: 100%;
+}
+
+.banner-inside {
+    display: flex;
+    position: absolute;
     align-items: center;
     justify-content: center;
-
-    background-image:
-        linear-gradient(
-            rgba(226, 244, 218, 0.85),
-            rgba(226, 244, 218, 0.85)
-        ),
-        url("images/banner-bg.jpg");
-
-    background-size: cover;
-    background-position: center;
+    flex-direction: column;
+    width: 90%;
+    top: 0;
+    bottom: 0;
 }
 
-.banner-content {
-    text-align: center;
-}
-
-.banner-content h1 {
-    font-family: var(--font-heading);
-    font-size: 34px;
-    margin-bottom: 8px;
-}
-
-.breadcrumb {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-
-    font-size: 10px;
-}
-
-
-/* ==================================================
-   POST LIST
-================================================== */
-
-.post-list {
-    width: 880px;
-    max-width: calc(100% - 40px);
-
-    margin: 0 auto;
-}
-
-.post-item {
-    display: flex;
-    gap: 35px;
-
-    margin-bottom: 48px;
-}
-
-.post-image {
-    width: 210px;
-    height: 145px;
-
-    flex-shrink: 0;
-
-    overflow: hidden;
-    border-radius: var(--radius);
-}
-
-.post-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.post-content {
-    padding-top: 8px;
-}
-
-.post-meta {
-    font-size: 10px;
-    margin-bottom: 8px;
-}
-
-.post-meta span {
-    margin-left: 3px;
-}
-
-.post-content h2 {
-    font-family: var(--font-heading);
-
-    font-size: 17px;
+.banner-inside h2 {
     font-weight: 600;
-
-    margin-bottom: 10px;
+    color: var(--color-title-black);
+    margin-bottom: 30px;
 }
 
-.post-description {
+.banner-inside a {
+    font-weight: 400;
+    color: var(--color-title-black);
+    text-decoration: dotted underline var(--color-title-black);
+}
+
+.banner-inside span {
+    font-weight: 400;
     color: var(--color-text-gray);
+}
 
-    font-size: 11px;
-    line-height: 1.6;
+.banner-inside .shop-text {
+    font-weight: 400;
+    color: var(--color-title-black);
+}
 
-    margin-bottom: 12px;
+.banner-inside a:hover {
+    color: var(--color-main-green);
+    text-decoration: none;
+}
+
+.news-page {
+    max-width: 1248px;
+    margin: 0 auto;
+    padding: 0 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: start;
+}
+
+.post-card {
+    display: flex;
+    gap: 24px;
+    margin-top: 50px;
+    margin-bottom: 130px;
+    margin-right: 25px;
+}
+
+.post-card img {
+    width: 276px;
+    height: 278px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.post-date {
+    color: var(--color-title-black);
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+.post-green-title {
+    color: var(--color-main-green);
+    text-decoration: underline;
+}
+
+.post-green-title p:hover {
+    color: var(--color-button-orange);
+    text-decoration: none;
+}
+
+.post h4 {
+    font-weight: 700;
+    color: var(--color-title-black);
+    margin-bottom: 8px;
+    text-decoration: underline;
+}
+
+.post-text {
+    color: var(--color-title-black);
+    margin-bottom: 16px;
+    margin-right: 25px;
 }
 
 .read-more {
-    background: var(--color-white);
-
-    border: 1px solid #d5d5d5;
-    border-radius: 3px;
-
-    padding: 7px 14px;
-
-    font-size: 10px;
-}
-
-
-/* ==================================================
-   PAGINATION
-================================================== */
-
-.pagination {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-
-    gap: 8px;
-
-    margin: 10px 0 48px;
-}
-
-.page {
-    width: 24px;
-    height: 24px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border: 1px solid #ddd;
-
-    font-size: 10px;
-}
-
-.active-page {
-    background: var(--color-main-green);
-    color: var(--color-white);
-
-    border-color: var(--color-main-green);
-}
-
-.next {
-    color: var(--color-main-green);
-    font-size: 10px;
-}
-
-.arrow {
-    font-size: 15px;
-}
-
-
-/* ==================================================
-   FEATURED POSTS
-================================================== */
-
-.featured-posts {
-    width: calc(100% - 80px);
-    max-width: 1400px;
-
-    margin: 0 auto 80px;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 12px;
-}
-
-.featured-card {
-    position: relative;
-
-    height: 180px;
-
-    overflow: hidden;
-    border-radius: 5px;
-}
-
-.featured-card img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-}
-
-.featured-overlay {
-    position: absolute;
-
-    inset: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-
-    padding: 30px;
-
-    background: rgba(0, 0, 0, 0.25);
-}
-
-.featured-overlay h3 {
-    color: var(--color-white);
-
-    font-family: var(--font-heading);
-
-    font-size: 16px;
-    line-height: 1.3;
-}
-
-
-/* ==================================================
-   COMMENTS SECTION
-================================================== */
-
-.comments-section {
-    background: #fff8ef;
-
-    padding: 65px 0 75px;
-}
-
-.comments-container {
-    width: 850px;
-    max-width: calc(100% - 40px);
-
-    margin: 0 auto;
-}
-
-.comments-container > h2 {
-    font-family: var(--font-heading);
-
-    font-size: 16px;
-    font-weight: 600;
-
-    margin-bottom: 12px;
-}
-
-.comment-form textarea {
-    width: 100%;
-    height: 90px;
-
-    padding: 14px;
-
-    border: 1px solid #e4e4e4;
-    border-radius: 3px;
-
-    resize: none;
-
-    background: var(--color-white);
-
-    font-size: 10px;
-
-    margin-bottom: 12px;
-}
-
-.form-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 12px;
-
-    margin-bottom: 10px;
-}
-
-.form-row input {
-    height: 40px;
-
-    border: 1px solid #e4e4e4;
-
-    padding: 0 10px;
-
-    font-size: 9px;
-}
-
-.save-comment {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-
-    font-size: 8px;
-
-    margin-bottom: 12px;
-}
-
-.save-comment input {
-    width: 10px;
-    height: 10px;
-}
-
-.comment-button {
-    border: none;
-
-    background: var(--color-button-orange);
-    color: var(--color-white);
-
-    padding: 10px 18px;
-
-    border-radius: 3px;
-
-    font-size: 9px;
-}
-
-
-/* ==================================================
-   CUSTOMER COMMENTS
-================================================== */
-
-.customer-comments {
-    margin-top: 40px;
-}
-
-.customer-comments h2 {
-    font-family: var(--font-heading);
-
-    font-size: 20px;
-    font-weight: 400;
-
-    margin-bottom: 7px;
-}
-
-.customer-intro {
-    font-size: 9px;
-    color: var(--color-text-gray);
-
-    margin-bottom: 25px;
-}
-
-.customer-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 12px;
-}
-
-.customer-card {
-    background: var(--color-white);
-
-    min-height: 250px;
-
-    padding: 25px 18px;
-
-    text-align: center;
-}
-
-.customer-card img {
-    width: 48px;
-    height: 48px;
-
-    object-fit: cover;
-
-    margin: 0 auto 15px;
-
-    border-radius: 3px;
-}
-
-.customer-card p {
-    color: var(--color-text-gray);
-
-    font-size: 9px;
-    line-height: 1.8;
-
-    margin-bottom: 18px;
-}
-
-.customer-card span {
-    color: var(--color-main-green);
-
-    font-size: 9px;
-}
-
-
-/* ==================================================
-   NEWS SECTION
-================================================== */
-
-.news-section {
-    width: 100%;
-
-    padding: 55px 80px 70px;
-}
-
-.news-header {
-    max-width: 1180px;
-
-    margin: 0 auto 25px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.news-header h2 {
-    font-family: var(--font-heading);
-
-    font-size: 22px;
-}
-
-.news-header button {
-    border: none;
-
-    background: var(--color-button-orange);
-    color: var(--color-white);
-
-    padding: 12px 35px;
-
+    gap: 6px;
+    border: 1px solid var(--color-box-gray);
     border-radius: 4px;
+    padding: 8px 16px;
+    font-weight: 600;
+    color: var(--color-title-black);
+    background-color: var(--color-white);
+}
 
-    font-size: 9px;
+.news-articles {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 60px 24px;
 }
 
 .news-grid {
-    max-width: 1180px;
-
-    margin: 0 auto;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 15px;
+    display: flex;
+    gap: 24px;
 }
 
 .news-card {
-    border: 1px solid #ddd;
-
-    border-radius: 7px;
-
+    position: relative;
+    border-radius: 6px;
     overflow: hidden;
-
-    background: var(--color-white);
+    flex: 1;
+    height: 300px;
 }
 
-.news-card > img {
+.news-card img {
+    position: absolute;
     width: 100%;
-    height: 155px;
-
+    height: 100%;
     object-fit: cover;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: var(--color-title-black);
+    opacity: 0.5;
+}
+
+.card-title {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+    z-index: 2;
+}
+
+.card-title h4 {
+    color: var(--color-white);
+    font-weight: 600;
+    margin-bottom: 8px;
 }
 
 .news-content {
-    padding: 15px;
+    color: var(--color-button-orange);
 }
 
-.news-content h3 {
-    font-family: var(--font-heading);
-
-    font-size: 14px;
-    line-height: 1.35;
-
-    text-decoration: underline;
-
-    margin-bottom: 12px;
+.customers-review {
+    min-height: 400px;
+    position: relative;
+    background-color: #FFF4E6;
 }
 
-.news-content p {
+.customers-review>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.review-inside {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+    justify-content: space-between;
+}
+
+.review-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.review-left h3 {
+    font-weight: 600;
+    color: var(--color-title-black);
+}
+
+.text-large {
     color: var(--color-text-gray);
-
-    font-size: 9px;
-    line-height: 1.6;
-
-    margin-bottom: 12px;
+    margin-top: 15px;
 }
 
-.news-meta {
-    font-size: 8px;
+.average-rating {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
 }
 
-.news-meta span {
+.rating-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.rating-score h4 {
+    font-weight: 400;
     color: var(--color-main-green);
+}
+
+.review-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.customer-card-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.customer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc((100% - 30px) / 3);
+    background-color: var(--color-white);
+    gap: 30px;
+    border-radius: var(--radius);
+    padding: 30px 45px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.customer-card img {
+    max-width: 90px;
+    max-height: 90px;
+    border-radius: 5px;
+}
+
+.text-body {
+    color: var(--color-main-green);
+}
+
+.cta {
+    width: calc(100% - 40px);
+    max-width: 1248px;
+    min-height: 200px;
+    margin: 60px auto 40px;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgba(76, 130, 25, 0.88),
+            rgba(76, 130, 25, 0.88)), url(https://avada.website/vegan-store/wp-content/uploads/sites/186/2023/12/vegan-ready-meals-banner-1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    color: var(--color-white);
+}
+
+.cta-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.cta h2 {
+    margin: 0 0 12px;
+    font-weight: bold;
+}
+
+.cta p {
+    margin: 8px;
+}
+
+.cta button {
+    width: 256px;
+    height: 76px;
+    flex-shrink: 0;
+    background: transparent;
+    border: 2px solid var(--color-white);
+    border-radius: 8px;
+    color: var(--color-white);
+    transition: 0.25s;
+}
+
+.cta button a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta button:hover {
+    background: var(--color-white);
+    color: var(--color-title-black);
+}
+
+.post button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (max-width: 1000px) {
+    .categories-banner {
+        width: calc(100% - 40px);
+        margin: 50px auto;
+    }
+
+    .banner-inside {
+        width: 85%;
+    }
+
+    .news-page {
+        max-width: 100%;
+        padding: 0 30px;
+        gap: 30px;
+    }
+
+    .post-card {
+        width: 100%;
+        gap: 20px;
+        margin-top: 30px;
+        margin-bottom: 90px;
+        margin-right: 0;
+    }
+
+    .post-card img {
+        width: 240px;
+        height: 240px;
+        flex-shrink: 0;
+    }
+
+    .post-text {
+        margin-right: 0;
+    }
+
+    .news-articles {
+        max-width: 100%;
+        padding: 50px 30px;
+    }
+
+    .news-grid {
+        gap: 18px;
+    }
+
+    .news-card {
+        height: 280px;
+    }
+
+    .review-inside {
+        padding: 40px 30px;
+        gap: 35px;
+    }
+
+    .review-left {
+        width: 28%;
+    }
+
+    .review-right {
+        width: 68%;
+    }
+
+    .customer-card-grid {
+        gap: 12px;
+        width: 100%;
+    }
+
+    .customer-card {
+        width: calc((100% - 24px) / 3);
+        padding: 25px 20px;
+        gap: 20px;
+    }
+
+    .cta {
+        width: calc(100% - 40px);
+        padding: 40px 60px;
+    }
+
+    .cta button {
+        width: 220px;
+        height: 65px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .categories-banner {
+        width: calc(100% - 30px);
+        min-height: 250px;
+        margin: 40px auto;
+    }
+
+    .banner-inside {
+        width: 90%;
+    }
+
+    .news-page {
+        padding: 0 20px;
+        gap: 20px;
+    }
+
+    .post-card {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 25px;
+        margin-bottom: 70px;
+        margin-right: 0;
+    }
+
+    .post-card img {
+        width: 100%;
+        height: 280px;
+    }
+
+    .post-content {
+        width: 100%;
+    }
+
+    .post-date {
+        margin-top: 5px;
+    }
+
+    .post-text {
+        margin-right: 0;
+    }
+
+    .news-articles {
+        padding: 40px 20px;
+    }
+
+    .news-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .news-card {
+        width: 100%;
+        height: 280px;
+        flex: none;
+    }
+
+    .customers-review {
+        min-height: auto;
+    }
+
+    .review-inside {
+        flex-direction: column;
+        padding: 40px 25px;
+        gap: 35px;
+    }
+
+    .review-left {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .average-rating {
+        align-items: center;
+    }
+
+    .review-right {
+        width: 100%;
+    }
+
+    .customer-card-grid {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .customer-card {
+        width: calc((100% - 15px) / 2);
+        padding: 25px 20px;
+    }
+
+    .cta {
+        width: calc(100% - 30px);
+        min-height: 180px;
+        margin: 45px auto 30px;
+        padding: 35px 35px;
+        gap: 25px;
+    }
+
+    .cta button {
+        width: 190px;
+        height: 60px;
+    }
 }

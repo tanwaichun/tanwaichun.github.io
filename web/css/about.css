@@ -5,6 +5,10 @@
     color: var(--color-title-black);
 }
 
+.page-head a {
+    color: var(--color-main-green);
+}
+
 .page-title {
     font-size: 48px;
     font-weight: 600;
@@ -385,21 +389,12 @@
     }
 
     .articles-title {
-        font-size: 24px;
         margin-bottom: 28px;
     }
 
     .articles-grid {
         flex-direction: column;
         gap: 20px;
-    }
-
-    .card-title h4 {
-        font-size: 16px;
-    }
-
-    .article-content {
-        font-size: 12px;
     }
 
     .article-card {
