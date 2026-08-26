@@ -335,11 +335,6 @@
     color: var(--color-button-orange);
 }
 
-.post a:hover {
-    text-decoration: none;
-    color: var(--color-button-orange);
-}
-
 @media screen and (max-width: 1000px) {
     .categories-banner {
         width: calc(100% - 40px);
