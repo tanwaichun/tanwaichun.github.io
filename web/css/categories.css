@@ -164,15 +164,12 @@
 
 .card-title h4 {
     color: var(--color-white);
-    font-size: 23px;
     font-weight: 600;
-    line-height: 1.4;
     margin-bottom: 8px;
 }
 
 .news-content {
     color: var(--color-button-orange);
-    font-size: 14px;
 }
 
 .customers-review {
@@ -205,7 +202,6 @@
 }
 
 .review-left h3 {
-    font-size: 36px;
     font-weight: 600;
     color: var(--color-title-black);
 }
@@ -228,8 +224,7 @@
     gap: 15px;
 }
 
-.rating-score {
-    font-size: 16px;
+.rating-score h4 {
     font-weight: 400;
     color: var(--color-main-green);
 }
@@ -510,6 +505,7 @@
         padding: 35px 35px;
         gap: 25px;
     }
+
     .cta button {
         width: 190px;
         height: 60px;
