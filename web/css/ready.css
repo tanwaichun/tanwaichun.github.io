@@ -1,18 +1,10 @@
-/* ==================================================
-   HERO
-================================================== */
-
 .hero {
     width: 100%;
     height: 450px;
-
     display: flex;
-
     justify-content: center;
     align-items: center;
-
     background: var(--color-bg-red);
-
     border-radius: 0 0 5px 5px;
 }
 
@@ -20,22 +12,16 @@
 .hero__inner {
     width: calc(100% - 40px);
     max-width: 1248px;
-
     min-height: 250px;
-
     margin: 0 auto;
-
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     align-items: center;
 }
 
 
 .hero__content {
     padding: 30px 40px;
-
     color: var(--color-white);
 }
 
@@ -44,42 +30,38 @@
 }
 
 
-.hero__content h1 {
+.hero__content h2 {
     margin: 0;
+    font-weight: bold;
 }
 
 
 .hero__content p {
     margin-top: 12px;
-
-    color: var(--color-hero-text);
+    color: var(--color-button-orange);
 }
 
 
 .hero__content button {
     width: 130px;
     height: 45px;
-
     margin-top: 30px;
-
     background: transparent;
-
-    border: 1px solid rgba(255, 255, 255, .6);
-
+    border: 1px solid var(--color-white);
     border-radius: 4px;
-
     color: var(--color-white);
-
-    font-size: 11px;
-
     transition: .25s;
 }
 
+.herp__content a {
+    text-decoration: none;
+    color: var(--color-white);
+}
 
-.hero__content button:hover {
-    background: var(--color-white);
-
-    color: var(--color-bg-red);
+.hero__content a:hover {
+    background: var(--color-main-green);
+    border-color: var(--color-main-green);
+    color: var(--color-white);
 }
 
 
@@ -95,73 +77,40 @@
     object-fit: cover;
 }
 
-
-/* ==================================================
-   FLASH SECTION
-================================================== */
-
-.flash-section {
-    width: 100%;
-
-    padding: 40px 0 70px;
-
-    background: var(--color-white);
-}
-
-
-/* ==================================================
-   FLASH HEADING
-================================================== */
-
 .flash-heading {
     width: calc(100% - 40px);
     max-width: 1248px;
-
     min-height: 95px;
-
     margin: 0 auto 25px;
-
-    padding: 20px 55px;
-
+    padding: 20px 35px;
     display: flex;
-
     justify-content: space-between;
     align-items: center;
-
     background-color: #f2f2f2;
-
-    background-image:
-        url("https://avada.website/vegan-store/wp-content/uploads/sites/186/2024/01/section-bg-3.png");
-
+    background-image: url("https://avada.website/vegan-store/wp-content/uploads/sites/186/2024/01/section-bg-3.png");
     background-size: cover;
-
     border-radius: 4px;
-
-    box-shadow:
-        0 2px 10px rgba(0, 0, 0, .04);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .04);
 }
-
 
 .flash-heading h2 {
     margin: 0;
 }
 
+/* ==================================================
+   RIGHT SIDE
+================================================== */
 
 .flash-heading__right {
     display: flex;
-
     flex-direction: column;
-
     align-items: flex-end;
-
     gap: 8px;
 }
-
 
 .flash-heading__right p {
     margin: 0;
 }
-
 
 /* ==================================================
    FLASH COUNTDOWN
@@ -169,41 +118,29 @@
 
 .flash-countdown {
     display: flex;
-
     gap: 7px;
 }
-
 
 .flash-countdown div {
     width: 55px;
     height: 35px;
-
     display: flex;
-
     justify-content: center;
     align-items: center;
-
     gap: 3px;
-
     background: var(--color-main-green);
-
     border-radius: 4px;
-
     color: var(--color-white);
 }
 
-
 .flash-countdown strong {
     font-size: 9px;
-
     font-weight: 400;
 }
-
 
 .flash-countdown span {
     font-size: 8px;
 }
-
 
 /* ==================================================
    FLASH PRODUCTS
@@ -211,18 +148,13 @@
 
 .flash-products {
     width: calc(100% - 40px);
-    max-width: 1248px;
-
+    max-width: 752px;
     margin: 0 auto;
-
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
-
-    column-gap: 20px;
+    column-gap: 15px;
     row-gap: 20px;
 }
-
 
 /* ==================================================
    FLASH PRODUCT CARD
@@ -230,80 +162,77 @@
 
 .flash-product {
     position: relative;
-
     min-width: 0;
-
     padding-bottom: 15px;
-
     background: var(--color-white);
-
     border-radius: 3px;
-
-    box-shadow:
-        0 2px 10px rgba(0, 0, 0, .05);
-
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .05);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
+/* ==================================================
+   PRODUCT IMAGE
+================================================== */
 
-.flash-product > img {
+.flash-product>img {
     width: 100%;
-    height: 145px;
-
+    height: 132px;
     object-fit: cover;
-
     border-radius: 4px;
 }
 
+/* ==================================================
+   PRODUCT TITLE
+================================================== */
 
 .flash-product h5 {
     margin-top: 10px;
-
     padding: 0 10px;
 }
 
+/* ==================================================
+   STARS
+================================================== */
 
 .flash-product .stars {
     margin-top: 5px;
-
     padding: 0 10px;
-
     color: var(--color-main-green);
-
     font-size: 9px;
-
     letter-spacing: 1px;
 }
 
+/* ==================================================
+   PRICE — 与图二一致（红色粗体）
+================================================== */
 
 .flash-product .price {
     margin-top: 10px;
-
     padding: 0 10px;
-
     color: var(--color-price-red);
+    font-weight: 700;
+    font-size: 14px;
 }
-
 
 .flash-product .price del {
     margin-left: 4px;
-
     color: var(--color-option-gray);
+    font-weight: 400;
+    font-size: 12px;
 }
 
-
 /* ==================================================
-   DESCRIPTION
+   DESCRIPTION — 改成尺寸/规格标签样式（图二风格）
 ================================================== */
 
 .flash-product .description {
     margin-top: 5px;
-
     padding: 0 10px;
-
     color: var(--color-box-gray);
+    font-size: 12px;
 }
-
 
 /* ==================================================
    SALE LABEL
@@ -311,173 +240,129 @@
 
 .sale {
     position: absolute;
-
     top: 8px;
     left: 8px;
-
     z-index: 2;
-
     padding: 5px 8px;
-
     background: var(--color-sale-purple);
-
     border-radius: 50%;
-
     color: var(--color-white);
 }
 
-
 /* ==================================================
-   PRODUCT OPTION
+   PRODUCT OPTION — 尺寸/颜色/重量标签（图二风格）
 ================================================== */
 
 .product-option {
-    margin-top: 15px;
-
+    margin-top: 10px;
     padding: 0 10px;
 }
 
-
-.product-option > span {
+.product-option>span {
     display: block;
-
-    margin-bottom: 5px;
-
+    margin-bottom: 4px;
     color: var(--color-box-gray);
+    font-size: 11px;
 }
 
-
-.product-option > div {
+.product-option>div {
     display: flex;
-
+    flex-wrap: wrap;
     gap: 4px;
 }
 
-
 .product-option button {
     min-width: 30px;
-    height: 20px;
-
-    padding: 0 6px;
-
+    height: 24px;
+    padding: 0 8px;
     background: var(--color-white);
-
     border: 1px solid var(--color-light-gray);
-
     border-radius: 3px;
-
     color: var(--color-option-gray);
-
-    font-size: 7px;
+    font-size: 10px;
+    cursor: pointer;
 }
 
+.product-option button.active {
+    background: var(--color-main-green);
+    color: var(--color-white);
+    border-color: var(--color-main-green);
+}
 
 /* ==================================================
-   COLOR OPTIONS
+   COLOR OPTIONS — 圆点颜色选择（图二风格）
 ================================================== */
 
 .color-options {
     align-items: center;
 }
 
-
 .color-options button {
-    width: 10px;
-    min-width: 10px;
-
-    height: 10px;
-
+    width: 16px;
+    min-width: 16px;
+    height: 16px;
     padding: 0;
-
     border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
 }
 
+.color-options button.active {
+    border-color: var(--color-main-green);
+}
 
 .color-options .black {
-    background: var(--color-title-black);
+    background: #000;
 }
 
+.color-options .red {
+    background: #e74c3c;
+}
+
+.color-options .blue {
+    background: #3498db;
+}
 
 .color-options .green {
-    background: var(--color-product-green);
+    background: #2ecc71;
 }
-
-
-/* ==================================================
-   DISCOUNT
-================================================== */
 
 .discount {
     display: inline-block;
-
     margin-top: 8px;
     margin-left: 10px;
-
     padding: 3px 5px;
-
     background: var(--color-sale-bg);
-
     color: var(--color-sale-text);
-
     font-size: 7px;
 }
-
-
-/* ==================================================
-   ADD TO CART
-================================================== */
 
 .add-cart {
     width: calc(100% - 20px);
     height: 35px;
-
-    margin: 15px 10px 0;
-
-    background: #f5f5f5;
-
-    border: 0;
-
+    margin: 12px 10px 0;
+    background: var(--color-white);
+    border: 1px solid var(--color-light-gray);
     border-radius: 3px;
-
     color: #444;
-
-    font-size: 10px;
-
+    font-size: 11px;
+    font-weight: 600;
     transition: .25s;
+    cursor: pointer;
 }
 
-
-.add-cart:hover {
-    background: var(--color-main-green);
-
-    color: var(--color-white);
-}
-
-
-/* ==================================================
-   ABOUT
-================================================== */
 
 .about {
     width: calc(100% - 40px);
     max-width: 1248px;
-
     min-height: 235px;
-
-    margin: 0 auto 60px;
-
+    margin: 60px auto 60px;
     padding: 20px 35px;
-
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     align-items: center;
-
-    background: var(--color-about-bg);
-
+    background: #FFF8F0;
     border-radius: 4px;
-
     box-shadow:
         0 3px 15px rgba(0, 0, 0, .08);
 }
@@ -490,29 +375,27 @@
 
 .about__content h2 {
     padding-bottom: 10px;
-
     border-bottom:
-        2px solid var(--color-border-gray);
+        2px solid var(--color-box-gray);
 }
 
 
 .about__content p {
     margin-top: 20px;
-
     max-width: 390px;
 }
 
 
 .about__content a {
     display: inline-block;
-
     margin-top: 22px;
-
-    color: var(--color-sale-text);
-
+    color: var(--color-button-orange);
     text-decoration: underline;
 }
 
+.about__content a:hover {
+    color: var(--color-title-black)
+}
 
 .about__image {
     height: 235px;
@@ -522,8 +405,95 @@
 .about__image img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-
     border-radius: 4px;
+}
+
+.new-arrivals {
+    width: calc(100% - 40px);
+    max-width: 1248px;
+    margin: 60px auto 60px;
+    padding: 20px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 28px;
+    background: var(--color-white);
+    border-radius: 5px;
+    box-shadow:
+        0 3px 15px var(--color-box-gray);
+}
+
+.new-arrivals__list h5 {
+    margin: 12px 0 25px;
+    padding-bottom: 20px;
+    border-bottom:
+        2px solid var(--color-border-gray);
+    font-weight: bold;
+}
+
+.new-arrivals__list .article {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    column-gap: 24px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.new-arrivals__list .article img {
+    width: 110px;
+    height: 88px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.new-arrivals__list .article p {
+    margin: 0;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+.new-arrivals__list .article p:hover {
+    color: var(--color-main-green);
+    text-decoration: none;
+}
+
+.new-arrivals__list .article span {
+    display: block;
+    font-weight: bold;
+    margin-top: 8px;
+    color: var(--color-price-red);
+}
+
+.arrival-banner {
+    position: relative;
+    height: 462px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.arrival-banner img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.arrival-banner>div {
+    position: absolute;
+    top: 43px;
+    left: 40px;
+}
+
+.arrival-banner h2 {
+    margin: 0 0 25px;
+    font-weight: bold;
+    max-width: 250px;
+}
+
+.arrival-banner p {
+    color: var(--color-title-black);
+    text-decoration: underline;
+    font-weight: bold;
 }

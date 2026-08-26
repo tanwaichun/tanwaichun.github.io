@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>product</title>
+    <title>Adult Cat Food</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/product.css">
 </head>
@@ -70,7 +70,7 @@
                 <div>Shop</div>
                 <div><a href="flash.html">Hot Deals</a></div>
                 <div><a href="about.html">About</a></div>
-                <div><a href="post.html">News</a></div>
+                <div><a href="news.html">News</a></div>
                 <div><a href="contact.html">Contact</a></div>
             </div>
             <div class="phone-contact">
@@ -170,20 +170,19 @@
             <div class="product-option">
                 <p>Weight</p>
                 <div class="option-btns">
-                    <button>1Kg</button>
-                    <button>500g</button>
+                    <div>1Kg</div>
                 </div>
             </div>
             <div class="button-section">
                 <div class="choose-number">
-                    <button class="btn-1">-</button>
-                    <div>1</div>
-                    <button class="btn-2">+</button>
+                    <div class="btn-1">-</div>
+                    <div>0</div>
+                    <div class="btn-2">+</div>
                 </div>
-                <button class="add-cart-btn">
+                <div class="add-cart-btn">
                     <div><img src="image/cart-icon.svg" alt="cart"></div>
-                    <div>Add To Cart</div>
-                </button>
+                    <div>Out of Stock</div>
+                </div>
             </div>
             <div class="categories-section">
                 <div>Categories:</div>
@@ -238,7 +237,7 @@
         <div>
             <p>Etiam ut pulvinar felis. Ut varius lacus vitae nibh malesuada consectetur felis dapibus. Phasellus nec
                 ipsum malesuada lorem pulvinar tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia
-                nostra</p>
+                nostra.</p>
         </div>
         <div class="product-benifits-point">
             <div class="point-arrow"> →</div>
@@ -388,7 +387,7 @@
                     </div>
                     <div class="email">
                         <div><label for="emailaddress">Email Address*</label></div>
-                        <div><input type="email" id="emailaddress" name="emailaddress"></div>
+                        <div><input type="email" id="emailaddress" name="emailaddress" required></div>
                     </div>
                     <div class="check-box">
                         <input type="checkbox" id="savename" name="savename" value="Name">
@@ -444,7 +443,7 @@
                     <p>Signup for 10% off your first purchase & more products discounts</p>
                     <form>
                         <div class="enter-email">
-                            <input type="email" id="email" name="email" placeholder="Enter your email ..*">
+                            <input type="email" id="email" name="email" placeholder="Enter your email ..*" required>
                             <div class="subscribe-button"> <input class="submit" type="submit" value="SUBSCRIBE NOW">
                             </div>
                         </div>
@@ -485,10 +484,14 @@
                             <p>Order by phone</p>
                         </div>
                         <div class="footer-phone-number">
-                            +1 800 555 5555
+                            <a href="tel:+1 800 555 5555" target="_blank">
+                                +1 800 555 5555
+                            </a>
                         </div>
                         <div class="vegan-gmail">
-                            <p>sales@avada-company.com</p>
+
+                            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtXDztHbwTkhJBRxwrQpnJgTzLvbzlGRWJjrhMzfbnLhWZNKCfmlwKwtMNpKpvXsxSdtMR"
+                                target="_blank">sales@avada-company.com</a>
                         </div>
                         <div class="footer-social">
                             <div><a href="https://www.facebook.com/ThemeFusionAvada" target="_blank"><img
@@ -498,7 +501,8 @@
                             <div><a href="https://www.instagram.com/themefusion/" target="_blank"><img
                                         src="image/instagram-icon.svg" alt="vegan instagram"></a></div>
                             <div><a href="https://avada.website/vegan-store/vegan-store-home-alt/" target="_blank"><img
-                                        src="image/pinterest-icon.svg" alt="vegan pinterest"></a></div>
+                                        src="image/pinterest-icon.svg" alt="vegan pinterest"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -532,6 +536,7 @@
 
     <script src="js/common.js">
     </script>
+
 </body>
 
 </html>

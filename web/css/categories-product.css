@@ -8,7 +8,7 @@
     margin: 60px auto;
 }
 
-.categories-banner>img {
+.categories-banner img {
     width: 100%;
 }
 
@@ -41,14 +41,13 @@
 .banner-inside span {
     font-size: 15px;
     font-weight: 400;
-    color: var(--color-white);
+    color: var(--color-text-gray);
 }
 
 .banner-inside .shop-text {
     font-size: 15px;
     font-weight: 400;
     color: var(--color-title-black);
-    text-decoration: dotted underline var(--color-title-black);
 }
 
 .banner-inside a:hover {
@@ -130,17 +129,6 @@
     margin-top: 15px;
 }
 
-.sale {
-    position: absolute;
-    background-color: #c13ee8;
-    color: var(--color-white);
-    border-radius: 50%;
-    font-size: 11px;
-    padding: 10px;
-    top: 20px;
-    left: 20px;
-}
-
 .product-price {
     display: flex;
     flex-direction: row;
@@ -162,28 +150,6 @@
     background-color: #ffa42e18;
     padding: 5px;
     margin-top: 11px;
-}
-
-.add-cart-btn {
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--color-title-black);
-    background-color: var(--color-white);
-    border-radius: var(--radius);
-    border: 1px solid #c2c2c2;
-    padding: 17px 10px;
-    width: 100%;
-    margin-top: 16px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.add-cart-btn img {
-    width: 21px;
-    margin-right: 15px;
-    margin-bottom: -2px;
 }
 
 .next-page-section {
@@ -270,10 +236,6 @@
     display: flex;
     flex-direction: row;
     width: calc((100% - 30px) / 2);
-}
-
-.deals-introduce .link-text {
-    text-decoration: underline var(--color-main-green);
 }
 
 .deals-introduce h5 {
@@ -585,7 +547,12 @@
 
 @media screen and (max-width:800px) {
     .categories-banner {
+        width: 95%;
         margin: 30px auto;
+    }
+
+    .banner-inside {
+        width: 100%;
     }
 
     .product-section {

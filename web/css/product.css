@@ -76,7 +76,7 @@
     color: var(--color-text-grey);
 }
 
-.option-btns button {
+.option-btns div {
     font-size: 15px;
     font-weight: 400;
     color: var(--color-box-gray);
@@ -100,7 +100,8 @@
     align-items: center;
 }
 
-.choose-number button,
+.choose-number .btn-1,
+.choose-number .btn-2,
 .choose-number div {
     font-size: 17px;
     border: 1px solid #e5e5e5;
@@ -531,12 +532,13 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 .product-introduction {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     margin-left: 15px;
 }
 
@@ -550,8 +552,6 @@
     font-size: 14px;
     font-weight: 400;
     color: var(--color-main-green);
-    text-decoration: dotted underline var(--color-main-green);
-    margin-bottom: 10px;
 }
 
 .product-introduction h5 {
@@ -560,7 +560,6 @@
     line-height: 1.4;
     color: var(--color-title-black);
     text-decoration: underline var(--color-title-black);
-    margin-bottom: 10px;
 }
 
 .related-price {
@@ -573,8 +572,9 @@
 .product-price {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
+    align-items: center;
 }
 
 .old-price {
@@ -619,6 +619,15 @@
         padding: 17px 5px;
     }
 
+    .banner-inside {
+        gap: 10px;
+        width: 95%;
+    }
+
+    .banner-text {
+        gap: 5px;
+    }
+
     .product-description {
         margin: 60px 80px;
     }
@@ -631,6 +640,10 @@
     .rate-star-section {
         flex: 1;
         gap: 10px;
+    }
+
+    .rate-star-section span {
+        display: none;
     }
 
     .product-card {
@@ -708,10 +721,6 @@
         margin: 60px;
     }
 
-    .rate-star-section span {
-        display: none;
-    }
-
     .rate-star {
         width: 100%;
         display: flex;
@@ -736,6 +745,7 @@
         display: flex;
         width: 100%;
         flex-direction: column;
+        align-items: flex-start;
     }
 
     .product-card img {
