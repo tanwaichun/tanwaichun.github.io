@@ -4,6 +4,10 @@
     padding: 50px 24px 40px;
 }
 
+.page-head a {
+    color: var(--color-main-green);
+}
+
 .page-title {
     font-size: 48px;
     font-weight: 600;
@@ -52,7 +56,8 @@
 
 .contact {
     max-width: 1180px;
-    margin: 100px;
+    margin: 150px;
+    margin-right: 60px;
 }
 
 .map-img {
@@ -92,7 +97,7 @@
 
 .contact-info p {
     font-size: 13px;
-    color: #4B4B4B;
+    color: var(--color-title-black);
     line-height: 1.7;
     margin-bottom: 4px;
 }
@@ -277,7 +282,6 @@
     }
 
     .message-title {
-        font-size: 28px;
         margin-top: 50px;
         margin-bottom: 30px;
     }
@@ -296,10 +300,6 @@
         margin-bottom: 20px;
     }
 
-    .form-group label {
-        font-size: 15px;
-    }
-
     .form-group input,
     .form-group textarea {
         padding: 12px 14px;
@@ -313,8 +313,32 @@
 }
 
 @media (max-width: 800px) {
+
+    .contact {
+        margin: 20px;
+    }
+
+    .contact-card {
+        flex-direction: column;
+        border-radius: 8px;
+    }
+
+    .contact-card img {
+        width: 100%;
+        height: 220px;
+        flex: none;
+    }
+
+    .contact-info {
+        flex: none;
+        padding: 20px;
+    }
+
+    .map-img {
+        height: 180px;
+    }
+
     .message-title {
-        font-size: 26px;
         margin-top: 40px;
         margin-bottom: 24px;
     }
